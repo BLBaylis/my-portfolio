@@ -1,0 +1,132 @@
+.navbar {
+	background-color: steelblue;
+	height          : 50px;
+	color           : black;
+
+}
+
+.button {
+	composes: navbar;
+	display : block;
+	position: absolute;
+	border  : none;
+}
+
+.button:hover{
+	background-color : #4e94ce;
+}
+
+.button:focus {
+	outline         : none;
+	background-color: orange;
+}
+
+.link {
+	composes       : button;
+	line-height    : 50px;
+	text-align     : center;
+	text-decoration: none;
+	z-index        : 0;
+	cursor         : pointer;
+	top            : 0;
+	left           : 0;
+}
+
+.logoLink {
+	composes: link;
+	width   : 80%;
+	z-index : 3;
+}
+
+.dropDownLink {
+	composes  : link;
+	width     : 100%;
+	transition: linear 100ms;
+}
+
+.dropDownBtn {
+	composes  : button;
+	left      : auto;
+	right     : 0;
+	z-index   : 3;
+	width     : 20%;
+	transition: linear 50ms;
+}
+
+.socialMediaBtn {
+	composes : dropDownLink;
+}
+
+.homeDropped {
+	composes  : dropDownLink;
+	z-index   : 2;
+	top       : 50px;
+	transition: linear 75ms;
+}
+
+.projectsDropped {
+	composes  : dropDownLink;
+	z-index   : 1;
+	top       : 100px;
+	transition: linear 100ms;
+}
+
+.linkedinDropped {
+	composes : dropDownLink;
+	z-index   : 0;
+	width     : 50%;
+	top       : 150px;
+	left      : 50%;
+	transition: linear 125ms;
+}
+
+.githubDropped {
+	composes: linkedinDropped;
+	left    : 0;
+}
+
+@media (min-width : 500px) {
+
+	.navbar {
+		display        : flex;
+		justify-content: space-evenly;
+	}
+
+	.dropDownBtn {
+		display : none;
+	}
+
+	.link {
+		position: static;
+		width   : 10%;
+	}
+
+	.logoLink {
+		z-index: 0;
+		order  : 1;
+		width  : 40%;
+	}
+
+	.socialMediaLink {
+		order          : 2;
+		line-height    : 50px;
+		text-align     : center;
+		text-decoration: none;
+		z-index        : 0;
+		cursor         : pointer;
+		top            : 0;
+		left           : 0;
+		color          : black;
+	}
+
+	.socialMediaLink:hover{
+		background-color : #4e94ce;
+	}
+
+	.socialMediaLink:focus {
+		outline         : none;
+		background-color: orange;
+	}
+
+
+}
