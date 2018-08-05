@@ -1,0 +1,17 @@
+.outerDiv {
+	height : 2500px;
+	padding-top : 25px;
+}
+
+.bradPic {
+	width           : 200px;
+	height          : 200px;
+	border-radius   : 50%;
+	background-color: #ffffff;
+}
+
+.info {
+	text-align : justify;
+	width : 90%;
+	margin : 0 auto;
+}

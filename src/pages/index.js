@@ -1,15 +1,21 @@
-import React from 'react';
-import Link from 'gatsby-link';
+import React from "react";
+import Link from "gatsby-link";
+import styles from"./index.module.css";
+import InfoSection from "../components/infoSection/InfoSection";
 
 const IndexPage = () => (
-	<div>
-		<div>
-			<h1>Hi people</h1>
-			<p>Welcome to your new Gatsby site.</p>
-			<p>Now go build something great.</p>
-			<Link to ="/projects/">Go to page 2</Link>
-		</div>
+	<div className = {styles.outerDiv}>
+		<InfoSection sectionName = "ABOUT ME">
+			<h1>Bradley Baylis</h1>
+			<img className = {styles.bradPic}/>
+			<p className = {styles.info}>Hi!  My name is Brad and I am a front end developer from London.
+			  I love the internet, gaming, exercising and cute doggos!  Click on
+			   the picture of my cute doggo Jazz for a gallery of cute dog pics and gifs!</p>
+			<Link to = "/dogGallery/">
+				<img alt = "A picture of my dog, Jazz"/>
+			</Link>
+		</InfoSection>
 	</div>
-)
+);
 
-export default IndexPage
+export default IndexPage;

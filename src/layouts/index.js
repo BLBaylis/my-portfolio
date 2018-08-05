@@ -14,9 +14,7 @@ const Layout = ({ children, data }) => (
       ]}
     />
     <Navbar />
-    <div>
-      	{children()}
-    </div>
+    {children()}
   </div>
 )
 

@@ -1,0 +1,84 @@
+.navbar {
+	position        : relative;
+	background-color: #ffffff;
+	height          : 50px;
+	color           : black;
+	z-index         : 100;
+	border          : none;
+	border-bottom   : solid 0.5px #0261ea;
+}
+
+.link {
+	position       : absolute;
+	border         : none;
+	line-height    : 50px;
+	text-align     : center;
+	text-decoration: none;
+	cursor         : pointer;
+	top            : 0;
+	left           : 0;
+	color          : #0261ea;
+}
+
+.logoLink {
+	composes: link;
+	position : static;
+	margin : 0 15px;
+}
+
+.home, .projects, .linkedin, .github {
+	composes  : link;
+	display   : none;
+	width     : 100%;
+	background-color : #ffffff;
+}
+
+.dropDownBtn {
+	composes     : navbar;
+	padding      : 0;
+	position     : absolute;
+	border-bottom: solid 0.5px #0261ea;
+	left         : auto;
+	right        : 0;
+	width        : 15%;
+}
+
+.dropDownBtn:hover {
+}
+
+.dropDownBtn:focus, .dropDownBtn:active {
+	outline : none;
+	background-color : #0d2a56;
+	color : #ffffff;
+}
+
+@media (min-width : 700px) {
+
+	.navbar {
+		display : flex;
+		justify-content : space-between;
+	}
+
+	.dropDownBtn {
+		display : none;
+	}
+
+	.internalLinksWrapper {
+		position : relative;
+		width : 150px;
+		display : flex;
+	}
+
+	.home, .projects, .linkedin, .github {
+		display         : inline;
+		position        : static;
+		background-color: transparent;
+	}
+
+	.linkedin, .github {
+		display: block;
+		width  : 75px;
+		float  : right;
+	}
+
+}

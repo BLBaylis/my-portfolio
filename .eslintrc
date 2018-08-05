@@ -1,12 +1,18 @@
 {
-  "parser": "babel-eslint",
-  "rules": {
-    "strict": 0
-  },
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "prettier"
-  ], 
-  "plugins": ["graphql"]
+	"parser": "babel-eslint",
+	"rules": {
+		"strict": 0,
+		"no-undef" : 1,
+		"no-console" : 1
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"prettier"
+	], 
+	"plugins": ["graphql"],
+	"env": {
+		"browser": true,
+		"node": true
+	}
 }

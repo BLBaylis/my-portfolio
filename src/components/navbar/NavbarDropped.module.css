@@ -1,0 +1,37 @@
+.link {
+	display         : block;
+	position        : absolute;
+	height          : 50px;
+	line-height     : 50px;
+	text-align      : center;
+	text-decoration : none;
+	cursor          : pointer;
+	top             : 0;
+	left            : 0;
+	width           : 100%;
+	background-color: #eeeeee;
+	border          : solid 0.5px #0261ea;
+	color          : #0261ea;
+}
+
+.home {
+	composes: link;
+	top     : 50px;
+}
+
+.projects {
+	composes: link;
+	top     : 100px;
+}
+
+.linkedin {
+	composes: link;
+	width   : 50%;
+	left    : 50%;
+	top     : 150px;
+}
+
+.github {
+	composes: linkedin;
+	left    : 0;
+}

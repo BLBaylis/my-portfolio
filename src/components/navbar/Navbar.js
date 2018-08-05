@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import styles from './Navbar.module.css';
+import undroppedStyles from './NavbarUndropped.module.css';
+import droppedStyles from './NavbarDropped.module.css';
 
 class Navbar extends React.Component {
 	constructor(props) {
@@ -8,29 +9,35 @@ class Navbar extends React.Component {
 		this.state = {
 			dropped : false
 		}
-		this.changeDroppedState = this.changeDroppedState.bind(this);
+		this.toggleMenu = this.toggleMenu.bind(this);
+		this.closeMenu = this.closeMenu.bind(this);
 	}
 
-	changeDroppedState(){
+	toggleMenu(){
 		this.setState((prevState) => ({
 				dropped : !(prevState.dropped)
 			})
 		);
 	}
 
+	closeMenu(){
+		this.setState({dropped : false});
+	}
+
 	render() {
-		const homeClass = this.state.dropped ? styles.homeDropped : styles.dropDownLink;
-		const projectsClass = this.state.dropped ? styles.projectsDropped : styles.dropDownLink;
-		const githubClass = this.state.dropped ? styles.githubDropped : styles.socialMediaLink;
-		const linkedinClass = this.state.dropped ? styles.linkedinDropped : styles.socialMediaLink;
+		const styles = this.state.dropped ? droppedStyles : undroppedStyles;
 		return (
-			<nav className = {styles.navbar}>
-				<Link to = "/" onClick = {this.changeDroppedState}className = {styles.logoLink}>Bradley Baylis</Link>
-				<button className = {styles.dropDownBtn} onClick = {this.changeDroppedState}>Drop</button>
-				<Link to = "/" onClick = {this.changeDroppedState}className = {homeClass}>Home</Link>
-				<Link to = "/404/" onClick = {this.changeDroppedState}className = {projectsClass}>Projects</Link>
-				<a className = {githubClass} onClick = {this.changeDroppedState}href = "blbaylis.github.io">Github</a>
-				<a className = {linkedinClass} onClick = {this.changeDroppedState} href = "www.linkedin.co.uk">Linkedin</a>
+			<nav className = {undroppedStyles.navbar}>
+				<div className = {undroppedStyles.internalLinksWrapper}>
+					<Link to = "/" onClick = {this.closeMenu} className = {styles.home}>Home</Link>
+					<Link to = "/404/" onClick = {this.closeMenu} className = {styles.projects}>Projects</Link>
+				</div>
+				<Link to = "/" onClick = {this.closeMenu} className = {undroppedStyles.logoLink}>Bradley Baylis</Link>
+				<button className = {undroppedStyles.dropDownBtn} onClick = {this.toggleMenu}>Drop</button>
+				<div className = {undroppedStyles.externalLinksWrapper}>
+					<a className = {styles.github} onClick = {this.closeMenu}href = "blbaylis.github.io">awda</a>
+					<a className = {styles.linkedin} onClick = {this.closeMenu} href = "www.linkedin.co.uk">dawd</a>
+				</div>
 			</nav>
 		);
 	}
