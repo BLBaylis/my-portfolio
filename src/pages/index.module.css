@@ -1,6 +1,4 @@
 .outerDiv {
-	height : 2500px;
-	padding-top : 25px;
 }
 
 .bradPic {
@@ -8,10 +6,34 @@
 	height          : 200px;
 	border-radius   : 50%;
 	background-color: #ffffff;
+	color           : #2D2E2E;
 }
 
 .info {
 	text-align : justify;
 	width : 90%;
 	margin : 0 auto;
+}
+
+.dogPic {
+	margin : 25px auto;
+	width : 50%;
+}
+
+.logoGrid1 {
+	display : grid;
+	grid-template-columns : 1fr 1fr;
+	grid-template-rows : 200px 1fr 1fr;
+	grid-gap : 20px;
+	place-items : center;
+}
+
+.logoGrid2 {
+	composes : logoGrid1;
+	grid-template-rows : auto;
+}
+
+.logo {
+	width : 100%;
+	margin : 0;
 }

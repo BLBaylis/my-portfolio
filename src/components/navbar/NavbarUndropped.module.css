@@ -2,10 +2,10 @@
 	position        : relative;
 	background-color: #ffffff;
 	height          : 50px;
-	color           : black;
+	color           : #2D2E2E;
 	z-index         : 100;
 	border          : none;
-	border-bottom   : solid 0.5px #0261ea;
+	border-bottom   : solid 0.5px #2D2E2E;
 }
 
 .link {
@@ -17,7 +17,7 @@
 	cursor         : pointer;
 	top            : 0;
 	left           : 0;
-	color          : #0261ea;
+	color          : #2D2E2E;
 }
 
 .logoLink {
@@ -37,18 +37,20 @@
 	composes     : navbar;
 	padding      : 0;
 	position     : absolute;
-	border-bottom: solid 0.5px #0261ea;
+	border-bottom: solid 0.5px #2D2E2E;
 	left         : auto;
 	right        : 0;
-	width        : 15%;
+	width        : 50px;
 }
 
 .dropDownBtn:hover {
+	color : #5F7367;
+	text-decoration : underline;
 }
 
-.dropDownBtn:focus, .dropDownBtn:active {
+.dropDownBtn:focus {
 	outline : none;
-	background-color : #0d2a56;
+	background-color : #5F7367;
 	color : #ffffff;
 }
 

@@ -10,8 +10,13 @@
 	left            : 0;
 	width           : 100%;
 	background-color: #eeeeee;
-	border          : solid 0.5px #0261ea;
-	color          : #0261ea;
+	border          : solid 0.5px #2D2E2E;
+	color          : #2D2E2E;
+}
+
+.link:hover {
+	background-color : #5F7367;
+	color : #fff;
 }
 
 .home {

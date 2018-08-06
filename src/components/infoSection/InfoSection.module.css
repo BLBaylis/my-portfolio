@@ -1,29 +1,28 @@
 .outerDiv {
 	position: relative;
 	width   : 95%;
-	height  : 600px;
-	margin  : 0 auto;
-	color   : white;
+	color   : #2D2E2E;
+	margin  : 30px auto;
 }
 
 .innerDiv {
 	border       : solid;
 	width        : 95%;
-	height       : 600px;
 	margin       : 0 auto;
 	border-radius: 2%;
 }
 
 .contentContainer {
-	margin-top: 10px;
 	height    : calc(100% - 10px);
 	width     : 100%;
 	text-align:center;
+	box-sizing: border-box;
+	padding   : 20px;
 }
 
 .sectionName {
 	position        : absolute;
-	background-color: #0261ea;
+	background-color: #eee;
 	top             : -11px;
 	left            : 12px;
 	z-index         : 1;

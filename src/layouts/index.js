@@ -4,6 +4,8 @@ import Helmet from 'react-helmet';
 import Navbar from '../components/navbar/Navbar';
 import './index.css';
 
+
+
 const Layout = ({ children, data }) => (
   <div>
     <Helmet
@@ -20,24 +22,24 @@ const Layout = ({ children, data }) => (
 
 Layout.propTypes = {
   children: PropTypes.func,
-  data: PropTypes.object
+  data: PropTypes.object,
 }
 
-export default Layout;
+export default Layout
 
 const graphql = (literals, ...substitutions) => {
-    let result = "";
+  let result = ''
 
-    // run the loop only for the substitution count
-    for (let i = 0; i < substitutions.length; i++) {
-        result += literals[i];
-        result += substitutions[i];
-    }
+  // run the loop only for the substitution count
+  for (let i = 0; i < substitutions.length; i++) {
+    result += literals[i]
+    result += substitutions[i]
+  }
 
-    // add the last literal
-    result += literals[literals.length - 1];
+  // add the last literal
+  result += literals[literals.length - 1]
 
-    return result;
+  return result
 }
 
 export const query = graphql`
