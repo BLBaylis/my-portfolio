@@ -1,39 +1,184 @@
-.outerDiv {
-}
-
 .bradPic {
 	width           : 200px;
 	height          : 200px;
 	border-radius   : 50%;
 	background-color: #ffffff;
 	color           : #2D2E2E;
+	margin-bottom   : 1.66667rem;
 }
 
 .info {
 	text-align : justify;
 	width : 90%;
-	margin : 0 auto;
+	max-width : 400px;
+	margin : 0 auto 1.66667rem;
+}
+
+.dogFig {
+	margin : 25px auto 0;
+	width : 50%;
 }
 
 .dogPic {
-	margin : 25px auto;
-	width : 50%;
+	max-width : 120px;
 }
 
 .logoGrid1 {
 	display : grid;
-	grid-template-columns : 1fr 1fr;
-	grid-template-rows : 200px 1fr 1fr;
-	grid-gap : 20px;
+	grid-template-columns : repeat(auto-fill, minmax(100px, 1fr));
+	grid-template-rows : 100px;
+	grid-auto-rows : 100px;
+	grid-gap  :20px;
+	justify-content : space-around;
 	place-items : center;
 }
 
+.logo {
+	height : 100%;
+	width : auto;
+}
+
+/*.logoGrid1 {
+	display : grid;
+	grid-template-columns : 1fr 1fr;
+	grid-template-rows : 160px 1fr 1fr;
+	grid-gap : 20px;
+	place-items : center;
+}
+*/
 .logoGrid2 {
 	composes : logoGrid1;
 	grid-template-rows : auto;
 }
-
+/*
 .logo {
 	width : 100%;
 	margin : 0;
+}*/
+
+.lrgProjectsLink {
+	display         : block;
+	width           : 95%;
+	height          : 40px;
+	line-height     : 36px; /*link height - (2* 2px border) */
+	margin          : 30px auto;
+	background-color: #fff;
+	border          : solid 2px black;
+	border-radius   : 2%;
+	text-align      : center;
+	text-decoration : none;
+	color           : black;
+}
+
+.lrgProjectsLink:hover {
+	color           : #fff;
+	background-color: #61E8E1;
+}
+
+@media (min-width : 450px) {
+
+	.info {
+		text-align : center;
+	}
+
+}
+
+@media (min-width : 550px) {
+
+	.logoGrid1 {
+		grid-template-columns : repeat(auto-fill, minmax(150px, 1fr));
+		grid-template-rows : 150px;
+		grid-auto-rows : 150px;
+	}
+
+}
+
+@media (min-width : 758px) {
+
+	.logoGrid1 {
+		grid-template-columns : repeat(auto-fill, minmax(175px, 1fr));
+		grid-template-rows : 150px;
+		grid-auto-rows : 150px;
+	}
+
+}
+
+@media (min-width : 801px) {
+
+	.logoGrid1 {
+		grid-template-columns : repeat(auto-fill, minmax(100px, 1fr));
+		grid-template-rows : 100px;
+		grid-auto-rows : 100px;
+	}
+
+}
+
+@media (min-width : 900px) {
+
+	.aboutGrid {
+		display              : grid;
+		grid-template-columns: 200px 1fr 1fr 1fr;
+		grid-template-rows   : repeat(4, 35px);
+		justify-items        : flex-start;
+		grid-gap             : 20px;
+		grid-template-areas  : 
+			"bradPic header header header"
+			"bradPic info info dogFig"
+			"bradPic info info dogFig"
+			"bradPic info info dogFig"	
+	}
+
+	.infoHeader {
+		grid-area : header;
+		display : block;
+		height : 100%;
+		margin : 0;
+	}
+
+	.bradPic {
+		grid-area : bradPic;
+	}
+
+	.info {
+		grid-area : info;
+		margin : 0;
+		width : 100%;
+	}
+
+	.dogFig {
+		display       : flex;
+		flex-direction: column;
+		align-self    : center;
+		grid-area     : dogFig;
+		height        : 100%;
+		width         : 100%;
+
+	}
+
+	.dogPic {
+		height    : 110px;
+		width     : 110px;
+		margin    : 5px auto 0;
+	}
+
+	figcaption {
+		height : 35px;
+		line-height : 35px;
+	}
+
+	/*.logoGrid1 {
+		display : grid;
+		grid-template-columns : repeat(auto-fill, 200px);
+		grid-template-rows : 200px;
+		grid-auto-rows : 200px;
+		grid-gap  :20px;
+		justify-content : space-around;
+		place-items : center;
+	}
+
+	.logo {
+		height : 100%;
+		width : auto;
+	}*/
+
 }

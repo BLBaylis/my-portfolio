@@ -26,6 +26,10 @@
 	margin : 0 15px;
 }
 
+.logoLink:hover {
+	color : #61E8E1;
+}
+
 .home, .projects, .linkedin, .github {
 	composes  : link;
 	display   : none;
@@ -44,14 +48,7 @@
 }
 
 .dropDownBtn:hover {
-	color : #5F7367;
-	text-decoration : underline;
-}
-
-.dropDownBtn:focus {
-	outline : none;
-	background-color : #5F7367;
-	color : #ffffff;
+	color : #61E8E1;
 }
 
 @media (min-width : 700px) {
