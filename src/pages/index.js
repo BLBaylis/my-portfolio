@@ -7,7 +7,6 @@ import reactLogo from "../static/images/react-logo.svg";
 import htmlLogo from "../static/images/html-logo.svg";
 import cssLogo from "../static/images/css-logo.svg";
 import javascriptLogo from "../static/images/javascript-logo.svg";
-//import webpackLogo from "../static/images/webpack-logo.svg";
 import webpackIcon from "../static/images/webpack-icon.svg";
 import gatsbyLogo from "../static/images/gatsby-logo.svg";
 import bootstrapLogo from "../static/images/bootstrap-logo.svg";
@@ -18,7 +17,10 @@ const IndexPage = () => (
   	<div className={styles.outerDiv}>
 		<InfoSection sectionName="ABOUT ME">
 			<div className = {styles.aboutGrid}> 
-				<h1 className = {styles.infoHeader}>Bradley Baylis</h1>
+				<h1 className = {styles.header}>Bradley Baylis 
+					<span className ={styles.inlineSubtitle}> <span className = {styles.divider}>|</span> Front End Developer</span>
+				</h1>
+				<h2 className = {styles.blockSubtitle}> Front End Developer</h2>
 				<img className={styles.bradPic} />
 				<p className={styles.info}>
 				Hi! My name is Brad and I am a front end developer from London. I love
@@ -43,7 +45,7 @@ const IndexPage = () => (
 		<InfoSection sectionName = "I'M ALSO FAMILIAR WITH">
 			<div className = {styles.logoGrid2}>
 				<img className = {styles.logo} src= {bootstrapLogo} alt = "Logo of HTML5"/>
-				<img className = {styles.logo} src= {jQueryLogo} alt = "Logo of CSS3"/>
+				<img className = {styles.logo + styles.jquery} src= {jQueryLogo} alt = "Logo of CSS3"/>
 			</div>
 		</InfoSection>
 		<h3><Link to = "/projects/" className = {styles.lrgProjectsLink}>PROJECTS</Link></h3>

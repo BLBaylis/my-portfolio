@@ -1,3 +1,20 @@
+.header {
+	margin-bottom : 0.75rem;
+}
+
+.inlineSubtitle {
+	display : none;
+	font-size : 1.5rem;
+}
+
+.divider {
+	font-size : 2rem;
+}
+
+.blockSubtitle {
+	margin-bottom : 0.85rem;
+}
+
 .bradPic {
 	width           : 200px;
 	height          : 200px;
@@ -33,32 +50,27 @@
 	place-items : center;
 }
 
+.logoGrid2 {
+	composes : logoGrid1;
+	grid-template-columns : repeat(2, minmax(100px, 1fr));
+	justify-content : center;
+}
+
 .logo {
 	height : 100%;
 	width : auto;
+	margin-bottom : 0;
 }
 
-/*.logoGrid1 {
-	display : grid;
-	grid-template-columns : 1fr 1fr;
-	grid-template-rows : 160px 1fr 1fr;
-	grid-gap : 20px;
-	place-items : center;
+.jquery {
+	height : auto;
+	max-height : 100%;
 }
-*/
-.logoGrid2 {
-	composes : logoGrid1;
-	grid-template-rows : auto;
-}
-/*
-.logo {
-	width : 100%;
-	margin : 0;
-}*/
 
 .lrgProjectsLink {
 	display         : block;
 	width           : 95%;
+	max-width       : 800px;
 	height          : 40px;
 	line-height     : 36px; /*link height - (2* 2px border) */
 	margin          : 30px auto;
@@ -91,6 +103,10 @@
 		grid-auto-rows : 150px;
 	}
 
+	.logoGrid1 {
+		grid-template-columns : repeat(2, minmax(150px, 1fr));
+	}
+
 }
 
 @media (min-width : 758px) {
@@ -99,6 +115,70 @@
 		grid-template-columns : repeat(auto-fill, minmax(175px, 1fr));
 		grid-template-rows : 150px;
 		grid-auto-rows : 150px;
+	}
+
+	.logoGrid2 {
+		grid-template-columns: repeat(2, 175px);
+	}
+
+	.aboutGrid {
+		display              : grid;
+		grid-template-columns: 200px 1fr 1fr 1fr;
+		grid-template-rows   : repeat(4, 35px);
+		justify-items        : flex-start;
+		grid-gap             : 20px;
+		grid-template-areas  : 
+			"bradPic header header header"
+			"bradPic info info dogFig"
+			"bradPic info info dogFig"
+			"bradPic info info dogFig"	
+	}
+
+	.header {
+		grid-area : header;
+		display : block;
+		height : 100%;
+		margin : 0;
+	}
+
+	.inlineSubtitle {
+		display : inline;
+	}
+
+	.blockSubtitle {
+		display : none;
+	}
+
+	.bradPic {
+		grid-area : bradPic;
+	}
+
+	.info {
+		grid-area : info;
+		margin : 0;
+		width : 100%;
+		text-align : justify;
+	}
+
+	.dogFig {
+		display       : flex;
+		flex-direction: column;
+		align-self    : center;
+		grid-area     : dogFig;
+		height        : 100%;
+		width         : 100%;
+		margin-top    : 0;
+	}
+
+	.dogPic {
+		height    : 110px;
+		width     : 110px;
+		margin    : 5px auto 0;
+	}
+
+	figcaption {
+		height : 35px;
+		line-height : 35px;
 	}
 
 }
@@ -111,11 +191,15 @@
 		grid-auto-rows : 100px;
 	}
 
+	.logoGrid2 {
+		grid-template-columns : repeat(2, 100px);
+	}
+
 }
 
-@media (min-width : 900px) {
+@media (min-width : 850px) {
 
-	.aboutGrid {
+	/*.aboutGrid {
 		display              : grid;
 		grid-template-columns: 200px 1fr 1fr 1fr;
 		grid-template-rows   : repeat(4, 35px);
@@ -137,25 +221,16 @@
 
 	.bradPic {
 		grid-area : bradPic;
-	}
+	}*/
 
 	.info {
-		grid-area : info;
-		margin : 0;
-		width : 100%;
+		height : 75%;
+		align-self : center;
 	}
 
-	.dogFig {
-		display       : flex;
-		flex-direction: column;
-		align-self    : center;
-		grid-area     : dogFig;
-		height        : 100%;
-		width         : 100%;
+	
 
-	}
-
-	.dogPic {
+	/*.dogPic {
 		height    : 110px;
 		width     : 110px;
 		margin    : 5px auto 0;
@@ -164,21 +239,6 @@
 	figcaption {
 		height : 35px;
 		line-height : 35px;
-	}
-
-	/*.logoGrid1 {
-		display : grid;
-		grid-template-columns : repeat(auto-fill, 200px);
-		grid-template-rows : 200px;
-		grid-auto-rows : 200px;
-		grid-gap  :20px;
-		justify-content : space-around;
-		place-items : center;
-	}
-
-	.logo {
-		height : 100%;
-		width : auto;
 	}*/
 
 }

@@ -20,6 +20,10 @@
 	color          : #2D2E2E;
 }
 
+.link:hover {
+	color : #61E8E1;
+}
+
 .logoLink {
 	composes: link;
 	position : static;
