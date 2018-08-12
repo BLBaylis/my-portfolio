@@ -1,19 +1,15 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import LargeLink from '../components/largeLink/LargeLink';
 import styles from "./project.module.css";
-import InfoSection from "../components/infoSection/InfoSection";
 import twitchScreenShot from "../static/images/twitch all.png";
 
-const Projects = () => (
-  <div>
-    <h1 className = {styles.heading}>Projects</h1>
-    <h4 className = {styles.subHeading}>All of my project ideas are from 
-    	<a href = "https://www.freecodecamp.org/" target = "_blank" rel = "noopener noreferrer"> Freecodecamp</a>.
-    </h4>
-    <InfoSection sectionName = "">
-    	<h2>Twitch.Tv Tool</h2>
+const TwitchTvProject = () => (
+  	<div className = {styles.outerDiv}>
+    	<h1 className = {styles.heading}>Twitch.Tv Tool</h1>
     	<figure>
-    		<img src = {twitchScreenShot}/>
+    		<a href="https://blbaylis.github.io/twitch-tv-tool/" target="_blank" rel="noopener noreferrer">
+    			<img src = {twitchScreenShot}/>
+    		</a>
     		<figcaption>Click the screenshot to visit my project!</figcaption>
     	</figure>
     	<h3></h3>
@@ -29,9 +25,10 @@ const Projects = () => (
     	which make for very straight-forward code.  I gained a better grasp of the promise and generator functions which 
     	these features are built on.</p>
     	<p className = {styles.info}>This is my favourite project I&#39;ve worked on overall!</p>
-    </InfoSection>
-    <Link to="/">Go back to the homepage</Link>
-  </div>
+   		<div className = {styles.largeLink}>
+    		<LargeLink to="PROJECTS/" buttonText = "PROJECTS"></LargeLink>
+    	</div>
+ 	</div>
 )
 
-export default Projects
+export default TwitchTvProject

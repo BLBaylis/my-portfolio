@@ -3,9 +3,17 @@ a {
 	text-decoration : none;
 }
 
+.outerDiv {
+	width: 90%;
+    max-width: 800px;
+    text-align: center;
+    color: #2d2e2e;
+    margin: auto;
+}
+
 .heading {
-	margin : 30px auto 1.6667rem;
-	text-align : center;
+	margin: 30px auto 1.6667rem;
+    text-align: center;
 }
 
 .subHeading {
