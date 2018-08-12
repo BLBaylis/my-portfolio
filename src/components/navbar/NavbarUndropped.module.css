@@ -21,7 +21,7 @@
 }
 
 .link:hover {
-	color : #61E8E1;
+	color : #470FF4;
 }
 
 .logoLink {
@@ -31,7 +31,7 @@
 }
 
 .logoLink:hover {
-	color : #61E8E1;
+	color : #470FF4;
 }
 
 .home, .projects, .linkedin, .github {
@@ -52,7 +52,7 @@
 }
 
 .dropDownBtn:hover {
-	color : #61E8E1;
+	color : #470FF4;
 }
 
 @media (min-width : 700px) {

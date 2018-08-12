@@ -1,7 +1,7 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import undroppedStyles from './NavbarUndropped.module.css'
-import droppedStyles from './NavbarDropped.module.css'
+import React from 'react';
+import Link from 'gatsby-link';
+import undroppedStyles from './NavbarUndropped.module.css';
+import droppedStyles from './NavbarDropped.module.css';
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -31,7 +31,7 @@ class Navbar extends React.Component {
           <Link to="/" onClick={this.closeMenu} className={styles.home}>
             Home
           </Link>
-          <Link to="/404/" onClick={this.closeMenu} className={styles.projects}>
+          <Link to="/projects/" onClick={this.closeMenu} className={styles.projects}>
             Projects
           </Link>
         </div>
@@ -52,14 +52,18 @@ class Navbar extends React.Component {
           <a
             className={styles.github}
             onClick={this.closeMenu}
-            href="blbaylis.github.io"
+            href="https://github.com/BLBaylis"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             awda
           </a>
           <a
             className={styles.linkedin}
             onClick={this.closeMenu}
-            href="www.linkedin.co.uk"
+            href="https://uk.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             dawd
           </a>

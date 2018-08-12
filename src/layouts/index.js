@@ -1,10 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
-import Navbar from '../components/navbar/Navbar';
-import './index.css';
-
-
+import React from 'react'
+import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
+import Navbar from '../components/navbar/Navbar'
+import './index.css'
 
 const Layout = ({ children, data }) => (
   <div>

@@ -1,4 +1,4 @@
-.header {
+.heading {
 	margin-bottom : 0.75rem;
 }
 
@@ -53,7 +53,7 @@
 .logoGrid2 {
 	composes : logoGrid1;
 	grid-template-columns : repeat(2, minmax(100px, 1fr));
-	justify-content : center;
+	justify-content : space-evenly;
 }
 
 .logo {
@@ -65,6 +65,7 @@
 .jquery {
 	height : auto;
 	max-height : 100%;
+	margin-bottom  : 0;
 }
 
 .lrgProjectsLink {
@@ -72,7 +73,7 @@
 	width           : 95%;
 	max-width       : 800px;
 	height          : 40px;
-	line-height     : 36px; /*link height - (2* 2px border) */
+	line-height     : 36px; /*link height === (2 * 2px border) */
 	margin          : 30px auto;
 	background-color: #fff;
 	border          : solid 2px black;
@@ -80,11 +81,12 @@
 	text-align      : center;
 	text-decoration : none;
 	color           : black;
+	font-size       : 1.31951rem;
 }
 
 .lrgProjectsLink:hover {
 	color           : #fff;
-	background-color: #61E8E1;
+	background-color: #470FF4;
 }
 
 @media (min-width : 450px) {
@@ -128,14 +130,14 @@
 		justify-items        : flex-start;
 		grid-gap             : 20px;
 		grid-template-areas  : 
-			"bradPic header header header"
+			"bradPic heading heading heading"
 			"bradPic info info dogFig"
 			"bradPic info info dogFig"
 			"bradPic info info dogFig"	
 	}
 
-	.header {
-		grid-area : header;
+	.heading {
+		grid-area : heading;
 		display : block;
 		height : 100%;
 		margin : 0;
@@ -199,46 +201,9 @@
 
 @media (min-width : 850px) {
 
-	/*.aboutGrid {
-		display              : grid;
-		grid-template-columns: 200px 1fr 1fr 1fr;
-		grid-template-rows   : repeat(4, 35px);
-		justify-items        : flex-start;
-		grid-gap             : 20px;
-		grid-template-areas  : 
-			"bradPic header header header"
-			"bradPic info info dogFig"
-			"bradPic info info dogFig"
-			"bradPic info info dogFig"	
-	}
-
-	.infoHeader {
-		grid-area : header;
-		display : block;
-		height : 100%;
-		margin : 0;
-	}
-
-	.bradPic {
-		grid-area : bradPic;
-	}*/
-
 	.info {
 		height : 75%;
 		align-self : center;
 	}
-
-	
-
-	/*.dogPic {
-		height    : 110px;
-		width     : 110px;
-		margin    : 5px auto 0;
-	}
-
-	figcaption {
-		height : 35px;
-		line-height : 35px;
-	}*/
 
 }

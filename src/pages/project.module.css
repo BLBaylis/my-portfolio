@@ -1,0 +1,17 @@
+a {
+	color : #470FF4;
+	text-decoration : none;
+}
+
+.heading {
+	margin : 30px auto 1.6667rem;
+	text-align : center;
+}
+
+.subHeading {
+	text-align  : center;
+}
+
+.info {
+	text-align : justify;
+}
