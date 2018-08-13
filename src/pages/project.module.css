@@ -11,6 +11,10 @@ a {
     margin: auto;
 }
 
+img {
+	margin-bottom : 0;
+}
+
 .heading {
 	margin: 30px auto 1.6667rem;
     text-align: center;

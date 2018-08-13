@@ -1,14 +1,14 @@
 import React from 'react';
 import LargeLink from '../components/largeLink/LargeLink';
 import styles from "./project.module.css";
-import twitchScreenShot from "../static/images/twitch all.png";
+import ticTacToeScreenShot from "../static/images/tictactoe.png";
 
 const TicTacToeProject = () => (
   	<div className = {styles.outerDiv}>
     	<h1 className = {styles.heading}>Tic Tac Tor Game</h1>
     	<figure>
     		<a href="https://blbaylis.github.io/tic-tac-toe/" target="_blank" rel="noopener noreferrer">
-    			<img src = {twitchScreenShot}/>
+    			<img src = {ticTacToeScreenShot}/>
     		</a>
     		<figcaption>Click the screenshot to visit my project!</figcaption>
     	</figure>
@@ -30,9 +30,8 @@ const TicTacToeProject = () => (
     		Paint to create a few funvariations of the classic noughts and crosses along with the oppunity to choose your colour. 
     		A fun project.
     	</p>
-    	<p className = {styles.info}>This is my favourite project I&#39;ve worked on overall!</p>
    		<div className = {styles.largeLink}>
-    		<LargeLink to="PROJECTS/" buttonText = "PROJECTS"></LargeLink>
+    		<LargeLink to="projects/" buttonText = "PROJECTS"></LargeLink>
     	</div>
  	</div>
 )

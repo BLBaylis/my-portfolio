@@ -1,8 +1,11 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import LargeLink from '../components/largeLink/LargeLink'
 import styles from "./projects.module.css";
-import twitchScreenShot from "../static/images/twitch all.png";
-import pomodoroScreenShot from "../static/images/pomodoro all.png";
+import twitchScreenShot from "../static/images/twitch.png";
+import pomodoroScreenShot from "../static/images/pomodoro.png";
+import ticTacToeScreenShot from "../static/images/tictactoe.png";
+import calculatorScreenShot from "../static/images/calculator.png";
 
 const Projects = () => (
   <div>
@@ -16,45 +19,46 @@ const Projects = () => (
     		<img className = {styles.thumbnail} src = {twitchScreenShot}/>
     		<div className = {styles.overlay}>
     			<h3 className = {styles.overlayHeading}>Portfolio</h3>
-    			<h4 className = {styles.techUsed}>This projet utilises HTML, CSS, JS, React.js and Webpack.  Bootstrapped by Gatsby.js</h4>
-    			<Link to = "/portfolio-project/" className = {styles.overlayLink}>CHECK IT OUT!</Link>
+    			<h4 className = {styles.techUsed}>This project utilises HTML, CSS, JS, React.js and Webpack.  Bootstrapped by Gatsby.js</h4>
+    			<Link to = "/portfolioProject/" className = {styles.overlayLink}>CHECK IT OUT!</Link>
     		</div>
     	</div>
     	<div className = {styles.projectAlt}>
-    		<img className = {styles.thumbnail} src = {pomodoroScreenShot}/>
+    		<img className = {styles.thumbnail} src = {twitchScreenShot}/>
     		<div className = {styles.overlay}>
     			<h3 className = {styles.overlayHeading}>Twitch.Tv Tool</h3>
-    			<h4 className = {styles.techUsed}>This projet utilises HTML, CSS, JS, React.js and Webpack.</h4>
-    			<Link to = "/twitch-tv-tool-project/" className = {styles.overlayLink}>CHECK IT OUT!</Link>
+    			<h4 className = {styles.techUsed}>This project utilises HTML, CSS, JS, React.js and Webpack.</h4>
+    			<Link to = "/twitchTvToolProject/" className = {styles.overlayLink}>CHECK IT OUT!</Link>
     		</div>
     	</div>
     	<div className = {styles.project}>
-    		<img className = {styles.thumbnail} src = {pomodoroScreenShot}/>
+    		<img className = {styles.thumbnail} src = {calculatorScreenShot}/>
     		<div className = {styles.overlay}>
     			<h3 className = {styles.overlayHeading}>Calculator</h3>
-    			<h4 className = {styles.techUsed}>This projet utilises HTML, CSS, JS, React.js and Webpack.</h4>
-    			<Link to = "/calculator-project/" className = {styles.overlayLink}>CHECK IT OUT!</Link>
+    			<h4 className = {styles.techUsed}>This project utilises HTML, CSS, JS, React.js and Webpack.</h4>
+    			<Link to = "/calculatorProject/" className = {styles.overlayLink}>CHECK IT OUT!</Link>
     		</div>
     	</div>
     	<div className = {styles.projectAlt  + " " + styles.item4}>
-    		<img className = {styles.thumbnail} src = {twitchScreenShot}/>
+    		<img className = {styles.thumbnail} src = {ticTacToeScreenShot}/>
     		<div className = {styles.overlay}>
     			<h3 className = {styles.overlayHeading}>Tic-Tac-Toe Game</h3>
-    			<h4 className = {styles.techUsed}>This projet utilises HTML, CSS and Javascript.</h4>
-    			<Link to = "/tic-tac-toe-project/" className = {styles.overlayLink}>CHECK IT OUT!</Link>
+    			<h4 className = {styles.techUsed}>This project utilises HTML, CSS and Javascript.</h4>
+    			<Link to = "/ticTacToeProject/" className = {styles.overlayLink}>CHECK IT OUT!</Link>
     		</div>
     	</div>
     	<div className = {styles.project}>
     		<img className = {styles.thumbnail} src = {pomodoroScreenShot}/>
     		<div className = {styles.overlay}>
     			<h3 className = {styles.overlayHeading}>Pomodoro Timer</h3>
-    			<h4 className = {styles.techUsed}>This projet utilises HTML, CSS and Javascript.</h4>
-    			<Link to = "/pomodoro-timer-project/" className = {styles.overlayLink}>CHECK IT OUT!</Link>
+    			<h4 className = {styles.techUsed}>This project utilises HTML, CSS and Javascript.</h4>
+    			<Link to = "/pomodoroTimerProject/" className = {styles.overlayLink}>CHECK IT OUT!</Link>
     		</div>
     	</div>
     </div>
-    
-    <Link to="/">Go back to the homepage</Link>
+    <div className = {styles.largeLink}>
+    	<LargeLink to="" buttonText = "HOME PAGE"></LargeLink>
+  	</div>
   </div>
 )
 

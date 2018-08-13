@@ -1,7 +1,7 @@
 import React from 'react';
 import LargeLink from '../components/largeLink/LargeLink';
 import styles from "./project.module.css";
-import twitchScreenShot from "../static/images/twitch all.png";
+import twitchScreenShot from "../static/images/twitch.png";
 
 const TwitchTvProject = () => (
   	<div className = {styles.outerDiv}>
@@ -26,7 +26,7 @@ const TwitchTvProject = () => (
     	these features are built on.</p>
     	<p className = {styles.info}>This is my favourite project I&#39;ve worked on overall!</p>
    		<div className = {styles.largeLink}>
-    		<LargeLink to="PROJECTS/" buttonText = "PROJECTS"></LargeLink>
+    		<LargeLink to="projects/" buttonText = "PROJECTS"></LargeLink>
     	</div>
  	</div>
 )

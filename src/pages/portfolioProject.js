@@ -18,7 +18,7 @@ const PortfolioProject = () => (
     		It is the first time I&#39;ve bootstrapped a project using Gatsby.js, which I&#39;m very impressed by.
     	</p>
    		<div className = {styles.largeLink}>
-    		<LargeLink to="PROJECTS/" buttonText = "PROJECTS"></LargeLink>
+    		<LargeLink to="projects/" buttonText = "PROJECTS"></LargeLink>
     	</div>
  	</div>
 )

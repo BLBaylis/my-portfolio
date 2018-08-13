@@ -1,14 +1,14 @@
 import React from 'react';
 import LargeLink from '../components/largeLink/LargeLink';
 import styles from "./project.module.css";
-import twitchScreenShot from "../static/images/twitch all.png";
+import calculatorScreenShot from "../static/images/calculator.png";
 
 const CalculatorProject = () => (
   	<div className = {styles.outerDiv}>
     	<h1 className = {styles.heading}>Calculator</h1>
     	<figure>
     		<a href="https://blbaylis.github.io/react-calculator/" target="_blank" rel="noopener noreferrer">
-    			<img src = {twitchScreenShot}/>
+    			<img src = {calculatorScreenShot}/>
     		</a>
     		<figcaption>Click the screenshot to visit my project!</figcaption>
     	</figure>

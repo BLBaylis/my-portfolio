@@ -1,14 +1,14 @@
 import React from 'react';
 import LargeLink from '../components/largeLink/LargeLink';
 import styles from "./project.module.css";
-import twitchScreenShot from "../static/images/twitch all.png";
+import pomodoroScreenShot from "../static/images/pomodoro.png";
 
 const PomodoroProject = () => (
   	<div className = {styles.outerDiv}>
     	<h1 className = {styles.heading}>Pomodoro Timer</h1>
     	<figure>
     		<a href="https://blbaylis.github.io/pomodoro-timer/" target="_blank" rel="noopener noreferrer">
-    			<img src = {twitchScreenShot}/>
+    			<img src = {pomodoroScreenShot}/>
     		</a>
     		<figcaption>Click the screenshot to visit my project!</figcaption>
     	</figure>
@@ -34,9 +34,8 @@ const PomodoroProject = () => (
     		the clock would have lent itself very well to React. Maybe one day, I&#39;ll come back and remake it, though this isn&#39;t 
     		a huge priority!
     	</p>
-    	<p className = {styles.info}>This is my favourite project I&#39;ve worked on overall!</p>
    		<div className = {styles.largeLink}>
-    		<LargeLink to="PROJECTS/" buttonText = "PROJECTS"></LargeLink>
+    		<LargeLink to="projects/" buttonText = "PROJECTS"></LargeLink>
     	</div>
  	</div>
 )
