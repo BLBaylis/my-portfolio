@@ -12,4 +12,5 @@ module.exports = {
         	pathToConfigModule: `src/utils/typography.js`,
       	},
     }],
+    pathPrefix: `/my-portfolio`,
 }

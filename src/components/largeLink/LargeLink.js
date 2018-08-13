@@ -4,7 +4,11 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 
 const LargeLink = props => {
-  return <Link className = {styles.largeLink} to = {"/" + props.to}>{props.buttonText}</Link>
+  return (
+    <Link className={styles.largeLink} to={'/' + props.to}>
+      {props.buttonText}
+    </Link>
+  )
 }
 
 LargeLink.propTypes = {

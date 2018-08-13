@@ -53,6 +53,13 @@
 
 .dropDownBtn:hover {
 	color : #470FF4;
+	outline : none;
+}
+
+.logo, .dropDownIcon {
+	height : 100%;
+	box-sizing : border-box;
+	padding : 5px;
 }
 
 @media (min-width : 700px) {
@@ -80,7 +87,8 @@
 
 	.linkedin, .github {
 		display: block;
-		width  : 75px;
+		height : 100%;
+		width : 50px;
 		float  : right;
 	}
 

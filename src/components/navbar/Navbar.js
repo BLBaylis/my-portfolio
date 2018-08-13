@@ -1,7 +1,14 @@
-import React from 'react';
-import Link from 'gatsby-link';
-import undroppedStyles from './NavbarUndropped.module.css';
-import droppedStyles from './NavbarDropped.module.css';
+import React from 'react'
+import Link from 'gatsby-link'
+import defaultStyles from './NavbarDefault.module.css'
+import droppedStyles from './NavbarDropped.module.css'
+import github from '../../static/images/github.png'
+import linkedin from '../../static/images/linkedin.png'
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+
+library.add(faBars);
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -24,31 +31,39 @@ class Navbar extends React.Component {
   }
 
   render() {
-    const styles = this.state.dropped ? droppedStyles : undroppedStyles
+    const styles = this.state.dropped ? droppedStyles : defaultStyles
     return (
-      <nav className={undroppedStyles.navbar}>
-        <div className={undroppedStyles.internalLinksWrapper}>
+      <nav className={defaultStyles.navbar}>
+        <div className={defaultStyles.internalLinksWrapper}>
           <Link to="/" onClick={this.closeMenu} className={styles.home}>
             Home
           </Link>
-          <Link to="/projects/" onClick={this.closeMenu} className={styles.projects}>
+          <Link
+            to="/projects/"
+            onClick={this.closeMenu}
+            className={styles.projects}
+          >
             Projects
           </Link>
         </div>
         <Link
           to="/"
           onClick={this.closeMenu}
-          className={undroppedStyles.logoLink}
+          className={defaultStyles.logoLink}
         >
           Bradley Baylis
         </Link>
         <button
-          className={undroppedStyles.dropDownBtn}
+          className={defaultStyles.dropDownBtn}
           onClick={this.toggleMenu}
         >
-          Drop
+          <FontAwesomeIcon
+        className= {defaultStyles.dropDownIcon}
+        size = "2x"
+        icon="bars"
+      />
         </button>
-        <div className={undroppedStyles.externalLinksWrapper}>
+        <div className={defaultStyles.externalLinksWrapper}>
           <a
             className={styles.github}
             onClick={this.closeMenu}
@@ -56,7 +71,7 @@ class Navbar extends React.Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            awda
+            <img className = {defaultStyles.logo} src = {github}/>
           </a>
           <a
             className={styles.linkedin}
@@ -65,7 +80,7 @@ class Navbar extends React.Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            dawd
+            <img className = {defaultStyles.logo} src = {linkedin}/>
           </a>
         </div>
       </nav>

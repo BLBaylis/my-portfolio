@@ -26,9 +26,9 @@ const IndexPage = () => (
         <h2 className={styles.blockSubtitle}> Front End Developer</h2>
         <img className={styles.bradPic} />
         <p className={styles.info}>
-        Hi! My name is Brad and I am a front end developer from London. I love
-        the internet, gaming, exercising and dogs! This coding stuff seems
-        pretty cool as well.
+          Hi! My name is Brad and I am a front end developer from London. I love
+          the internet, gaming, exercising and dogs! This coding stuff seems
+          pretty cool as well.
         </p>
         <figure className={styles.dogFig}>
           <img
@@ -58,14 +58,14 @@ const IndexPage = () => (
       <div className={styles.logoGrid2}>
         <img className={styles.logo} src={bootstrapLogo} alt="Logo of HTML5" />
         <img
-          className={styles.logo + " " + styles.jquery}
+          className={styles.logo + ' ' + styles.jquery}
           src={jQueryLogo}
           alt="Logo of CSS3"
         />
       </div>
     </InfoSection>
     <Link to="/projects/" className={styles.lrgProjectsLink}>
-        PROJECTS
+      PROJECTS
     </Link>
   </div>
 )
