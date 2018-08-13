@@ -51,7 +51,7 @@
 	width        : 50px;
 }
 
-.dropDownBtn:hover {
+.dropDownBtn:hover, .dropDownBtn:focus {
 	color : #470FF4;
 	outline : none;
 }
@@ -60,6 +60,10 @@
 	height : 100%;
 	box-sizing : border-box;
 	padding : 5px;
+}
+
+.github:hover .logo, .linkedin:hover .logo {
+	fill : #470FF4;
 }
 
 @media (min-width : 700px) {
@@ -90,6 +94,7 @@
 		height : 100%;
 		width : 50px;
 		float  : right;
+		box-sizing : border-box;
 	}
 
 }

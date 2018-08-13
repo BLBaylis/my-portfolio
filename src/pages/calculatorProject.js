@@ -22,9 +22,6 @@ const CalculatorProject = () => (
       one of my projects for the first time. As a result, there isn&#39;t much
       more for me to say about it!
     </p>
-    <p className={styles.info}>
-      This is my favourite project I&#39;ve worked on overall!
-    </p>
     <div className={styles.largeLink}>
       <LargeLink to="PROJECTS/" buttonText="PROJECTS" />
     </div>

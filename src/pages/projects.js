@@ -6,6 +6,7 @@ import twitchScreenShot from '../static/images/twitch.png'
 import pomodoroScreenShot from '../static/images/pomodoro.png'
 import ticTacToeScreenShot from '../static/images/tictactoe.png'
 import calculatorScreenShot from '../static/images/calculator.png'
+import portfolioScreenShot from '../static/images/portfolio.png'
 
 const Projects = () => (
   <div>
@@ -24,7 +25,7 @@ const Projects = () => (
     </h4>
     <div className={styles.projectGallery}>
       <div className={styles.project}>
-        <img className={styles.thumbnail} src={twitchScreenShot} />
+        <img className={styles.thumbnail} src={portfolioScreenShot} />
         <div className={styles.overlay}>
           <h3 className={styles.overlayHeading}>Portfolio</h3>
           <h4 className={styles.techUsed}>

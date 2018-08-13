@@ -11,7 +11,7 @@
 	width           : 100%;
 	background-color: #eeeeee;
 	border          : solid 0.5px #2D2E2E;
-	color          : #2D2E2E;
+	color           : #2D2E2E;
 }
 
 .link:hover {
@@ -34,9 +34,20 @@
 	width   : 50%;
 	left    : 50%;
 	top     : 150px;
+	border-bottom : solid 1.5px;
 }
 
 .github {
 	composes: linkedin;
 	left    : 0;
+}
+
+.logo {
+	height : 100%;
+	box-sizing : border-box;
+	padding : 5px;
+}
+
+.github:hover .logo, .linkedin:hover .logo {
+	fill : #fff;
 }

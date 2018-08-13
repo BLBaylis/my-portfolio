@@ -17,7 +17,7 @@ const PomodoroProject = () => (
       <figcaption>Click the screenshot to visit my project!</figcaption>
     </figure>
     <p className={styles.info}>
-      When I read about htis project on Freecodecamp, I had never heard of the
+      When I read about this project on Freecodecamp, I had never heard of the
       concept of a pomodoro. The technique is used to increase your productivity
       and originally consisted of a 25 minute work session followed by a 5
       minute break, which combined make up a single pomodoro. You would then as
@@ -46,9 +46,9 @@ const PomodoroProject = () => (
     <p className={styles.info}>
       Unfortunately, I hadn&#39;t learnt React.js when I made this as it would
       have been ideal. The idea of the different phases in a pomodoro is a
-      textbook example of state. This, combined with the constant updating of
+      textbook example of state. This combined with the constant updating of
       the clock would have lent itself very well to React. Maybe one day,
-      I&#39;ll come back and remake it, though this isn&#39;t a huge priority!
+      I&#39;ll come back and remake it, though this isn&#39;t high priority!
     </p>
     <div className={styles.largeLink}>
       <LargeLink to="projects/" buttonText="PROJECTS" />

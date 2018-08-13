@@ -36,12 +36,12 @@ const TicTacToeProject = () => (
       a loop, which in the end ran as many as a million at a time with no
       losses. This testing was quite taxing for my poor old computer! I have
       also been unable to beat it the old fashioned way, playing against it
-      myself. This was only slightly taxing for my poor old brain.
+      myself. This testing was only slightly taxing for my poor old brain.
     </p>
     <p className={styles.info}>
       I also seized the opportunity to get a bit creative with icons, firing up
-      the lowly Microsoft Paint to create a few funvariations of the classic
-      noughts and crosses along with the oppunity to choose your colour. A fun
+      the lowly Microsoft Paint to create a few fun variations of the classic
+      noughts and crosses along with the opportunity to choose your colour. A fun
       project.
     </p>
     <div className={styles.largeLink}>
