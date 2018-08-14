@@ -24,7 +24,7 @@ const Projects = () => (
       and listed by most recent to least recent.
     </h4>
     <div className={styles.projectGallery}>
-      <div className={styles.project}>
+      <Link to = "/portfolioProject/" className={styles.project}>
         <img className={styles.thumbnail} src={portfolioScreenShot} />
         <div className={styles.overlay}>
           <h3 className={styles.overlayHeading}>Portfolio</h3>
@@ -32,59 +32,59 @@ const Projects = () => (
             This project utilises HTML, CSS, JS, React.js and Webpack.
             Bootstrapped by Gatsby.js
           </h4>
-          <Link to="/portfolioProject/" className={styles.overlayLink}>
+          <div className={styles.overlayLink}>
             CHECK IT OUT!
-          </Link>
+          </div>
         </div>
-      </div>
-      <div className={styles.projectAlt}>
+      </Link>
+      <Link to="/twitchTvToolProject/" className={styles.projectAlt}>
         <img className={styles.thumbnail} src={twitchScreenShot} />
         <div className={styles.overlay}>
           <h3 className={styles.overlayHeading}>Twitch.Tv Tool</h3>
           <h4 className={styles.techUsed}>
             This project utilises HTML, CSS, JS, React.js and Webpack.
           </h4>
-          <Link to="/twitchTvToolProject/" className={styles.overlayLink}>
+          <div className={styles.overlayLink}>
             CHECK IT OUT!
-          </Link>
+          </div>
         </div>
-      </div>
-      <div className={styles.project}>
+      </Link>
+      <Link to="/calculatorProject/"  className={styles.project}>
         <img className={styles.thumbnail} src={calculatorScreenShot} />
         <div className={styles.overlay}>
           <h3 className={styles.overlayHeading}>Calculator</h3>
           <h4 className={styles.techUsed}>
             This project utilises HTML, CSS, JS, React.js and Webpack.
           </h4>
-          <Link to="/calculatorProject/" className={styles.overlayLink}>
+          <div className={styles.overlayLink}>
             CHECK IT OUT!
-          </Link>
+          </div>
         </div>
-      </div>
-      <div className={styles.projectAlt + ' ' + styles.item4}>
+      </Link>
+      <Link to="/ticTacToeProject/" className={styles.projectAlt + ' ' + styles.item4}>
         <img className={styles.thumbnail} src={ticTacToeScreenShot} />
         <div className={styles.overlay}>
           <h3 className={styles.overlayHeading}>Tic-Tac-Toe Game</h3>
           <h4 className={styles.techUsed}>
             This project utilises HTML, CSS and Javascript.
           </h4>
-          <Link to="/ticTacToeProject/" className={styles.overlayLink}>
+          <div className={styles.overlayLink}>
             CHECK IT OUT!
-          </Link>
+          </div>
         </div>
-      </div>
-      <div className={styles.project}>
+      </Link>
+      <Link to="/pomodoroTimerProject/" className={styles.project}>
         <img className={styles.thumbnail} src={pomodoroScreenShot} />
         <div className={styles.overlay}>
           <h3 className={styles.overlayHeading}>Pomodoro Timer</h3>
           <h4 className={styles.techUsed}>
             This project utilises HTML, CSS and Javascript.
           </h4>
-          <Link to="/pomodoroTimerProject/" className={styles.overlayLink}>
+          <div className={styles.overlayLink}>
             CHECK IT OUT!
-          </Link>
+          </div>
         </div>
-      </div>
+      </Link>
     </div>
     <div className={styles.largeLink}>
       <LargeLink to="" buttonText="HOME PAGE" />
