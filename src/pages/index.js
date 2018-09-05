@@ -3,7 +3,6 @@ import Link from 'gatsby-link'
 import IntroSection from "../components/introSection/IntroSection";
 import styles from './index.module.css'
 import InfoSection from '../components/infoSection/InfoSection'
-import bradPic from '../static/images/brad.jpg'
 import jazz from '../static/images/jazz-pic.jpg'
 import reactLogo from '../static/images/react-logo.svg'
 import htmlLogo from '../static/images/html-logo.svg'
@@ -22,15 +21,7 @@ import portfolioScreenShot from '../static/images/portfolio.png'
 const IndexPage = () => (
   <div className="outerDiv">
   <IntroSection/>
-    <section className="aboutMe">
-      <h2>About Me</h2>
-      <img src={bradPic} />
-      <p>
-        Hi! My name is Brad and I am a front end developer from London. I love
-        the internet, gaming, exercising and dogs! This coding stuff seems
-        pretty cool as well.
-      </p>
-    </section>
+    
     <main className="portfolio">
       <h1 className={styles.heading}>Projects</h1>
       <h4 className={styles.subHeading}>
