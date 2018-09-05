@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import IntroSection from "../components/introSection/IntroSection";
 import styles from './index.module.css'
 import InfoSection from '../components/infoSection/InfoSection'
 import bradPic from '../static/images/brad.jpg'
@@ -20,11 +21,7 @@ import portfolioScreenShot from '../static/images/portfolio.png'
 
 const IndexPage = () => (
   <div className="outerDiv">
-    <section className="intro">
-      <h1>Bradley Baylis</h1>
-      <h2>Front End Developer</h2>
-      <h3>I make websites</h3>
-    </section>
+  <IntroSection/>
     <section className="aboutMe">
       <h2>About Me</h2>
       <img src={bradPic} />
