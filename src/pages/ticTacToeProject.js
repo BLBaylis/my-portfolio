@@ -17,8 +17,8 @@ const TicTacToeProject = () => (
       <figcaption>Click the screenshot to visit my project!</figcaption>
     </figure>
     <p className={styles.info}>
-      The primary aim of this project was to create a Tic-TacToe game that
-      can&#39;t be beaten. I emjoyed breaking the game down into a system and I
+      The primary aim of this project was to create a Tic-Tac-Toe game that
+      can&#39;t be beaten. I enjoyed breaking the game down into a system and I
       was interested in solving games anyway as someone who enjoys some chess
       from time to time. Not that we are likely to ever solve chess with how
       many different game boards are possible!
@@ -41,8 +41,8 @@ const TicTacToeProject = () => (
     <p className={styles.info}>
       I also seized the opportunity to get a bit creative with icons, firing up
       the lowly Microsoft Paint to create a few fun variations of the classic
-      noughts and crosses along with the opportunity to choose your colour. A fun
-      project.
+      noughts and crosses along with the opportunity to choose your colour. A
+      fun project.
     </p>
     <div className={styles.largeLink}>
       <LargeLink to="projects/" buttonText="PROJECTS" />

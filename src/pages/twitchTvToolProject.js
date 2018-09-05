@@ -23,12 +23,11 @@ const TwitchTvProject = () => (
       display information about them including whether the stream was live.
     </p>
     <p className={styles.info}>
-      I&#39;m a gamer myself and thus visit the Twitch website myself frequently
-      and so I decided to go a bit further and flesh out the tool somewhat
-      compared to the rather minimal aims of the project. As a result, I added
-      search functionality for any streamer on Twitch along with some streams I
-      personally enjoy and the featured streams of Twitch which display on the
-      Twitch website main page.
+      I&#39;m a gamer who visits the Twitch website frequently and so I decided
+      to go a bit further and flesh out the tool somewhat compared to the rather
+      minimal aims of the project. As a result, I added search functionality for
+      any streamer on Twitch along with some streams I personally enjoy and the
+      featured streams of Twitch which display on the Twitch website main page.
     </p>
     <p className={styles.info}>
       This project was one of my earliest projects to deal with asynchronous

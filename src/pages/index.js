@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styles from './index.module.css'
 import InfoSection from '../components/infoSection/InfoSection'
+import bradPic from '../static/images/brad.jpg'
 import jazz from '../static/images/jazz-pic.jpg'
 import reactLogo from '../static/images/react-logo.svg'
 import htmlLogo from '../static/images/html-logo.svg'
@@ -11,62 +12,101 @@ import webpackIcon from '../static/images/webpack-icon.svg'
 import gatsbyLogo from '../static/images/gatsby-logo.svg'
 import bootstrapLogo from '../static/images/bootstrap-logo.svg'
 import jQueryLogo from '../static/images/jquery-logo.svg'
+import twitchScreenShot from '../static/images/twitch.png'
+import pomodoroScreenShot from '../static/images/pomodoro.png'
+import ticTacToeScreenShot from '../static/images/tictactoe.png'
+import calculatorScreenShot from '../static/images/calculator.png'
+import portfolioScreenShot from '../static/images/portfolio.png'
 
 const IndexPage = () => (
-  <div className={styles.outerDiv}>
-    <InfoSection sectionName="ABOUT ME">
-      <div className={styles.aboutGrid}>
-        <h1 className={styles.heading}>
-          Bradley Baylis
-          <span className={styles.inlineSubtitle}>
-            {' '}
-            <span className={styles.divider}>|</span> Front End Developer
-          </span>
-        </h1>
-        <h2 className={styles.blockSubtitle}> Front End Developer</h2>
-        <img className={styles.bradPic} />
-        <p className={styles.info}>
-          Hi! My name is Brad and I am a front end developer from London. I love
-          the internet, gaming, exercising and dogs! This coding stuff seems
-          pretty cool as well.
-        </p>
-        <figure className={styles.dogFig}>
-          <img
-            className={styles.dogPic}
-            src={jazz}
-            alt="A picture of my dog, Jazz"
-          />
-          <figcaption>My dog, Jazz</figcaption>
-        </figure>
+  <div className="outerDiv">
+    <section className="intro">
+      <h1>Bradley Baylis</h1>
+      <h2>Front End Developer</h2>
+      <h3>I make websites</h3>
+    </section>
+    <section className="aboutMe">
+      <h2>About Me</h2>
+      <img src={bradPic} />
+      <p>
+        Hi! My name is Brad and I am a front end developer from London. I love
+        the internet, gaming, exercising and dogs! This coding stuff seems
+        pretty cool as well.
+      </p>
+    </section>
+    <main className="portfolio">
+      <h1 className={styles.heading}>Projects</h1>
+      <h4 className={styles.subHeading}>
+        All of my project ideas are from
+        <a
+          href="https://www.freecodecamp.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {' '}
+          Freecodecamp{' '}
+        </a>
+        and listed by most recent to least recent.
+      </h4>
+      <div className={styles.projectGallery}>
+        <Link to="/portfolioProject/" className={styles.project}>
+          <img className={styles.thumbnail} src={portfolioScreenShot} />
+          <div className={styles.overlay}>
+            <h3 className={styles.overlayHeading}>Portfolio</h3>
+            <h4 className={styles.techUsed}>
+              This project utilises HTML, CSS, JS, React.js and Webpack.
+              Bootstrapped by Gatsby.js
+            </h4>
+            <div className={styles.overlayLink}>CHECK IT OUT!</div>
+          </div>
+        </Link>
+        <Link to="/twitchTvToolProject/" className={styles.projectAlt}>
+          <img className={styles.thumbnail} src={twitchScreenShot} />
+          <div className={styles.overlay}>
+            <h3 className={styles.overlayHeading}>Twitch.Tv Tool</h3>
+            <h4 className={styles.techUsed}>
+              This project utilises HTML, CSS, JS, React.js and Webpack.
+            </h4>
+            <div className={styles.overlayLink}>CHECK IT OUT!</div>
+          </div>
+        </Link>
+        <Link to="/calculatorProject/" className={styles.project}>
+          <img className={styles.thumbnail} src={calculatorScreenShot} />
+          <div className={styles.overlay}>
+            <h3 className={styles.overlayHeading}>Calculator</h3>
+            <h4 className={styles.techUsed}>
+              This project utilises HTML, CSS, JS, React.js and Webpack.
+            </h4>
+            <div className={styles.overlayLink}>CHECK IT OUT!</div>
+          </div>
+        </Link>
+        <Link
+          to="/ticTacToeProject/"
+          className={styles.projectAlt + ' ' + styles.item4}
+        >
+          <img className={styles.thumbnail} src={ticTacToeScreenShot} />
+          <div className={styles.overlay}>
+            <h3 className={styles.overlayHeading}>Tic-Tac-Toe Game</h3>
+            <h4 className={styles.techUsed}>
+              This project utilises HTML, CSS and Javascript.
+            </h4>
+            <div className={styles.overlayLink}>CHECK IT OUT!</div>
+          </div>
+        </Link>
+        <Link to="/pomodoroTimerProject/" className={styles.project}>
+          <img className={styles.thumbnail} src={pomodoroScreenShot} />
+          <div className={styles.overlay}>
+            <h3 className={styles.overlayHeading}>Pomodoro Timer</h3>
+            <h4 className={styles.techUsed}>
+              This project utilises HTML, CSS and Javascript.
+            </h4>
+            <div className={styles.overlayLink}>CHECK IT OUT!</div>
+          </div>
+        </Link>
       </div>
-    </InfoSection>
-    <InfoSection sectionName="TECHNOLOGIES IN MY PROJECTS">
-      <div className={styles.logoGrid1}>
-        <img className={styles.logo} src={htmlLogo} alt="Logo of HTML5" />
-        <img className={styles.logo} src={cssLogo} alt="Logo of CSS3" />
-        <img
-          className={styles.logo}
-          src={javascriptLogo}
-          alt="Unoffical logo of Javascript"
-        />
-        <img className={styles.logo} src={reactLogo} alt="Logo of React.js" />
-        <img className={styles.logo} src={webpackIcon} alt="Logo of Webpack" />
-        <img className={styles.logo} src={gatsbyLogo} alt="Logo of Gatsby.js" />
-      </div>
-    </InfoSection>
-    <InfoSection sectionName="I'M ALSO FAMILIAR WITH">
-      <div className={styles.logoGrid2}>
-        <img className={styles.logo} src={bootstrapLogo} alt="Logo of HTML5" />
-        <img
-          className={styles.logo + ' ' + styles.jquery}
-          src={jQueryLogo}
-          alt="Logo of CSS3"
-        />
-      </div>
-    </InfoSection>
-    <Link to="/projects/" className={styles.lrgProjectsLink}>
-      PROJECTS
-    </Link>
+    </main>
+    <section className="contact" >
+    </section>
   </div>
 )
 

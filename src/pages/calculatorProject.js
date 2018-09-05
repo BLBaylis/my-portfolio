@@ -18,9 +18,9 @@ const CalculatorProject = () => (
     </figure>
     <p className={styles.info}>
       The trusty calculator was one of my first projects, though this is a
-      remake because I decided it would be an easy way to implement React.js in
-      one of my projects for the first time. As a result, there isn&#39;t much
-      more for me to say about it!
+      remake because I decided it would be an easy way to implement React in one
+      of my projects for the first time. As a result, there isn&#39;t much more
+      for me to say about it!
     </p>
     <div className={styles.largeLink}>
       <LargeLink to="PROJECTS/" buttonText="PROJECTS" />
