@@ -1,5 +1,11 @@
-/*import React from "react";
-import Link from "gatsby-link";
+import React from 'react'
+import Link from 'gatsby-link'
+import styles from './Projects.module.css'
+import twitchScreenShot from '../static/images/twitch.png'
+import pomodoroScreenShot from '../static/images/pomodoro.png'
+import ticTacToeScreenShot from '../static/images/tictactoe.png'
+import calculatorScreenShot from '../static/images/calculator.png'
+import portfolioScreenShot from '../static/images/portfolio.png'
 
 const Projects = () => (
   <main className="projects">
@@ -75,4 +81,4 @@ const Projects = () => (
   </main>
 )
 
-export default Projects;*/
+export default Projects

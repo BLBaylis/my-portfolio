@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 const Contact = () => (
   <section className="contact">
@@ -6,4 +6,4 @@ const Contact = () => (
   </section>
 )
 
-export default Contact;
+export default Contact

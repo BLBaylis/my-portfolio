@@ -1,3 +1,14 @@
 .aboutMe {
-	height : 100%;
+	text-align : center;
+	padding : 1.6667rem 0;
+}
+
+.bradPic {
+	height : 200px;
+}
+
+.paragraph {
+	width : 33em;
+	margin : 1.6667rem auto;
+	text-align: justify;
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import IntroSection from '../components/introSection/IntroSection'
-//import Projects from '../components/projects/Projects'
-//import AboutMe from '../components/aboutMe/AboutMe'
+import Projects from '../components/projects/Projects'
+import AboutMe from '../components/aboutMe/AboutMe'
 //import Contact from '../components/contact/Contact'
 /*import styles from './index.module.css'
 import InfoSection from '../components/infoSection/InfoSection'
@@ -13,18 +13,13 @@ import javascriptLogo from '../static/images/javascript-logo.svg'
 import webpackIcon from '../static/images/webpack-icon.svg'
 import gatsbyLogo from '../static/images/gatsby-logo.svg'
 import bootstrapLogo from '../static/images/bootstrap-logo.svg'
-import jQueryLogo from '../static/images/jquery-logo.svg'
-import twitchScreenShot from '../static/images/twitch.png'
-import pomodoroScreenShot from '../static/images/pomodoro.png'
-import ticTacToeScreenShot from '../static/images/tictactoe.png'
-import calculatorScreenShot from '../static/images/calculator.png'
-import portfolioScreenShot from '../static/images/portfolio.png'*/
+import jQueryLogo from '../static/images/jquery-logo.svg'*/
 
 const IndexPage = () => (
   <div className="outerDiv">
     <IntroSection />
-    {/*<AboutMe />*/}
-    {/*<Projects />*/}
+    <AboutMe />
+    <Projects />
     {/*<Contact />*/}
   </div>
 )

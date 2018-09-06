@@ -1,9 +1,8 @@
-import Typography from "typography";
+import Typography from 'typography'
 
 const typography = new Typography({
   baseFontSize: '24px',
   baseLineHeight: 1.6666666666666667,
-  blockMarginBottom: 1,
   bodyFontFamily: ['Archivo Narrow', 'Georgia', 'serif'],
   bodyWeight: 400,
   boldWeight: 700,
@@ -18,4 +17,4 @@ const typography = new Typography({
   scaleRatio: 3,
 })
 
-export default typography;
+export default typography
