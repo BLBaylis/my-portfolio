@@ -1,12 +1,12 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import LargeLink from '../components/largeLink/LargeLink'
-import styles from './projects.module.css'
-import twitchScreenShot from '../static/images/twitch.png'
-import pomodoroScreenShot from '../static/images/pomodoro.png'
-import ticTacToeScreenShot from '../static/images/tictactoe.png'
-import calculatorScreenShot from '../static/images/calculator.png'
-import portfolioScreenShot from '../static/images/portfolio.png'
+import React from "react";
+import Link from "gatsby-link";
+import LargeLink from "../components/largeLink/LargeLink";
+import styles from "./projects.module.css";
+import twitchScreenShot from "../static/images/twitch.png";
+import pomodoroScreenShot from "../static/images/pomodoro.png";
+import ticTacToeScreenShot from "../static/images/tictactoe.png";
+import calculatorScreenShot from "../static/images/calculator.png";
+import portfolioScreenShot from "../static/images/portfolio.png";
 
 const Projects = () => (
   <div>
@@ -85,4 +85,4 @@ const Projects = () => (
   </div>
 )
 
-export default Projects
+export default Projects;
