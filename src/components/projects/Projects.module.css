@@ -1,0 +1,33 @@
+.projects {
+	padding : 1.6667rem 0;
+	text-align : center;
+}
+
+.projectGallery {
+	display : grid;
+	grid-gap : 30px;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	margin : 30px;
+	justify-content : center;
+	padding : 0;
+}
+
+@media (max-width : 580px) {
+
+	.projectGallery {
+		width : 100%;
+		padding : 0;
+		grid-gap : 0;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		margin : 0;
+	}
+
+}
+
+@media (min-width : 736px) {
+
+	.projectGallery {
+		grid-template-columns : repeat(6, 1fr);
+	}
+
+}
