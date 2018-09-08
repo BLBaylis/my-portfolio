@@ -7,16 +7,15 @@ const Projects = () => (
   <main className={styles.projects}>
     <h2 className={styles.heading}>Projects</h2>
     <h4 className={styles.subHeading}>
-      All of my project ideas are from
+      All of my project ideas are from{' '}
       <a
         href="https://www.freecodecamp.org/"
         target="_blank"
         rel="noopener noreferrer"
       >
-        {' '}
-        Freecodecamp{' '}
+      Freecodecamp
       </a>
-      and listed by most recent to least recent.
+       {' '}and listed by most recent to least recent.
     </h4>
     <div className={styles.projectGallery}>
       <ProjectLink project={projectData.portfolio} className={styles.project}>

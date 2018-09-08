@@ -2,23 +2,19 @@ import React from 'react'
 import IntroSection from '../components/introSection/IntroSection'
 import Projects from '../components/projects/Projects'
 import AboutMe from '../components/aboutMe/AboutMe'
+import Skills from '../components/skills/Skills'
 //import Contact from '../components/contact/Contact'
-/*import styles from './index.module.css'
+import styles from './index.module.css'
+/*
 import InfoSection from '../components/infoSection/InfoSection'
 import jazz from '../static/images/jazz-pic.jpg'
-import reactLogo from '../static/images/react-logo.svg'
-import htmlLogo from '../static/images/html-logo.svg'
-import cssLogo from '../static/images/css-logo.svg'
-import javascriptLogo from '../static/images/javascript-logo.svg'
-import webpackIcon from '../static/images/webpack-icon.svg'
-import gatsbyLogo from '../static/images/gatsby-logo.svg'
-import bootstrapLogo from '../static/images/bootstrap-logo.svg'
-import jQueryLogo from '../static/images/jquery-logo.svg'*/
+*/
 
 const IndexPage = () => (
-  <div className="outerDiv">
+  <div className={styles.outerDiv}>
     <IntroSection />
     <AboutMe />
+    <Skills/>
     <Projects />
     {/*<Contact />*/}
   </div>

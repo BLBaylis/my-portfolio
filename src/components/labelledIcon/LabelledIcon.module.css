@@ -1,0 +1,18 @@
+.labelledIcon {
+	display : flex;
+	justify-content : center;
+	align-items : center;
+	width : 100%;
+}
+
+.icon {
+	width : 100px;
+}
+
+.iconLink {
+	padding : 10px;
+}
+
+.label {
+	display: inline;
+}
