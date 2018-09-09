@@ -19,18 +19,18 @@ const Projects = () => (
        {' '}and listed by most recent to least recent.
     </h4>
     <div className={styles.projectGallery}>
-      <ProjectLink project={projectData.portfolio} className={styles.project}>
+      <ProjectLink project={projectData.portfolio} class={["project"]}>
       </ProjectLink>
-      <ProjectLink project={projectData.twitch} className={styles.projectAlt}>
+      <ProjectLink project={projectData.twitch} class={["projectAlt"]}>
       </ProjectLink>
-      <ProjectLink project={projectData.calculator} className={styles.project}>
+      <ProjectLink project={projectData.calculator} class={["project"]}>
       </ProjectLink>
       <ProjectLink
         project={projectData.ticTacToe}
-        className={styles.projectAlt + ' ' + styles.item4}
+        class={["projectAlt", "item4"]}
       >
       </ProjectLink>
-      <ProjectLink project={projectData.pomodoro} className={styles.project}>
+      <ProjectLink project={projectData.pomodoro} class={["project"]}>
       </ProjectLink>
     </div>
   </main>

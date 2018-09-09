@@ -16,6 +16,11 @@ const toolsData = [
 		icon : "",
 		link : ""
 	},
+	{
+		label : "ESLint",
+		icon : "",
+		link : ""
+	},
 ]
 
 export default toolsData

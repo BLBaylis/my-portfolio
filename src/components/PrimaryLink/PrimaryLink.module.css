@@ -1,0 +1,8 @@
+.primaryLink {
+	background-color : #fff;
+	color : #470FF4;
+	border: 3px solid #fff;
+	padding : 1px 30px;
+	box-sizing : border-box;
+	text-decoration : none;
+}

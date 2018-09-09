@@ -1,5 +1,5 @@
 .project, .projectAlt {
-	background-color : #fff;
+	background-color : transparent;
 	position : relative;
 	overflow: hidden;
 }
@@ -26,37 +26,38 @@
 }
 
 .techUsed {
-	text-align  : center;
-	margin : 0;
-	color : #fff;
-	width : 75%;
+	text-align: center;
+	margin    : 0;
+	color     : #fff;
+	width     : 75%;
 }
 
 .overlayLink {
-	display : block;
-	color : #470FF4;
-	background-color : #eee;
-	text-align : center;
-	width  :50%;
-	margin : 0;
+	display         : block;
+	color           : #470FF4;
+	background-color: #eee;
+	text-align      : center;
+	width           : 80%;
+	margin          : 0 auto;
+	text-decoration : none;
 }
 
 .overlayLink:hover {
-	display : block;
-	background-color : #fff;
-	margin : 0;
+	display         : block;
+	background-color: #fff;
+	margin          : 0;
 }
 
 .project:hover .overlay, .projectAlt:hover .overlay {
-	bottom: 0;
-	height: 100%;
-	opacity : 1;
+	bottom : 0;
+	height : 100%;
+	opacity: 1;
 }
 
 .thumbnail {
-	margin-bottom : 0;
-	padding : 50px 20px; 
-	display : block;
+	margin-bottom: 0;
+	padding      : 50px 20px; 
+	display      : block;
 }
 
 @media (max-width : 580px) {
