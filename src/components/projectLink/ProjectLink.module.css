@@ -1,5 +1,8 @@
 .project, .projectAlt {
 	background-color : transparent;
+	border : solid 1px;
+	padding : 1.6667rem 0;
+	border-radius : 2px;
 	position : relative;
 	overflow: hidden;
 }
@@ -19,9 +22,8 @@
 	align-items : center;
 }
 
-.overlayHeading {
+.heading {
 	text-align  : center;
-	margin : 0;
 	color : #fff;
 }
 
@@ -55,9 +57,16 @@
 }
 
 .thumbnail {
-	margin-bottom: 0;
-	padding      : 50px 20px; 
+	margin-bottom: 1.6667rem;
+	padding      : 0px 20px; 
 	display      : block;
+}
+
+.btnWrapper {
+	padding : 0 23px;
+	box-sizing : border-box;
+	display : flex;
+	justify-content: space-between
 }
 
 @media (max-width : 580px) {

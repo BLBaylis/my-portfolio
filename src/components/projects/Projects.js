@@ -6,7 +6,7 @@ import * as projectData from '../../utils/projectData'
 const Projects = () => (
   <main className={styles.projects}>
     <h2 className={styles.heading}>Projects</h2>
-    <h4 className={styles.subHeading}>
+    <p className={styles.subHeading}>
       All of my project ideas are from{' '}
       <a
       	className = {styles.link}
@@ -17,7 +17,7 @@ const Projects = () => (
       Freecodecamp
       </a>
        {' '}and listed by most recent to least recent.
-    </h4>
+    </p>
     <div className={styles.projectGallery}>
       <ProjectLink project={projectData.portfolio} class={["project"]}>
       </ProjectLink>

@@ -2,12 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styles from './ProjectLink.module.css'
 import PrimaryLink from '../primaryLink/PrimaryLink'
+import SecondaryLink from '../secondaryLink/SecondaryLink'
 
 const ProjectLink = props => {
 	let classNames = props.class.map(curr => styles[curr]).join(" ");
-	const {/*title, */thumbnail, /*tags,*/ projectPageLink} = props.project;
+	const {title, thumbnail, /*tags,*/ projectPageLink} = props.project;
 	return (
 		<div className={classNames}>
+			<h4 className = {styles.heading}>{title}</h4>
 			<img className={styles.thumbnail} src={thumbnail} />
 			{/*<div className={styles.overlay}>
 				<h3 className={styles.overlayHeading}>{title}</h3>
@@ -15,8 +17,10 @@ const ProjectLink = props => {
 					
 				</h4>
 			</div>*/}
-			<PrimaryLink to = {`/${projectPageLink}/`} text = "VISIT"/>
-			<PrimaryLink to = {`/${projectPageLink}/`} text = "DETAILS"/>
+			<div className = {styles.btnWrapper}>
+				<PrimaryLink to = {`/${projectPageLink}/`} text = "VISIT"/>
+				<SecondaryLink to = {`/${projectPageLink}/`} text = "DETAILS"/>
+			</div>
 			{/*<div className={styles.overlayLink}>CHECK IT OUT!</div>*/}
 		</div>
 	)

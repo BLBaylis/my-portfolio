@@ -11,9 +11,9 @@
 
 .projectGallery {
 	display : grid;
-	grid-gap : 30px;
+	grid-gap : 40px;
 	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-	margin : 30px;
+	margin : 40px;
 	justify-content : center;
 	padding : 0;
 }
