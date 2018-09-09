@@ -9,6 +9,7 @@ const Projects = () => (
     <h4 className={styles.subHeading}>
       All of my project ideas are from{' '}
       <a
+      	className = {styles.link}
         href="https://www.freecodecamp.org/"
         target="_blank"
         rel="noopener noreferrer"

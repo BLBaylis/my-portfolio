@@ -7,7 +7,7 @@ const LabelledIcon = (props) => (
 		<a className = {styles.iconLink} href = {props.link}>
 			<img className = {styles.icon} src = {props.icon}/>
 		</a>
-		<a href = {props.link}>
+		<a className = {styles.labelLink} href = {props.link}>
 			<h3 className = {styles.label}>{props.label}</h3>
 		</a>
 	</div>

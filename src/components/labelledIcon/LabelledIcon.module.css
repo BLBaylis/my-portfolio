@@ -1,8 +1,8 @@
 .labelledIcon {
-	display : flex;
-	justify-content : center;
-	align-items : center;
-	width : 100%;
+	display        : flex;
+	justify-content: start;
+	align-items    : center;
+	width          : 400px;
 }
 
 .icon {
@@ -10,7 +10,11 @@
 }
 
 .iconLink {
-	padding : 10px;
+	padding : 50px;
+}
+
+.labelLink {
+	color : black;
 }
 
 .label {

@@ -1,6 +1,12 @@
 .projects {
 	padding : 1.6667rem 0;
 	text-align : center;
+	background-color : #470FF4;
+	color : #fff;
+}
+
+.link {
+	color : #eee;
 }
 
 .projectGallery {
