@@ -9,7 +9,7 @@ const PrimaryLink = props => (
 
 PrimaryLink.propTypes = {
 	text : PropTypes.string.isRequired,
-	to : PropTypes.string.isRequired
+	to : PropTypes.string.isRequired,
 }
 
 export default PrimaryLink

@@ -4,7 +4,7 @@ import ProjectLink from '../projectLink/ProjectLink'
 import * as projectData from '../../utils/projectData'
 
 const Projects = () => (
-  <main className={styles.projects}>
+  <main id = "projects" className={styles.projects}>
     <h2 className={styles.heading}>Projects</h2>
     <p className={styles.subHeading}>
       All of my project ideas are from{' '}

@@ -13,7 +13,18 @@
 	padding : 50px;
 }
 
+.disabledIconLink {
+	pointer-events: none;
+	padding : 50px;
+}
+
 .labelLink {
+	color : black;
+}
+
+.disabledLink {
+	pointer-events: none;
+	text-decoration : none;
 	color : black;
 }
 

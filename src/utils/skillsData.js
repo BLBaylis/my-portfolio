@@ -9,12 +9,12 @@ const skillsData = [
 	{
 		label : "HTML5",
 		icon : htmlLogo,
-		link : ""
+		link : "https://www.w3.org/html/"
 	},
 	{
 		label : "CSS3",
 		icon : cssLogo,
-		link : ""
+		link : "https://www.w3.org/Style/CSS/Overview.en.html"
 	},
 	{
 		label : "Javascript",
@@ -24,17 +24,17 @@ const skillsData = [
 	{
 		label : "React",
 		icon : reactLogo,
-		link : ""
+		link : "https://reactjs.org/"
 	},
 	{
 		label : "jQuery",
 		icon : jQueryLogo,
-		link : ""
+		link : "https://jquery.com/"
 	},
 	{
 		label : "Bootstrap",
 		icon : bootstrapLogo,
-		link : ""
+		link : "https://getbootstrap.com/"
 	}
 ]
 

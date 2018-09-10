@@ -1,25 +1,28 @@
 import webpackIcon from '../static/images/webpack-icon.svg'
+import babelLogo from '../static/images/babel-logo.svg'
+import sassLogo from '../static/images/sass-logo.svg'
+import eslintLogo from '../static/images/eslint-logo.svg'
 
 const toolsData = [
 	{
 		label : "Webpack",
 		icon : webpackIcon,
-		link : ""
+		link : "https://webpack.js.org/"
 	},
 	{
 		label : "Babel",
-		icon : "",
-		link : ""
+		icon : babelLogo,
+		link : "http://babeljs.io/"
 	},
 	{
 		label : "SASS",
-		icon : "",
-		link : ""
+		icon : sassLogo,
+		link : "https://sass-lang.com/"
 	},
 	{
 		label : "ESLint",
-		icon : "",
-		link : ""
+		icon : eslintLogo,
+		link : "https://eslint.org/"
 	},
 ]
 
