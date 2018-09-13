@@ -3,7 +3,7 @@ import bradPic from '../../static/images/brad.jpg'
 import styles from './AboutMe.module.css'
 
 const AboutMe = () => (
-  <section className={styles.aboutMe}>
+  <section className={styles.aboutMe} id = "about-me">
     <h2>About Me</h2>
     <img className={styles.bradPic} src={bradPic} />
     <p className={styles.paragraph}>

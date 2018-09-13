@@ -1,7 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import Navbar from '../components/navbar/Navbar'
+//import Navbar from '../components/navbar/Navbar'
+//import DesktopNavbar from '../components/desktopNavbar/DesktopNavbar'
+import MobileNavbar from '../components/mobileNavbar/MobileNavbar'
 import './index.css'
 
 const Layout = ({ children, data }) => (
@@ -13,7 +15,7 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <Navbar />
+    <MobileNavbar />
     {children()}
   </div>
 )
