@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './PrimaryLink.module.css'
+import styles from './PrimaryLink.module.scss'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 

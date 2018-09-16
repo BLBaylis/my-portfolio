@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './Projects.module.css'
+import styles from './Projects.module.scss'
 import ProjectLink from '../projectLink/ProjectLink'
 import * as projectData from '../../utils/projectData'
 

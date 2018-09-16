@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './DesktopNavbar.module.css'
+import styles from './DesktopNavbar.module.scss'
 import Link from 'gatsby-link'
 
 

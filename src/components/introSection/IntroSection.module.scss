@@ -1,0 +1,14 @@
+@import "../../utils/variables";
+@import "../../utils/mixins";
+
+.intro {
+	height : 500px;
+	text-align : center;
+	background-color: $primary-color;
+	color : $secondary-color;
+	@include flex(center, center);
+}
+
+.anchor {
+	color : $secondary-color;
+}

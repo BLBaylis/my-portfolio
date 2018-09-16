@@ -1,34 +1,36 @@
+@import '../../utils/variables';
+
 .desktopNavbar {
 	position        : relative;
 	background-color: #470FF4;
-	height          : 50px;
+	height          : $base-line-height;
 	z-index         : 100;
 	border          : none;
 }
 
 .navList {
 	list-style-type: none;
-	line-height    : 50px;
+	line-height    : $base-line-height;
 	overflow       : hidden;
 	margin         : 0;
 }
 
 .navLink {
 	float : right;
-	margin : 0 10px;
+	margin: 0 (1/2) * $base-line-height;
 }
 
 .furthestRightNavLink {
 	composes : navLink;
-	margin : 0 20px 0 10px;
+	margin : 0 (1/2) * $base-line-height 0 (1/4) * $base-line-height;
 }
 
 .anchor {
 	text-decoration: none;
-	color : #fff;
+	color : $secondary-color;
 }
 
 .logo {
 	float : left;
-	margin : 0 20px;
+	margin : 0 (1/2) * $base-line-height;
 }

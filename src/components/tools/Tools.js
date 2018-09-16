@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './Tools.module.css'
+import styles from './Tools.module.scss'
 import LabelledIconList from '../labelledIconList/LabelledIconList'
 import toolsData from '../../utils/toolsData'
 

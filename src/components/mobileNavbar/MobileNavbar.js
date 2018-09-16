@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './MobileNavbar.module.css'
+import styles from './MobileNavbar.module.scss'
 import Link from 'gatsby-link'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -11,7 +11,7 @@ class MobileNavbar extends React.Component {
 	constructor() {
 		super();
 		this.state = {
-			navbarDropped : true
+			navbarDropped : false
 		}
 		this.toggleMenu = this.toggleMenu.bind(this);
 	}

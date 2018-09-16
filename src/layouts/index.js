@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 //import Navbar from '../components/navbar/Navbar'
 //import DesktopNavbar from '../components/desktopNavbar/DesktopNavbar'
 import MobileNavbar from '../components/mobileNavbar/MobileNavbar'
-import './index.css'
+//import './index.css'
 
 const Layout = ({ children, data }) => (
   <div>

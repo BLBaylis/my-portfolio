@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './IntroSection.module.css'
+import styles from './IntroSection.module.scss'
 import PrimaryAnchor from '../primaryAnchor/PrimaryAnchor'
 
 const IntroSection = () => (

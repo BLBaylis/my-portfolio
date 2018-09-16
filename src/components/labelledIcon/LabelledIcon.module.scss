@@ -1,8 +1,9 @@
+@import "../../utils/variables";
+@import "../../utils/mixins";
+
 .labelledIcon {
-	display        : flex;
-	justify-content: start;
-	align-items    : center;
-	width          : 400px;
+	@include flex(start, center);
+	width : 400px;
 }
 
 .icon {
@@ -10,22 +11,22 @@
 }
 
 .iconLink {
-	padding : 50px;
+	padding : $base-line-height;
 }
 
 .disabledIconLink {
 	pointer-events: none;
-	padding : 50px;
+	padding : $base-line-height;
 }
 
 .labelLink {
-	color : black;
+	color : $black;
 }
 
 .disabledLink {
 	pointer-events: none;
 	text-decoration : none;
-	color : black;
+	color : $black;
 }
 
 .label {

@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styles from './ProjectLink.module.css'
+import styles from './ProjectLink.module.scss'
 import PrimaryAnchor from '../primaryAnchor/PrimaryAnchor'
 import SecondaryLink from '../secondaryLink/SecondaryLink'
 

@@ -6,6 +6,7 @@ module.exports = {
   	'gatsby-plugin-react-helmet',
    	'gatsby-plugin-eslint', 
    	'gatsby-plugin-typography',
+   	'gatsby-plugin-sass',
   	{
       	resolve: `gatsby-plugin-typography`,
       	options: {

@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './PrimaryAnchor.module.css'
+import styles from './PrimaryAnchor.module.scss'
 import PropTypes from 'prop-types'
 
 const PrimaryAnchor = props => (

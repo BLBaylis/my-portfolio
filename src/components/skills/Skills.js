@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './Skills.module.css'
+import styles from './Skills.module.scss'
 import LabelledIconList from '../labelledIconList/LabelledIconList'
 import skillsData from '../../utils/skillsData'
 

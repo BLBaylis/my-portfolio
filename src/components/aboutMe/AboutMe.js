@@ -1,6 +1,6 @@
 import React from 'react'
 import bradPic from '../../static/images/brad.jpg'
-import styles from './AboutMe.module.css'
+import styles from './AboutMe.module.scss'
 
 const AboutMe = () => (
   <section className={styles.aboutMe} id = "about-me">

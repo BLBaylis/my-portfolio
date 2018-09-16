@@ -1,0 +1,11 @@
+@import "../../utils/variables";
+@import "../../utils/mixins";
+
+.secondaryLink {
+	background-color : transparent;
+	color : $secondary-color;
+	border: 1px solid $secondary-color;
+	padding : 1px 30px;
+	box-sizing : border-box;
+	text-decoration : none;
+}

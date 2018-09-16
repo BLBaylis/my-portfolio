@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styles from './LabelledIcon.module.css'
+import styles from './LabelledIcon.module.scss'
 
 const LabelledIcon = (props) => {
 	const linkClassName = props.link ? styles.labelLink : styles.disabledLink;

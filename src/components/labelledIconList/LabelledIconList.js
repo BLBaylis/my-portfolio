@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './LabelledIconList.module.css'
+import styles from './LabelledIconList.module.scss'
 import PropTypes from 'prop-types'
 import LabelledIcon from '../labelledIcon/LabelledIcon'
 
