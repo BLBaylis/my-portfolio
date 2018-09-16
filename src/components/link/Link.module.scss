@@ -1,0 +1,35 @@
+@import '../../utils/variables';
+@import '../../utils/mixins';
+
+.link {
+	box-sizing     : border-box;
+	text-decoration: none;
+	padding        : 0 $base-line-height;
+	display        : inline-block;
+}
+
+.sm {
+	@include matching-height-and-line-height($base-line-height * 0.75);
+}
+
+.md {
+	@include matching-height-and-line-height($base-line-height);
+}
+
+.lrg {
+	@include matching-height-and-line-height($base-line-height * 1.5);
+}
+
+.xl {
+	@include matching-height-and-line-height($base-line-height * 2);
+}
+
+.primary-theme {
+	@include primary-theme;
+	border : solid 1px $secondary-color 
+}
+
+.alt-theme {
+	@include alt-theme;
+	border : solid 1px $primary-color 
+}

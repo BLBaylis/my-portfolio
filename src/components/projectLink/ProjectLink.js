@@ -1,8 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styles from './ProjectLink.module.scss'
-import PrimaryAnchor from '../primaryAnchor/PrimaryAnchor'
-import SecondaryLink from '../secondaryLink/SecondaryLink'
+//import PrimaryAnchor from '../primaryAnchor/PrimaryAnchor'
+import * as Anchor from '../anchor/Anchor'
+import * as Link from '../link/Link'
+//import SecondaryLink from '../secondaryLink/SecondaryLink'
 
 const ProjectLink = props => {
 	let classNames = props.class.map(curr => styles[curr]).join(" ");
@@ -18,8 +20,8 @@ const ProjectLink = props => {
 				</h4>
 			</div>*/}
 			<div className = {styles.btnWrapper}>
-				<PrimaryAnchor href = {href} text = "VISIT"/>
-				<SecondaryLink to = {`/${projectPageLink}/`} text = "DETAILS"/>
+				<Anchor.Md href = {href} text = "VISIT" btnTheme = "alt-theme"/>
+				<Link.Md to = {`/${projectPageLink}/`} text = "DETAILS" btnTheme = "primary-theme"/>
 			</div>
 		</div>
 	)

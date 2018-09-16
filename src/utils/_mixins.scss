@@ -1,5 +1,22 @@
+@import 'variables';
+
 @mixin flex($justify-content, $align-items) {
 	display : flex;
 	justify-content : $justify-content;
 	align-items : $align-items;
+}
+
+@mixin matching-height-and-line-height ($height) {
+	height : $height;
+	line-height : $height;
+}
+
+@mixin primary-theme {
+	background-color : $primary-color;
+	color : $secondary-color
+}
+
+@mixin alt-theme {
+	background-color : $secondary-color;
+	color : $primary-color
 }
