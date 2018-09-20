@@ -11,11 +11,9 @@
     "gatsby-link": "^1.6.46",
     "gatsby-plugin-react-helmet": "^2.0.11",
     "gatsby-plugin-sass": "^1.0.26",
-    "gatsby-plugin-typography": "^1.7.19",
     "npm": "^6.4.1",
     "prop-types": "^15.6.2",
-    "react-helmet": "^5.2.0",
-    "typography-theme-judah": "^0.15.10"
+    "react-helmet": "^5.2.0"
   },
   "keywords": [
     "gatsby"

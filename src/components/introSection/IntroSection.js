@@ -6,8 +6,12 @@ const IntroSection = () => (
   <section className={styles.intro}>
     <div className={styles.textBox}>
       <h1 className={styles.heading}>Bradley Baylis</h1>
-      <h2>Front End Developer</h2>
-      <Anchor.Xl href = "#projects" text = "Jump to projects" btnTheme = "alt-theme"/>
+      <h2 className = {styles.subheading}>Front End Developer</h2>
+      <Anchor.Xl
+        href="#projects"
+        text="Jump to projects"
+        btnTheme="alt-theme"
+      />
     </div>
   </section>
 )

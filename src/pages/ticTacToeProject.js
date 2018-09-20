@@ -1,6 +1,4 @@
-import React from 'react'
-import LargeLink from '../components/largeLink/LargeLink'
-import styles from './project.module.css'
+/*import React from 'react'
 import ticTacToeScreenShot from '../static/images/tictactoe.png'
 
 const TicTacToeProject = () => (
@@ -44,10 +42,8 @@ const TicTacToeProject = () => (
       noughts and crosses along with the opportunity to choose your colour. A
       fun project.
     </p>
-    <div className={styles.largeLink}>
-      <LargeLink to="projects/" buttonText="PROJECTS" />
-    </div>
   </div>
 )
 
 export default TicTacToeProject
+*/

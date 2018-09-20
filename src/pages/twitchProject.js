@@ -1,6 +1,4 @@
-import React from 'react'
-import LargeLink from '../components/largeLink/LargeLink'
-import styles from './project.module.css'
+/*import React from 'react'
 import twitchScreenShot from '../static/images/twitch.png'
 
 const TwitchTvProject = () => (
@@ -43,10 +41,8 @@ const TwitchTvProject = () => (
     <p className={styles.info}>
       This is my favourite project I&#39;ve worked on overall!
     </p>
-    <div className={styles.largeLink}>
-      <LargeLink to="projects/" buttonText="PROJECTS" />
-    </div>
   </div>
 )
 
 export default TwitchTvProject
+*/

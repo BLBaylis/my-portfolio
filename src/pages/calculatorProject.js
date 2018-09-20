@@ -1,5 +1,4 @@
-import React from 'react'
-import LargeLink from '../components/largeLink/LargeLink'
+/*import React from 'react'
 import styles from './project.module.css'
 import calculatorScreenShot from '../static/images/calculator.png'
 
@@ -22,10 +21,7 @@ const CalculatorProject = () => (
       of my projects for the first time. As a result, there isn&#39;t much more
       for me to say about it!
     </p>
-    <div className={styles.largeLink}>
-      <LargeLink to="PROJECTS/" buttonText="PROJECTS" />
-    </div>
   </div>
 )
 
-export default CalculatorProject
+export default CalculatorProject*/

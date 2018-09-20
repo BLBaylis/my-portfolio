@@ -1,6 +1,5 @@
-import React from 'react'
+/*import React from 'react'
 import Link from 'gatsby-link'
-import LargeLink from '../components/largeLink/LargeLink'
 import styles from './project.module.css'
 import portfolioScreenShot from '../static/images/portfolio.png'
 
@@ -20,10 +19,8 @@ const PortfolioProject = () => (
       I&#39;ve bootstrapped a project using Gatsby.js, which I&#39;m very
       impressed by.
     </p>
-    <div className={styles.largeLink}>
-      <LargeLink to="projects/" buttonText="PROJECTS" />
-    </div>
   </div>
 )
 
 export default PortfolioProject
+*/

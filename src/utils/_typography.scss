@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+h1, h2, h3, h4, h5, h6 {
+  text-rendering: optimizeLegibility;
+  line-height: 1;
+  margin-top: 0;
+  color: #222; 
+}
+
+blockquote + figcaption cite {
+  display: block;
+  font-size: inherit;
+  text-align: right; 
+}
+
+body {
+  word-wrap: break-word; 
+}
+
+pre code {
+  word-wrap: normal; 
+}
+
+html {
+  font: normal 150%/1.65 serif; 
+}
+
+body {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  color: #444; 
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 1.81818rem; 
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 1.51515rem; 
+}
+
+h3 {
+  font-size: 2em;
+  margin-bottom: 1.21212rem; 
+}
+
+h4 {
+  font-size: 1.5em;
+  margin-bottom: 0.90909rem; 
+}
+
+h5 {
+  font-size: 1em;
+  margin-bottom: 0.60606rem; 
+}
+
+h6 {
+  font-size: 0.75em;
+  margin-bottom: 0.45455rem; 
+}
+
+p {
+  margin: auto auto 1.5rem; 
+}
+  
+ p + p {
+    text-indent: 1.5rem;
+    margin-top: -1.5rem; 
+}
+
+small {
+  font-size: 65%; 
+}
+
+input,
+abbr,
+acronym,
+blockquote,
+code,
+kbd,
+q,
+samp,
+var {
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none; 
+}
+
+pre {
+  white-space: pre; 
+}
+
+pre code {
+  white-space: -moz-pre-wrap;
+  white-space: pre-wrap; 
+}
+
+dt,
+dd {
+  display: inline;
+  margin: 0; 
+}
+
+dt + dt:before,
+dd + dt:before {
+  content: "\A";
+  white-space: pre; 
+}
+
+dd + dd:before {
+  content: ", "; 
+}
+
+dd:before {
+  content: ": ";
+  margin-left: -0.2rem; 
+}
+
+dt {
+  display: inline;
+  counter-reset: definitions; 
+}
+  
+dt + dt:before {
+  content: ", ";
+  margin-left: -0.2rem; 
+}
+
+dd {
+  display: block;
+  counter-increment: definitions; 
+}
+
+dd:before {
+    content: counter(definitions, decimal) ". "; 
+}

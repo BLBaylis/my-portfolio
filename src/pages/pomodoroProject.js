@@ -1,6 +1,5 @@
 import React from 'react'
-import LargeLink from '../components/largeLink/LargeLink'
-import styles from './project.module.css'
+import styles from './index.module.css'
 import pomodoroScreenShot from '../static/images/pomodoro.png'
 
 const PomodoroProject = () => (
@@ -50,9 +49,6 @@ const PomodoroProject = () => (
       would have lent itself very well to React. Maybe one day, I&#39;ll come
       back and remake it, though this isn&#39;t high priority!
     </p>
-    <div className={styles.largeLink}>
-      <LargeLink to="projects/" buttonText="PROJECTS" />
-    </div>
   </div>
 )
 

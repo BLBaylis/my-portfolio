@@ -2,13 +2,52 @@
 @import "../../utils/mixins";
 
 .intro {
-	height : 500px;
+	height : 400px;
 	text-align : center;
 	background-color: $primary-color;
 	color : $secondary-color;
 	@include flex(center, center);
 }
 
+.textBox {
+	position : relative;
+	top : -$navbar-height/2;
+}
+
+.heading {
+	/*font-size : 60px;*/
+	margin : 0 auto 1.6667rem;
+}
+
+.subheading {
+	/*font-size : 40px;*/
+	margin : 0 auto 1.6667rem;
+}
+
 .anchor {
 	color : $secondary-color;
+}
+
+@media (min-width : 400px) {
+
+  .intro {
+  	height : 500px;
+  }
+
+}
+
+@media (min-width : 700px) {
+
+  .intro {
+  	height : 600px;
+  }
+
+}
+
+@media (min-width : 1300px) {
+  
+  .intro {
+  	height : 650px;
+  }
+
 }

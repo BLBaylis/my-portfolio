@@ -4,15 +4,16 @@
 .mobileNavbar {
 	position        : relative;
 	background-color: $primary-color;
-	height          : $base-line-height;
+	height          : $navbar-height;
 	z-index         : 100;
 	border          : none;	
 }
 
 .navList {
 	list-style-type: none;
-	line-height    : $base-line-height;
+	line-height    : $navbar-height;
 	margin         : 0;
+	padding        : 0;
 }
 
 .anchor {
@@ -22,7 +23,7 @@
 
 .logo {
 	float : left;
-	margin : 0 (1/2) * $base-line-height;
+	margin : 0 (1/4) * $navbar-height;
 }
 
 .navLink {
@@ -44,8 +45,8 @@
 	box-sizing      : border-box;
 	overflow        : hidden;
 	background-color: $primary-color;
-	height          : $base-line-height;
-	width           : $base-line-height;
+	height          : $navbar-height;
+	width           : $navbar-height;
 	padding         : 0;
 	border          : 0;
 	top             : 0;
@@ -63,8 +64,8 @@
 
 .dropdownIcon {
 	box-sizing: border-box;
-	width     : $base-line-height !important;
-	height    : $base-line-height;
+	width     : $navbar-height !important;
+	height    : $navbar-height;
 	padding   : 5px;
 	color     : $secondary-color;
 }
@@ -72,7 +73,8 @@
 .dropdownMenu {
 	position       : absolute;
 	width          : 100%;
-	top            : $base-line-height;
+	top            : $navbar-height;
 	list-style-type: none;
 	margin         : 0;
+	padding        : 0;
 }

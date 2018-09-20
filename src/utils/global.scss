@@ -1,0 +1,111 @@
+/*@import "typeplate-sk/typeplate-index";*/
+/*@import 'typography';*/
+
+$sm: 400px;
+$md: 700px;
+$lrg: 900px;
+$xl: 1300px;
+
+body {
+  	font-size: 100%;
+  	margin : 0;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+  	font-size-adjust: 0.5;
+}
+
+h1 {
+	font-size: 2em;
+	line-height: 1.25;
+	margin : 0.9375em auto 0.3125em;
+	letter-spacing: -1px;
+}
+
+h2 {
+  	font-size: 1.625em;
+  	line-height: 1.15384615;
+  	margin : 1.15384616em auto 0.38461539em;
+}
+
+h3 {
+  	font-size: 1.375em;
+  	line-height: 1.13636364;
+  	margin: 1.36363637em auto 0.45454546em;
+}
+
+h4 {
+  	font-size: 1.125em;
+  	line-height: 1.11111111;
+  	margin: 1.66666667em auto 0.55555556em;
+}
+
+@media (min-width: $md) {
+
+	body {
+		font-size : 1.2em;
+		line-height : 1.375;
+	}
+
+	h1 {
+    	font-size: 2.5em;
+    	line-height: 1.125;
+    	letter-spacing: normal;
+		margin: 0.73333334em auto 0.24444445em;
+		max-width: 14.4em;
+  	}
+
+  	h2 {
+    	font-size: 2em;
+    	line-height: 1.25;
+    	margin: 1.03125em auto 0.34375em;
+		max-width: 18em;
+  	}
+
+  	h3 {
+    	font-size: 1.5em;
+    	line-height: 1.25;
+    	margin: 1.37500001em auto 0.45833334em;
+		max-width: 26.18182em;
+  	}
+
+  	h4 {
+    	line-height: 1.22222222;
+    	margin: 1.83333333em auto 0.61111111em;
+		max-width: 32em;
+ 	}
+}
+
+@media (min-width : $lrg) {
+
+	body {
+		font-size : 1.4em;
+	}
+
+	h1 {
+    	font-size: 3em;
+    	line-height: 1.05;
+    	margin: 0.6875em auto 0.22916667em;
+		max-width: 12.66667em;
+  	}
+
+	h2 {
+    	font-size: 2.25em;
+   	 	line-height: 1.25;
+   	 	margin: 1.03125em auto 0.34375em;
+		max-width: 16.88889em;
+  	}
+
+	h3 {
+    	font-size: 1.75em;
+    	line-height: 1.25;
+    	margin: 1.37500001em auto 0.45833334em;
+		max-width: 21.71429em;
+  	}
+
+  	h4 {
+  		max-width: 33.77778em;
+  	}
+
+}
+

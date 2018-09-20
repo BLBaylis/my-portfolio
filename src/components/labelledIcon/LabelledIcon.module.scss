@@ -3,20 +3,21 @@
 
 .labelledIcon {
 	@include flex(start, center);
-	width : 400px;
+	width : 300px;
 }
 
-.icon {
+.icon { 
 	width : 100px;
 }
 
 .iconLink {
 	padding : $base-line-height;
+	margin-right : 20px;
 }
 
 .disabledIconLink {
+	@extend .iconLink;
 	pointer-events: none;
-	padding : $base-line-height;
 }
 
 .labelLink {
