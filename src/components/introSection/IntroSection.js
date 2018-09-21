@@ -10,7 +10,7 @@ const IntroSection = () => (
       <Anchor.Xl
         href="#projects"
         text="Jump to projects"
-        btnTheme="alt-theme"
+        btnTheme="alt-theme-1"
       />
     </div>
   </section>

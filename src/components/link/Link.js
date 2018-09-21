@@ -8,16 +8,16 @@ const types = {
   md: 'md',
   lrg: 'lrg',
   xl: 'xl',
-  primaryTheme: 'primary-theme',
-  altTheme: 'alt-theme',
+  primaryTheme: 'primary-theme-1',
+  altTheme: 'alt-theme-1',
 }
 
 const Link = props => {
-  const { to, text, btnSize, btnTheme } = props
+  const { to, text, btnSize, btnTheme} = props;
   const className = classNames(
     styles.link,
     styles[btnSize || types.md],
-    styles[btnTheme || types.primaryTheme]
+    styles[btnTheme || types.primaryTheme],
   )
   return (
     <a to={to} className={className}>

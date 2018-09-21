@@ -8,16 +8,16 @@ const types = {
   md: 'md',
   lrg: 'lrg',
   xl: 'xl',
-  primaryTheme: 'primary-theme',
-  altTheme: 'alt-theme',
+  primaryTheme: 'primary-theme-1',
+  altTheme: 'alt-theme-1',
 }
 
 const Anchor = props => {
-  const { href, text, btnSize, btnTheme } = props
+  const { href, text, btnSize, btnTheme} = props
   const className = classNames(
     styles.anchor,
     styles[btnSize || types.md],
-    styles[btnTheme || types.primaryTheme]
+    styles[btnTheme || types.primaryTheme],
   )
   return (
     <a href={href} className={className}>

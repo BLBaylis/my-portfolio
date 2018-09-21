@@ -33,3 +33,10 @@
 .label {
 	display: inline;
 }
+
+@media (min-width : 900px) {
+
+	.labelledIcon {
+		width : 400px;
+	}
+}

@@ -5,6 +5,7 @@
 	box-sizing     : border-box;
 	text-decoration: none;
 	padding        : 0 $base-line-height;
+	margin         : 0 20px;
 	display        : inline-block;
 }
 
@@ -24,12 +25,22 @@
 	@include matching-height-and-line-height($base-line-height * 2);
 }
 
-.primary-theme {
+.primary-theme-1 {
 	@include primary-theme;
-	border : solid 1px $secondary-color 
+	border : solid 1px $primary-color;
 }
 
-.alt-theme {
+.primary-theme-2 {
+	@include primary-theme;
+	border : solid 1px $secondary-color;
+}
+
+.alt-theme-1 {
 	@include alt-theme;
-	border : solid 1px $primary-color 
+	border : solid 1px $primary-color;
+}
+
+.alt-theme-2 {
+	@include alt-theme;
+	border : solid 1px $secondary-color;
 }

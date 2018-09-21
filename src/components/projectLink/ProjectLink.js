@@ -7,6 +7,8 @@ import * as Link from '../link/Link'
 //import SecondaryLink from '../secondaryLink/SecondaryLink'
 
 const ProjectLink = props => {
+  let projectAlt;
+  if (props.class.includes("projectAlt")){projectAlt = true;}
   let classNames = props.class.map(curr => styles[curr]).join(' ')
   const { title, thumbnail, /*tags,*/ projectPageLink, href } = props.project
   return (
@@ -20,12 +22,20 @@ const ProjectLink = props => {
 				</h4>
 			</div>*/}
       <div className={styles.btnWrapper}>
-        <Anchor.Md href={href} text="VISIT" btnTheme="alt-theme" />
-        <Link.Md
+        {projectAlt && <Anchor.Md href={href} text="VISIT" btnTheme="alt-theme-1" />}
+        {projectAlt && <Link.Md
           to={`/${projectPageLink}/`}
           text="DETAILS"
-          btnTheme="primary-theme"
-        />
+          btnTheme="primary-theme-1"
+        />}
+        {!projectAlt && <Anchor.Md href={href} text="VISIT" btnTheme="alt-theme-2" />}
+        {!projectAlt && <Link.Md
+          to={`/${projectPageLink}/`}
+          text="DETAILS"
+          btnTheme="primary-theme-2"
+        />}
+        
+        
       </div>
     </div>
   )
