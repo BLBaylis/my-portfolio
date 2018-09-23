@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styles from './LabelledIcon.module.scss' 
+import Typography from '@material-ui/core/Typography'
 
 const LabelledIcon = props => {
   const linkClassName = props.link ? styles.labelLink : styles.disabledLink
@@ -13,7 +14,7 @@ const LabelledIcon = props => {
         <img className={styles.icon} src={props.icon} />
       </a>
       <a className={linkClassName} href={props.link}>
-        <h3 className={styles.label}>{props.label}</h3>
+        <Typography variant = "display1" className={styles.label}>{props.label}</Typography>
       </a>
     </div>
   )

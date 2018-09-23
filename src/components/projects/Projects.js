@@ -2,11 +2,12 @@ import React from 'react'
 import styles from './Projects.module.scss'
 import ProjectLink from '../projectLink/ProjectLink'
 import * as projectData from '../../utils/projectData'
+import Typography from '@material-ui/core/Typography'
 
 const Projects = () => (
   <main id="projects" className={styles.projects}>
-    <h2 className={styles.heading}>Projects</h2>
-    <h4 className={styles.subHeading}>
+    <Typography variant = "display2" className={styles.heading}>Projects</Typography>
+    <Typography variant = "title" className={styles.subHeading}>
       All of my project ideas are from{' '}
       <a
         className={styles.link}
@@ -17,7 +18,7 @@ const Projects = () => (
         Freecodecamp
       </a>{' '}
       and listed by most recent to least recent.
-    </h4>
+    </Typography>
     <div className={styles.projectGallery}>
       <ProjectLink project={projectData.portfolio} class={['project']} />
       <ProjectLink project={projectData.twitch} class={['projectAlt']} />

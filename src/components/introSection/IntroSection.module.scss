@@ -9,6 +9,10 @@
 	@include flex(center, center);
 }
 
+.altColor {
+	color : $secondary-color;
+}
+
 .textBox {
 	position : relative;
 	top : -$navbar-height/2;

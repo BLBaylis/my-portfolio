@@ -1,19 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styles from './ProjectLink.module.scss'
+import Typography from '@material-ui/core/Typography';
 //import PrimaryAnchor from '../primaryAnchor/PrimaryAnchor'
-import * as Anchor from '../anchor/Anchor'
-import * as Link from '../link/Link'
+//import * as Anchor from '../anchor/Anchor'
+//import * as Link from '../link/Link'
 //import SecondaryLink from '../secondaryLink/SecondaryLink'
 
 const ProjectLink = props => {
-  let projectAlt;
-  if (props.class.includes("projectAlt")){projectAlt = true;}
+  //let projectAlt;
+  //if (props.class.includes("projectAlt")){projectAlt = true;}
   let classNames = props.class.map(curr => styles[curr]).join(' ')
-  const { title, thumbnail, /*tags,*/ projectPageLink, href } = props.project
+  const { title, thumbnail, /*tags, projectPageLink, href */} = props.project
   return (
     <div className={classNames}>
-      <h4 className={styles.heading}>{title}</h4>
+      <Typography variant = "display1" className={styles.heading}>{title}</Typography>
       <img className={styles.thumbnail} src={thumbnail} />
       {/*<div className={styles.overlay}>
 				<h3 className={styles.overlayHeading}>{title}</h3>
@@ -21,21 +22,7 @@ const ProjectLink = props => {
 					
 				</h4>
 			</div>*/}
-      <div className={styles.btnWrapper}>
-        {projectAlt && <Anchor.Md href={href} text="VISIT" btnTheme="alt-theme-1" />}
-        {projectAlt && <Link.Md
-          to={`/${projectPageLink}/`}
-          text="DETAILS"
-          btnTheme="primary-theme-1"
-        />}
-        {!projectAlt && <Anchor.Md href={href} text="VISIT" btnTheme="alt-theme-2" />}
-        {!projectAlt && <Link.Md
-          to={`/${projectPageLink}/`}
-          text="DETAILS"
-          btnTheme="primary-theme-2"
-        />}
-        
-        
+      <div className={styles.btnWrapper}>       
       </div>
     </div>
   )

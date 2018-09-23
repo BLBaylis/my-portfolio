@@ -2,11 +2,12 @@ import React from 'react'
 import styles from './Tools.module.scss'
 import LabelledIconList from '../labelledIconList/LabelledIconList'
 import toolsData from '../../utils/toolsData'
+import Typography from '@material-ui/core/Typography'
 
 const Tools = () => (
   <section className={styles.tools}>
-    <h2>Tools</h2>
-    <h4>Tools of the trade</h4>
+    <Typography variant = "display2">Tools</Typography>
+    <Typography variant = "title">Tools of the trade</Typography>
     <LabelledIconList data={toolsData} />
   </section>
 )
