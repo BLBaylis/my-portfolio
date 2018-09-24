@@ -5,4 +5,6 @@ export const primaryColor = "#470FF4";
 export const secondaryColor = "$white";
 export const baseLineHeight = "1.66667rem";
 export const baseFontSize = "24px";
-export const navbarHeight = "50px";
+export const landscapeNavbarHeight = "48px";
+export const standardNavbarHeight = "56px";
+export const lrgNavbarHeight = "64px";

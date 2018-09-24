@@ -15,16 +15,14 @@
 
 .textBox {
 	position : relative;
-	top : -$navbar-height/2;
+	top : -$standard-navbar-height/2;
 }
 
 .heading {
-	/*font-size : 60px;*/
 	margin : 0 auto 1.6667rem;
 }
 
 .subheading {
-	/*font-size : 40px;*/
 	margin : 0 auto 1.6667rem;
 }
 
@@ -32,10 +30,26 @@
 	color : $secondary-color;
 }
 
+@media (min-width:0px) and (orientation: landscape) {
+  
+  .textBox {
+    top : -$landscape-navbar-height/2;
+  }
+
+}
+
 @media (min-width : 400px) {
 
   .intro {
   	height : 500px;
+  }
+
+}
+
+@media (min-width:600px) {
+  
+  .textBox {
+    top : -$lrg-navbar-height/2;
   }
 
 }
