@@ -3,7 +3,7 @@
 
 .labelledIcon {
   @include flex(start, center);
-  width: 300px;
+  width: 400px;
 }
 
 .icon {
@@ -34,8 +34,8 @@
   display: inline;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 700px) {
   .labelledIcon {
-    width: 400px;
+    width: 350px;
   }
 }
