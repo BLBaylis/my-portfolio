@@ -46,7 +46,7 @@ export const calculator = {
 }
 
 export const portfolio = {
-  title: 'My Portfolio Page',
+  title: 'Portfolio Page',
   thumbnail: portfolioScreenShot,
   tags: ['HTML', 'CSS', 'JS', 'React', 'Webpack', 'Gatsby', 'Babel', 'SASS'],
   projectPageLink: 'portfolioProject',

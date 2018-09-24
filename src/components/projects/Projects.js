@@ -1,15 +1,14 @@
 import React from 'react'
 import styles from './Projects.module.scss'
-import ProjectLink from '../projectLink/ProjectLink'
-import * as projectData from '../../utils/projectData'
-import Typography from '@material-ui/core/Typography'
+import ProjectGallery from '../projectGallery/ProjectGallery'
+import WhiteTypography from '../whiteTypography/WhiteTypography'
 
 const Projects = () => (
   <main id="projects" className={styles.projects}>
-    <Typography variant="display2" className={styles.heading}>
+    <WhiteTypography variant="display2" className={styles.heading}>
       Projects
-    </Typography>
-    <Typography variant="title" className={styles.subHeading}>
+    </WhiteTypography>
+    <WhiteTypography variant="body1" className={styles.subHeading}>
       All of my project ideas are from{' '}
       <a
         className={styles.link}
@@ -20,9 +19,32 @@ const Projects = () => (
         Freecodecamp
       </a>{' '}
       and listed by most recent to least recent.
-    </Typography>
+    </WhiteTypography>
+    <ProjectGallery/>
+  </main>
+)
+
+/* MOBILE VERSION 
+
+const Projects = () => (
+  <main id="projects" className={styles.projects}>
+    <WhiteTypography variant="display2" className={styles.heading}>
+      Projects
+    </WhiteTypography>
+    <WhiteTypography variant="body1" className={styles.subHeading}>
+      All of my project ideas are from{' '}
+      <a
+        className={styles.link}
+        href="https://www.freecodecamp.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Freecodecamp
+      </a>{' '}
+      and listed by most recent to least recent.
+    </WhiteTypography>
     <div className={styles.projectGallery}>
-      <ProjectLink project={projectData.portfolio} class={['project']} />
+      <ProjectCard project={projectData.portfolio} class={['project']} />
       <ProjectLink project={projectData.twitch} class={['projectAlt']} />
       <ProjectLink project={projectData.calculator} class={['project']} />
       <ProjectLink
@@ -36,5 +58,6 @@ const Projects = () => (
     </div>
   </main>
 )
+*/
 
 export default Projects

@@ -1,0 +1,75 @@
+@import '../../utils/variables';
+@import '../../utils/mixins';
+
+.projectGallery {
+  padding: 0;
+  grid-gap: 0;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin: 0;
+}
+
+@media (min-width: 697px) {
+  .projectGallery {
+    display: grid;
+    grid-gap: $base-vertical-rhythm;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin: $base-vertical-rhythm;
+    justify-content: center;
+    padding: 0;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .projectGallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.project,
+.projectAlt {
+  background-color: $primary-color;
+  color: $white;
+  position: relative;
+  overflow: hidden;
+  grid-column-start: span 2;
+  height : 100%;
+}
+
+.item5 {
+  grid-column: 2 / span 2;
+}
+
+.project:hover .overlay,
+.projectAlt:hover .overlay {
+  bottom: 0;
+  height: 100%;
+  opacity: 1;
+}
+
+@media (max-width: 697px) {
+  .project,
+  .projectAlt {
+    border: none;
+  }
+
+  .projectAlt {
+    background-color: $white;
+    color: $black;
+  }
+}
+
+@media (min-width: 1024px) {
+  .project,
+  .projectAlt {
+    grid-column-start: span 2;
+  }
+
+  .item4 {
+    grid-column: 2 / span 2;
+  }
+
+  .item5 {
+    grid-column: 4 / span 2;
+  }
+}

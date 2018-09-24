@@ -2,37 +2,17 @@
 @import '../../utils/mixins';
 
 .projects {
-  display: inline-block;
+  display: block;
   text-align: center;
   background-color: $primary-color;
   color: $secondary-color;
+  padding : $section-vertical-rhythm 0;
+}
+
+.subHeading {
+  margin : $base-vertical-rhythm 0;
 }
 
 .link {
-  color: $grey;
-}
-
-.projectGallery {
-  padding: 0;
-  grid-gap: 0;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  margin: 0;
-}
-
-@media (min-width: 697px) {
-  .projectGallery {
-    display: grid;
-    grid-gap: $base-vertical-rhythm;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    margin: $base-vertical-rhythm;
-    justify-content: center;
-    padding: 0;
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .projectGallery {
-    grid-template-columns: repeat(6, 1fr);
-  }
+  color: $text-color-for-blue-bg;
 }
