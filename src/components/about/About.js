@@ -6,9 +6,9 @@ import Tools from '../tools/Tools'
 
 const About = () => (
   <section className={styles.about} id="about">
-  	<Bio/>
-  	<Skills/>
-  	<Tools/>
+    <Bio />
+    <Skills />
+    <Tools />
   </section>
 )
 

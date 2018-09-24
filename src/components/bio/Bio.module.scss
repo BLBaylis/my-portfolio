@@ -1,83 +1,72 @@
-@import "../../utils/variables";
-@import "../../utils/mixins";
+@import '../../utils/variables';
+@import '../../utils/mixins';
 
 .bio {
-	text-align      : center;
-	background-color: $secondary-color;
+  @include flex(center, center);
+  padding : $section-vertical-rhythm 0;
+  text-align: center;
+  background-color: $secondary-color;
 }
 
 .content {
-	margin     : 0 auto;
-	padding-top: 0;
-}
-
-.bioWrapper {
-	margin : 1.66667rem 0 1.875em;
+  padding-top: 0;
 }
 
 .bioWrapper::after {
-	content: "";
-	clear  : both;
-	display: table;
+  content: '';
+  clear: both;
+  display: table;
 }
 
 .bradPic {
-	margin       : 15px auto;
-	height       : 150px;
-	border-radius: 25px;
-	font-size    : 1.625em;
+  margin: $base-vertical-rhythm auto;
+  height: 150px;
+  border-radius: 25px;
+  font-size: 1.625em;
 }
 
 .paragraph {
-	display : block;
-	text-align : center;
-	margin : 1.6667rem 15px;
+  display: block;
+  text-align: center;
 }
 
 @media (min-width: 400px) {
-
   .paragraph {
-    width : 95%;
-    max-width : 500px;
-    text-align  :center;
-    margin : 1.667rem auto;
+  	width : 95%;
+  	margin : 0 auto;
+    max-width: 500px;
+    text-align: center;
   }
-  
+
   .content {
     max-width: 960px;
   }
-
 }
 
 @media (min-width: 700px) {
-
   .bioWrapper {
     @include flex(center, center);
-    margin : 1.667rem 0 2.3203125em;
+    margin: $base-vertical-rhythm 0 2.3203125em;
   }
-  
+
   .bradPic {
     float: left;
-    margin : 0 25px;
+    margin: 0 25px;
   }
 
   .paragraph {
-  	text-align : left;
-  	margin : 0 1.375em;
-  	max-width : 550px;
+    text-align: left;
+    margin: 0 1.375em;
+    max-width: 550px;
   }
 
   .content {
     max-width: 1050px;
   }
-
 }
 
 @media (min-width: 900px) {
-  
   .content {
     max-width: 1200px;
   }
-
 }
-

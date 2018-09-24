@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styles from './LabelledIcon.module.scss' 
+import styles from './LabelledIcon.module.scss'
 import Typography from '@material-ui/core/Typography'
 
 const LabelledIcon = props => {
@@ -14,7 +14,9 @@ const LabelledIcon = props => {
         <img className={styles.icon} src={props.icon} />
       </a>
       <a className={linkClassName} href={props.link}>
-        <Typography variant = "display1" className={styles.label}>{props.label}</Typography>
+        <Typography variant="display1" className={styles.label}>
+          {props.label}
+        </Typography>
       </a>
     </div>
   )

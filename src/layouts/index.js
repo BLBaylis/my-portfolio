@@ -21,7 +21,7 @@ const Layout = ({ children, data }) => (
     <div>
       <CssBaseline />
       {/*<MobileNavbar />*/}
-      <MobileNavbar/>
+      <MobileNavbar />
       {children()}
     </div>
   </div>

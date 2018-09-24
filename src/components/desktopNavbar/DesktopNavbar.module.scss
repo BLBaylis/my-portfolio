@@ -1,36 +1,36 @@
 @import '../../utils/variables';
 
 .desktopNavbar {
-	position        : relative;
-	background-color: #470FF4;
-	height          : $base-line-height;
-	z-index         : 100;
-	border          : none;
+  position: relative;
+  background-color: #470ff4;
+  height: $base-line-height;
+  z-index: 100;
+  border: none;
 }
 
 .navList {
-	list-style-type: none;
-	line-height    : $base-line-height;
-	overflow       : hidden;
-	margin         : 0;
+  list-style-type: none;
+  line-height: $base-line-height;
+  overflow: hidden;
+  margin: 0;
 }
 
 .navLink {
-	float : right;
-	margin: 0 (1/2) * $base-line-height;
+  float: right;
+  margin: 0 (1/2) * $base-line-height;
 }
 
 .furthestRightNavLink {
-	composes : navLink;
-	margin : 0 (1/2) * $base-line-height 0 (1/4) * $base-line-height;
+  composes: navLink;
+  margin: 0 (1/2) * $base-line-height 0 (1/4) * $base-line-height;
 }
 
 .anchor {
-	text-decoration: none;
-	color : $secondary-color;
+  text-decoration: none;
+  color: $secondary-color;
 }
 
 .logo {
-	float : left;
-	margin : 0 (1/2) * $base-line-height;
+  float: left;
+  margin: 0 (1/2) * $base-line-height;
 }

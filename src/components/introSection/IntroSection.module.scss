@@ -1,71 +1,61 @@
-@import "../../utils/variables";
-@import "../../utils/mixins";
+@import '../../utils/variables';
+@import '../../utils/mixins';
 
 .intro {
-	height : 400px;
-	text-align : center;
-	background-color: $primary-color;
-	color : $secondary-color;
-	@include flex(center, center);
+  height: 400px;
+  text-align: center;
+  background-color: $primary-color;
+  color: $secondary-color;
+  @include flex(center, center);
 }
 
 .altColor {
-	color : $secondary-color;
+  color: $secondary-color;
 }
 
 .textBox {
-	position : relative;
-	top : -$standard-navbar-height/2;
+  position: relative;
+  top: -$standard-navbar-height/2;
 }
 
 .heading {
-	margin : 0 auto 1.6667rem;
+  margin: 0 auto 1.6667rem;
 }
 
 .subheading {
-	margin : 0 auto 1.6667rem;
+  margin: 0 auto 1.6667rem;
 }
 
 .anchor {
-	color : $secondary-color;
+  color: $secondary-color;
 }
 
-@media (min-width:0px) and (orientation: landscape) {
-  
+@media (min-width: 0px) and (orientation: landscape) {
   .textBox {
-    top : -$landscape-navbar-height/2;
+    top: -$landscape-navbar-height/2;
   }
-
 }
 
-@media (min-width : 400px) {
-
+@media (min-width: 400px) {
   .intro {
-  	height : 500px;
+    height: 500px;
   }
-
 }
 
-@media (min-width:600px) {
-  
+@media (min-width: 600px) {
   .textBox {
-    top : -$lrg-navbar-height/2;
+    top: -$lrg-navbar-height/2;
   }
-
 }
 
-@media (min-width : 700px) {
-
+@media (min-width: 700px) {
   .intro {
-  	height : 600px;
+    height: 600px;
   }
-
 }
 
-@media (min-width : 1300px) {
-  
+@media (min-width: 1300px) {
   .intro {
-  	height : 650px;
+    height: 650px;
   }
-
 }

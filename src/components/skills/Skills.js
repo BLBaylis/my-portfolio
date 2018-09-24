@@ -6,8 +6,8 @@ import Typography from '@material-ui/core/Typography'
 
 const Skills = () => (
   <section className={styles.skills}>
-    <Typography variant = "display2">Skills</Typography>
-    <Typography variant = "title">Skills to pay the bills!</Typography>
+    <Typography variant="display2">Skills</Typography>
+    <Typography variant="title">Skills to pay the bills!</Typography>
     <LabelledIconList data={skillsData} />
   </section>
 )

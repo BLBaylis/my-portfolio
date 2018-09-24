@@ -6,8 +6,10 @@ import Typography from '@material-ui/core/Typography'
 
 const Projects = () => (
   <main id="projects" className={styles.projects}>
-    <Typography variant = "display2" className={styles.heading}>Projects</Typography>
-    <Typography variant = "title" className={styles.subHeading}>
+    <Typography variant="display2" className={styles.heading}>
+      Projects
+    </Typography>
+    <Typography variant="title" className={styles.subHeading}>
       All of my project ideas are from{' '}
       <a
         className={styles.link}
@@ -27,7 +29,10 @@ const Projects = () => (
         project={projectData.ticTacToe}
         class={['projectAlt', 'item4']}
       />
-      <ProjectLink project={projectData.pomodoro} class={['project', 'item5']} />
+      <ProjectLink
+        project={projectData.pomodoro}
+        class={['project', 'item5']}
+      />
     </div>
   </main>
 )
