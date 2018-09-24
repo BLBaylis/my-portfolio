@@ -13,7 +13,7 @@ const styles = {
 }
 
 const CustomButton = props => {
-  const { href, variant } = props
+  const {href, variant} = props
   return (
     <Button {...props} variant={variant} href={href}>
       {props.children}

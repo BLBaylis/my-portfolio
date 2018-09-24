@@ -1,8 +1,9 @@
-/*import React from 'react'
+import React from 'react'
 import twitchScreenShot from '../static/images/twitch.png'
+import styles from './index.module.css'
 
 const TwitchTvProject = () => (
-  <div className={styles.outerDiv}>
+  <div>
     <h1 className={styles.heading}>Twitch.Tv Tool</h1>
     <figure>
       <a
@@ -45,4 +46,4 @@ const TwitchTvProject = () => (
 )
 
 export default TwitchTvProject
-*/
+
