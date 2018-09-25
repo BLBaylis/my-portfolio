@@ -9,7 +9,7 @@ const Bio = () => (
       <Typography variant="display2">About Me</Typography>
       <div className={styles.bioWrapper}>
         <img className={styles.bradPic} src={bradPic} />
-        <Typography variant="body1" align = "center" className={styles.paragraph}>
+        <Typography variant="body1" align="center" className={styles.paragraph}>
           Hi! My name is Brad and I am a front end developer from London. I love
           the internet, gaming, exercising and dogs! This coding stuff seems
           pretty cool as well.

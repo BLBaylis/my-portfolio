@@ -9,31 +9,15 @@
   @include flex(center, center);
 }
 
-.altColor {
-  color: $secondary-color;
+.button {
+  background-color: $secondary-color;
+  color: $primary-color;
+  margin-top: 1.225rem;
 }
 
 .textBox {
   position: relative;
   top: -$standard-navbar-height/2;
-}
-
-.heading {
-  margin: 0 auto 1.6667rem;
-}
-
-.subheading {
-  margin: 0 auto 1.6667rem;
-}
-
-.anchor {
-  color: $secondary-color;
-}
-
-@media (min-width: 0px) and (orientation: landscape) {
-  .textBox {
-    top: -$landscape-navbar-height/2;
-  }
 }
 
 @media (min-width: 400px) {

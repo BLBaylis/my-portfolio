@@ -20,7 +20,7 @@ const Projects = () => (
       </a>{' '}
       and listed by most recent to least recent.
     </WhiteTypography>
-    <ProjectGallery/>
+    <ProjectGallery />
   </main>
 )
 

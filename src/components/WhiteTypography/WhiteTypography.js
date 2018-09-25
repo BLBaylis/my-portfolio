@@ -10,7 +10,7 @@ const styles = {
 }
 
 const WhiteTypography = props => {
-  const { variant } = props;
+  const { variant } = props
   return (
     <Typography {...props} variant={variant}>
       {props.children}
@@ -19,10 +19,7 @@ const WhiteTypography = props => {
 }
 
 WhiteTypography.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.array,
-  ]),
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   variant: PropTypes.string,
 }
 

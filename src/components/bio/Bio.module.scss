@@ -3,7 +3,7 @@
 
 .bio {
   @include flex(center, center);
-  padding : $section-vertical-rhythm 0;
+  padding: $section-vertical-rhythm 0;
   text-align: center;
   background-color: $secondary-color;
 }
@@ -28,14 +28,16 @@
 .paragraph {
   display: block;
   text-align: center;
+  margin: 5px 0;
 }
 
 @media (min-width: 400px) {
   .paragraph {
-  	width : 95%;
-  	margin : 0 auto;
+    width: 95%;
+    margin: 0 auto;
     max-width: 500px;
     text-align: center;
+    font-size: 1rem;
   }
 
   .content {

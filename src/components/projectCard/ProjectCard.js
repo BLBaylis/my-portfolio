@@ -7,22 +7,37 @@ import Button from '@material-ui/core/Button'
 import Link from 'gatsby-link'
 
 const ProjectCard = props => {
-  const {title, thumbnail, href, projectPageLink} = props.project
+  const { title, thumbnail, href, projectPageLink } = props.project
   return (
     <Card className={styles.projectCard}>
-      <Typography variant="display1">
-        {title}
-      </Typography>
-      <img className={styles.thumbnail} src={thumbnail} />
-      <div className={styles.overlay}>
-		<h3 className={styles.overlayHeading}>{title}</h3>
-		<h4 className={styles.techUsed}>
-					
-		</h4>
-	  </div>
+      <Typography variant="display1">{title}</Typography>
+      <a href={href}>
+        <img className={styles.thumbnail} src={thumbnail} />
+      </a>
+      {/*<div className={styles.overlay}>
+      		<h3 className={styles.overlayHeading}>{title}</h3>
+      		<h4 className={styles.techUsed}>
+      					
+      		</h4>
+      	  </div>*/}
       <div className={styles.btnWrapper}>
-        <Button variant = "outlined" size = "large" href = {href} className = {styles.outlinedBtn}>VISIT</Button>
-        <Button component = {Link} to = {`/${projectPageLink}`} variant = "text" size = "large">DETAILS</Button>
+        <Button
+          variant="outlined"
+          size="large"
+          href={href}
+          className={styles.outlinedBtn}
+        >
+          VISIT
+        </Button>
+        <Button
+          component={Link}
+          to={`/${projectPageLink}`}
+          className={styles.btn}
+          variant="text"
+          size="large"
+        >
+          DETAILS
+        </Button>
       </div>
     </Card>
   )

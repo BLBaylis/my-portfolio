@@ -46,4 +46,3 @@ const TwitchTvProject = () => (
 )
 
 export default TwitchTvProject
-

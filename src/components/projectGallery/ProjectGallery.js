@@ -6,21 +6,21 @@ import ProjectCard from '../projectCard/ProjectCard'
 
 const ProjectGallery = () => (
   <div className={styles.projectGallery}>
-    <div className = {styles.project}>
-      <ProjectCard project = {projectData.portfolio}/>   	  
+    <div className={styles.project}>
+      <ProjectCard project={projectData.portfolio} />
     </div>
-    <div className = {styles.project}>
-      <ProjectCard project = {projectData.twitch}/>   	  
+    <div className={styles.project}>
+      <ProjectCard project={projectData.twitch} />
     </div>
-    <div className = {styles.project}>
-      <ProjectCard project = {projectData.calculator}/>	  
+    <div className={styles.project}>
+      <ProjectCard project={projectData.calculator} />
     </div>
-    <div className = {classNames(styles.project, styles.item4)}>
-      <ProjectCard project = {projectData.ticTacToe}/> 	  
+    <div className={classNames(styles.project, styles.item4)}>
+      <ProjectCard project={projectData.ticTacToe} />
     </div>
-    <div className = {classNames(styles.project, styles.item5)}>
-      <ProjectCard project = {projectData.pomodoro}/>	  
-    </div>   
+    <div className={classNames(styles.project, styles.item5)}>
+      <ProjectCard project={projectData.pomodoro} />
+    </div>
   </div>
 )
 
