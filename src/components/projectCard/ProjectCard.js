@@ -14,18 +14,12 @@ const ProjectCard = props => {
       <Typography variant="display1">{title}</Typography>
       <ProjectOverlay {...props.project} />
       <div className={styles.btnWrapper}>
-        <CustomButton
-          variant="outlined"
-          size="large"
-          href={href}
-          className={styles.outlinedBtn}
-        >
+        <CustomButton variant="outlined" size="large" href={href}>
           VISIT
         </CustomButton>
         <CustomButton
           component={Link}
           to={`/${projectPageLink}`}
-          className={styles.btn}
           variant="text"
           size="large"
         >

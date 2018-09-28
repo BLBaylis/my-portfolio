@@ -1,14 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Button from '@material-ui/core/Button'
 import { withStyles } from '@material-ui/core/styles'
 import { primaryColor, secondaryColor } from '../../utils/cssVariables'
+import Button from '@material-ui/core/Button'
 
 const styles = {
   root: {
     backgroundColor: secondaryColor,
     color: primaryColor,
-    margin: '1.225rem 20px 0',
+    margin: '0 20px',
+    borderColor: primaryColor,
   },
 }
 

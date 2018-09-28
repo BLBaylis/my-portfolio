@@ -10,12 +10,12 @@ export const twitch = {
   tags: [
     'HTML',
     'CSS',
-    'JS',
+    'Javascript',
     'React',
     'Webpack',
-    'Create React App',
     'Babel',
     'SASS',
+    'Create React App',
   ],
   projectPageLink: 'twitchProject',
   href: 'https://blbaylis.github.io/Twitch-Tool/',
@@ -24,7 +24,7 @@ export const twitch = {
 export const pomodoro = {
   title: 'Pomodoro Timer',
   thumbnail: pomodoroScreenShot,
-  tags: ['HTML', 'CSS', 'JS'],
+  tags: ['HTML', 'CSS', 'Javascript'],
   projectPageLink: 'pomodoroProject',
   href: 'https://blbaylis.github.io/pomodoro-timer/',
 }
@@ -32,7 +32,7 @@ export const pomodoro = {
 export const ticTacToe = {
   title: 'Tic-Tac-Toe Game',
   thumbnail: ticTacToeScreenShot,
-  tags: ['HTML', 'CSS', 'JS'],
+  tags: ['HTML', 'CSS', 'Javascript'],
   projectPageLink: 'ticTacToeProject',
   href: 'https://blbaylis.github.io/tic-tac-toe/',
 }
@@ -40,7 +40,7 @@ export const ticTacToe = {
 export const calculator = {
   title: 'React Calculator',
   thumbnail: calculatorScreenShot,
-  tags: ['HTML', 'CSS', 'JS', 'React', 'Webpack', 'Babel', 'SASS'],
+  tags: ['HTML', 'CSS', 'Javascript', 'React', 'Webpack', 'Babel', 'SASS'],
   projectPageLink: 'calculatorProject',
   href: 'https://blbaylis.github.io/react-calculator/',
 }
@@ -48,7 +48,16 @@ export const calculator = {
 export const portfolio = {
   title: 'Portfolio Page',
   thumbnail: portfolioScreenShot,
-  tags: ['HTML', 'CSS', 'JS', 'React', 'Webpack', 'Gatsby', 'Babel', 'SASS'],
+  tags: [
+    'HTML',
+    'CSS',
+    'Javascript',
+    'React',
+    'Webpack',
+    'Gatsby',
+    'Babel',
+    'SASS',
+  ],
   projectPageLink: 'portfolioProject',
   href: 'https://blbaylis.github.io/my-portfolio/',
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import WhiteTypography from '../whiteTypography/WhiteTypography'
 import styles from './IntroSection.module.scss'
-import CustomButton from '../customButton/CustomButton'
+import IntroButton from '../introButton/IntroButton'
 
 const IntroSection = () => (
   <section className={styles.intro}>
@@ -12,13 +12,9 @@ const IntroSection = () => (
       <WhiteTypography variant="display2" gutterBottom>
         Front End Developer
       </WhiteTypography>
-      <CustomButton
-        variant="contained"
-        href="#projects"
-        size="large"
-      >
+      <IntroButton variant="contained" href="#projects" size="large">
         JUMP TO PROJECTS
-      </CustomButton>
+      </IntroButton>
     </div>
   </section>
 )

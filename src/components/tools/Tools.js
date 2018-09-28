@@ -6,7 +6,9 @@ import Typography from '@material-ui/core/Typography'
 
 const Tools = () => (
   <section className={styles.tools}>
-    <Typography variant="display2" gutterBottom>Tools</Typography>
+    <Typography variant="display2" gutterBottom>
+      Tools
+    </Typography>
     <Typography variant="title">Tools of the trade</Typography>
     <LabelledIconList data={toolsData} />
   </section>
