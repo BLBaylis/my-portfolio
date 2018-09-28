@@ -1,10 +1,4 @@
-@import '../../utils/variables';
-
-.customMargin {
-  margin-top: 1.225rem;
-}
-
-.altTheme {
-  background-color: $secondary-color;
-  color: $primary-color;
+.root {
+	color : purple;
+	background-color : green;
 }

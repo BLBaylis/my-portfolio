@@ -1,0 +1,43 @@
+@import '../../utils/variables';
+
+.projectOverlay {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.info,
+.img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s ease-in-out;
+}
+
+.thumbnail {
+  margin: $base-vertical-rhythm auto;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+}
+
+.img {
+  transform: translateX(0);
+  background-color: transparent;
+}
+
+.projectOverlay:hover .img {
+  transform: translateX(100%);
+  pointer-events: none;
+}
+
+.info {
+  position: absolute;
+  top: 0;
+  transform: translateX(-100%);
+  background-color: transparent;
+  pointer-events: none;
+}
+
+.projectOverlay:hover .info {
+  transform: translateX(0);
+}

@@ -8,7 +8,7 @@ const styles = {
   root: {
     backgroundColor: secondaryColor,
     color: primaryColor,
-    marginTop: '1.225rem',
+    margin: '1.225rem 20px 0',
   },
 }
 

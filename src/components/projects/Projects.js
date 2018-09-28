@@ -5,7 +5,7 @@ import WhiteTypography from '../whiteTypography/WhiteTypography'
 
 const Projects = () => (
   <main id="projects" className={styles.projects}>
-    <WhiteTypography variant="display2" className={styles.heading}>
+    <WhiteTypography variant="display2" gutterBottom className={styles.heading}>
       Projects
     </WhiteTypography>
     <WhiteTypography variant="body1" className={styles.subHeading}>
