@@ -2,36 +2,53 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styles from './ProjectLink.module.scss'
 import Typography from '@material-ui/core/Typography'
-//import PrimaryAnchor from '../primaryAnchor/PrimaryAnchor'
-//import * as Anchor from '../anchor/Anchor'
-//import * as Link from '../link/Link'
-//import SecondaryLink from '../secondaryLink/SecondaryLink'
+import WhiteTypography from '../whiteTypography/WhiteTypography'
+import CustomButton from '../customButton/CustomButton'
+import CustomButtonAlt from '../customButtonAlt/CustomButtonAlt'
+import Link from 'gatsby-link'
 
 const ProjectLink = props => {
-  //let projectAlt;
-  //if (props.class.includes("projectAlt")){projectAlt = true;}
-  let classNames = props.class.map(curr => styles[curr]).join(' ')
-  const { title, thumbnail /*tags, projectPageLink, href */ } = props.project
-  return (
-    <div className={classNames}>
-      <Typography variant="display1" className={styles.heading}>
+  const {className} = props;
+  const { title, thumbnail, projectPageLink, href } = props.project
+  const typography = props.className === "project" ? (<WhiteTypography variant="display1" className={styles.heading}>
+          {title}
+        </WhiteTypography>) : (<Typography variant="display1" className={styles.heading}>
         {title}
-      </Typography>
+      </Typography>)
+  const buttons = props.className === "project" ? (<span><CustomButtonAlt variant="outlined" size="large" href={href}>
+          VISIT
+        </CustomButtonAlt>
+        <CustomButtonAlt
+          component={Link}
+          to={`/${projectPageLink}`}
+          variant="text"
+          size="large">
+          DETAILS
+        </CustomButtonAlt></span>) : (<span><CustomButton variant="outlined" size="large" href={href}>
+          VISIT
+        </CustomButton>
+        <CustomButton
+          component={Link}
+          to={`/${projectPageLink}`}
+          variant="text"
+          size="large"
+        >
+          DETAILS
+        </CustomButton></span>)
+  return (
+    <div className = {styles[className]}>
+      {typography}    
       <img className={styles.thumbnail} src={thumbnail} />
-      {/*<div className={styles.overlay}>
-				<h3 className={styles.overlayHeading}>{title}</h3>
-				<h4 className={styles.techUsed}>
-					
-				</h4>
-			</div>*/}
-      <div className={styles.btnWrapper} />
+      <div className={styles.btnWrapper}>
+      	{buttons}
+      </div>
     </div>
   )
 }
 
 ProjectLink.propTypes = {
   project: PropTypes.object.isRequired,
-  class: PropTypes.array,
+  className: PropTypes.string,
 }
 
 export default ProjectLink

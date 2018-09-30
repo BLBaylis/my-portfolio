@@ -6,18 +6,18 @@ import Button from '@material-ui/core/Button'
 
 const styles = {
   root: {
-    backgroundColor: secondaryColor,
-    color: primaryColor,
+    backgroundColor: primaryColor,
+    color: secondaryColor,
     margin: '0 20px 10px',
-    borderColor: primaryColor,
-    boxSizing : "border-box",
+    borderColor: secondaryColor,
+    boxSizing : 'border-box',
     '&:hover' : {
-    	backgroundColor : "#bebebe"
+    	backgroundColor : "#330da8"
     }
   },
 }
 
-const CustomButton = props => {
+const CustomButtonAlt = props => {
   const { href, variant } = props
   return (
     <Button {...props} variant={variant} href={href}>
@@ -26,10 +26,10 @@ const CustomButton = props => {
   )
 }
 
-CustomButton.propTypes = {
+CustomButtonAlt.propTypes = {
   children: PropTypes.string.isRequired,
   href: PropTypes.string,
   variant: PropTypes.string,
 }
 
-export default withStyles(styles)(CustomButton)
+export default withStyles(styles)(CustomButtonAlt)

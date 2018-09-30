@@ -2,7 +2,7 @@ export const white = '#fff'
 export const grey = '#eee'
 export const black = '#444'
 export const primaryColor = '#470FF4'
-export const secondaryColor = '$white'
+export const secondaryColor = white
 export const greyText = 'rgba(0, 0, 0, 0.54)'
 export const textColorForBlueBg = '#b0c8d6'
 

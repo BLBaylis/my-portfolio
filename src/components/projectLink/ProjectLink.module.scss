@@ -1,66 +1,25 @@
 @import '../../utils/variables';
 @import '../../utils/mixins';
 
-.project,
-.projectAlt {
+//switch to desktop at 697px
+
+.project {
   background-color: $primary-color;
   color: $white;
   position: relative;
   overflow: hidden;
-  border: solid 1px;
-  border-radius: 2px;
-  grid-column-start: span 2;
+  border: none;
+  padding : $base-vertical-rhythm;
 }
 
-.item5 {
-  grid-column: 2 / span 2;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: $primary-color;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  transition: 0.5s ease;
-  @include flex(space-evenly, center);
-  flex-direction: column;
+.projectAlt {
+  @extend .project;
+  background-color: $white;
+  color: $black;
 }
 
 .heading {
   text-align: center;
-}
-
-.techUsed {
-  text-align: center;
-  margin: 0;
-  color: $secondary-color;
-  width: 75%;
-}
-
-.overlayLink {
-  display: block;
-  color: $primary-color;
-  background-color: $grey;
-  text-align: center;
-  width: 80%;
-  margin: 0 auto;
-  text-decoration: none;
-}
-
-.overlayLink:hover {
-  display: block;
-  background-color: $secondary-color;
-  margin: 0;
-}
-
-.project:hover .overlay,
-.projectAlt:hover .overlay {
-  bottom: 0;
-  height: 100%;
-  opacity: 1;
 }
 
 .thumbnail {
@@ -74,32 +33,5 @@
 .btnWrapper {
   padding: 0 23px;
   box-sizing: border-box;
-  margin: $base-vertical-rhythm 0;
-}
-
-@media (max-width: 697px) {
-  .project,
-  .projectAlt {
-    border: none;
-  }
-
-  .projectAlt {
-    background-color: $white;
-    color: $black;
-  }
-}
-
-@media (min-width: 1024px) {
-  .project,
-  .projectAlt {
-    grid-column-start: span 2;
-  }
-
-  .item4 {
-    grid-column: 2 / span 2;
-  }
-
-  .item5 {
-    grid-column: 4 / span 2;
-  }
+  margin: $base-vertical-rhythm 0 0;
 }

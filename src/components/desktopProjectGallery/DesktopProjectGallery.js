@@ -1,7 +1,7 @@
 import React from 'react'
 import * as projectData from '../../utils/projectData'
 import classNames from 'classnames'
-import styles from '../projectGallery/ProjectGallery.module.scss'
+import styles from './DesktopProjectGallery.module.scss'
 import ProjectCard from '../projectCard/ProjectCard'
 
 const ProjectGallery = () => (
