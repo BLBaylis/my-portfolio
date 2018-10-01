@@ -8,23 +8,36 @@ import CustomButtonAlt from '../customButtonAlt/CustomButtonAlt'
 import Link from 'gatsby-link'
 
 const ProjectLink = props => {
-  const {className} = props;
+  const { className } = props
   const { title, thumbnail, projectPageLink, href } = props.project
-  const typography = props.className === "project" ? (<WhiteTypography variant="display1" className={styles.heading}>
-          {title}
-        </WhiteTypography>) : (<Typography variant="display1" className={styles.heading}>
+  const typography =
+    props.className === 'project' ? (
+      <WhiteTypography variant="display1" className={styles.heading}>
         {title}
-      </Typography>)
-  const buttons = props.className === "project" ? (<span><CustomButtonAlt variant="outlined" size="large" href={href}>
+      </WhiteTypography>
+    ) : (
+      <Typography variant="display1" className={styles.heading}>
+        {title}
+      </Typography>
+    )
+  const buttons =
+    props.className === 'project' ? (
+      <span>
+        <CustomButtonAlt variant="outlined" size="large" href={href}>
           VISIT
         </CustomButtonAlt>
         <CustomButtonAlt
           component={Link}
           to={`/${projectPageLink}`}
           variant="text"
-          size="large">
+          size="large"
+        >
           DETAILS
-        </CustomButtonAlt></span>) : (<span><CustomButton variant="outlined" size="large" href={href}>
+        </CustomButtonAlt>
+      </span>
+    ) : (
+      <span>
+        <CustomButton variant="outlined" size="large" href={href}>
           VISIT
         </CustomButton>
         <CustomButton
@@ -34,14 +47,14 @@ const ProjectLink = props => {
           size="large"
         >
           DETAILS
-        </CustomButton></span>)
+        </CustomButton>
+      </span>
+    )
   return (
-    <div className = {styles[className]}>
-      {typography}    
+    <div className={styles[className]}>
+      {typography}
       <img className={styles.thumbnail} src={thumbnail} />
-      <div className={styles.btnWrapper}>
-      	{buttons}
-      </div>
+      <div className={styles.btnWrapper}>{buttons}</div>
     </div>
   )
 }

@@ -10,10 +10,10 @@ const styles = {
     color: secondaryColor,
     margin: '0 20px 10px',
     borderColor: secondaryColor,
-    boxSizing : 'border-box',
-    '&:hover' : {
-    	backgroundColor : "#330da8"
-    }
+    boxSizing: 'border-box',
+    '&:hover': {
+      backgroundColor: '#330da8',
+    },
   },
 }
 

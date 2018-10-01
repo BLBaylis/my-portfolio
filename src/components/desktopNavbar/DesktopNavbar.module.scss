@@ -2,27 +2,22 @@
 
 .desktopNavbar {
   position: relative;
-  background-color: #470ff4;
-  height: $base-line-height;
-  z-index: 100;
+  width: 100%;
   border: none;
 }
 
 .navList {
   list-style-type: none;
-  line-height: $base-line-height;
   overflow: hidden;
   margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 .navLink {
   float: right;
-  margin: 0 (1/2) * $base-line-height;
-}
-
-.furthestRightNavLink {
-  composes: navLink;
-  margin: 0 (1/2) * $base-line-height 0 (1/4) * $base-line-height;
+  margin: 0 (1/2) * $base-vertical-rhythm;
+  line-height: inherit;
 }
 
 .anchor {
@@ -32,5 +27,11 @@
 
 .logo {
   float: left;
-  margin: 0 (1/2) * $base-line-height;
+  margin: 0 (1/2) * $base-vertical-rhythm;
+}
+
+@media (max-width: 700px) {
+  .desktopNavbar {
+    display: none;
+  }
 }

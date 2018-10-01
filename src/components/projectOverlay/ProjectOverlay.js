@@ -14,9 +14,13 @@ function groupElementsInArrIntoSets(arr, setLength) {
 const ProjectOverlay = props => {
   const { thumbnail, tags } = props
   let tagEls = groupElementsInArrIntoSets(tags, 3).map(x => (
-  	<WhiteTypography key={Math.random()*10} variant="button">
-      <div className = {styles.row}>
-        {x.map(y => <li className = {styles.tag} key = {Math.random()*0.001}>{y}</li>)}
+    <WhiteTypography key={Math.random() * 10} variant="button">
+      <div className={styles.row}>
+        {x.map(y => (
+          <li className={styles.tag} key={Math.random() * 0.001}>
+            {y}
+          </li>
+        ))}
       </div>
     </WhiteTypography>
   ))
