@@ -17,6 +17,10 @@ const JSStyles = {
   appBar: {
     backgroundColor: primaryColor,
   },
+  appBarNoShadow: {
+    backgroundColor: primaryColor,
+    boxShadow : 'none'
+  },
   grow: {
     flexGrow: 1,
   },
@@ -28,7 +32,7 @@ const JSStyles = {
 
 class MobileNavbar extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
 
     this.state = {
       dropped: false,
@@ -45,10 +49,12 @@ class MobileNavbar extends React.Component {
 
   render() {
     const { classes } = this.props
+    const onClick = this.state.dropped ? this.handleClose : this.handleClick;
+    const appBar = this.state.dropped ? classes.appBar : classes.appBarNoShadow;
     return (
       <nav className={classNames(styles.mobileNavbar, classes.root)}>
-        <AppBar position="static" className={classes.appBar}>
-          <DropdownMenu dropped={this.state.dropped} />
+        <AppBar position="static" className={appBar}>
+          <DropdownMenu droppedStatus={this.state.dropped} handleClose = {this.handleClose}/>
           <Toolbar>
             <Typography
               variant="title"
@@ -58,7 +64,7 @@ class MobileNavbar extends React.Component {
               Bradley Baylis
             </Typography>
             <IconButton
-              onClick={this.handleClick}
+              onClick={onClick}
               className={classes.menuButton}
               color="inherit"
               aria-label="Menu"
