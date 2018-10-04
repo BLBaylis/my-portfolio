@@ -1,7 +1,7 @@
 import webpackIcon from '../static/images/webpack-icon.svg'
 import babelLogo from '../static/images/babel-logo.svg'
-import sassLogo from '../static/images/sass-logo.svg'
 import eslintLogo from '../static/images/eslint-logo.svg'
+import prettierLogo from '../static/images/prettier-logo.svg'
 
 const toolsData = [
   {
@@ -15,14 +15,14 @@ const toolsData = [
     link: 'http://babeljs.io/',
   },
   {
-    label: 'SASS',
-    icon: sassLogo,
-    link: 'https://sass-lang.com/',
-  },
-  {
     label: 'ESLint',
     icon: eslintLogo,
     link: 'https://eslint.org/',
+  },
+  {
+    label: 'Prettier',
+    icon: prettierLogo,
+    link: 'https://prettier.io/',
   },
 ]
 

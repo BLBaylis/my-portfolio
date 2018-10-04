@@ -19,7 +19,7 @@ const JSStyles = {
   },
   appBarNoShadow: {
     backgroundColor: primaryColor,
-    boxShadow : 'none'
+    boxShadow: 'none',
   },
   grow: {
     flexGrow: 1,
@@ -32,7 +32,7 @@ const JSStyles = {
 
 class MobileNavbar extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
 
     this.state = {
       dropped: false,
@@ -49,12 +49,15 @@ class MobileNavbar extends React.Component {
 
   render() {
     const { classes } = this.props
-    const onClick = this.state.dropped ? this.handleClose : this.handleClick;
-    const appBar = this.state.dropped ? classes.appBar : classes.appBarNoShadow;
+    const onClick = this.state.dropped ? this.handleClose : this.handleClick
+    const appBar = this.state.dropped ? classes.appBar : classes.appBarNoShadow
     return (
       <nav className={classNames(styles.mobileNavbar, classes.root)}>
         <AppBar position="static" className={appBar}>
-          <DropdownMenu droppedStatus={this.state.dropped} handleClose = {this.handleClose}/>
+          <DropdownMenu
+            droppedStatus={this.state.dropped}
+            handleClose={this.handleClose}
+          />
           <Toolbar>
             <Typography
               variant="title"

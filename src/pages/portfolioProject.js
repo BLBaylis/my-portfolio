@@ -1,6 +1,6 @@
-/*import React from 'react'
+import React from 'react'
 import Link from 'gatsby-link'
-import styles from './project.module.css'
+import styles from './index.module.css'
 import portfolioScreenShot from '../static/images/portfolio.png'
 
 const PortfolioProject = () => (
@@ -23,4 +23,4 @@ const PortfolioProject = () => (
 )
 
 export default PortfolioProject
-*/
+

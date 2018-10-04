@@ -34,10 +34,10 @@
 @media (min-width: 400px) {
   .paragraph {
     width: 95%;
-    margin: 0 auto;
+    margin: 0 auto !important;
     max-width: 500px;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.1rem !important;
   }
 
   .content {
@@ -58,7 +58,7 @@
 
   .paragraph {
     text-align: left;
-    margin: 0 1.375em;
+    margin: 0 1.375em !important;
     max-width: 550px;
   }
 

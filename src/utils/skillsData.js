@@ -4,6 +4,7 @@ import cssLogo from '../static/images/css-logo.svg'
 import javascriptLogo from '../static/images/javascript-logo.svg'
 import bootstrapLogo from '../static/images/bootstrap-logo.svg'
 import jQueryLogo from '../static/images/jquery-logo.svg'
+import sassLogo from '../static/images/sass-logo.svg'
 
 const skillsData = [
   {
@@ -35,6 +36,11 @@ const skillsData = [
     label: 'Bootstrap',
     icon: bootstrapLogo,
     link: 'https://getbootstrap.com/',
+  },
+  {
+    label: 'SASS',
+    icon: sassLogo,
+    link: 'https://sass-lang.com/',
   },
 ]
 

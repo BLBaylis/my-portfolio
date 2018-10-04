@@ -2,67 +2,52 @@
 @import '../../utils/mixins';
 
 .projectGallery {
+  display: none;
   padding: 0;
   grid-gap: 0;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
   margin: 0;
 }
 
-@media (min-width: 697px) {
+@media (min-width: 700px) {
   .projectGallery {
     display: grid;
     grid-gap: $base-vertical-rhythm;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     margin: $base-vertical-rhythm;
     justify-content: center;
     padding: 0;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 816px) {
   .projectGallery {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, minmax(130px, 1fr));
   }
-}
 
-.project,
-.projectAlt {
-  background-color: $primary-color;
-  color: $white;
-  position: relative;
-  overflow: hidden;
-  grid-column-start: span 2;
-  height: 100%;
-}
-
-.item5 {
-  grid-column: 2 / span 2;
-}
-
-.project:hover .overlay,
-.projectAlt:hover .overlay {
-  bottom: 0;
-  height: 100%;
-  opacity: 1;
-}
-
-@media (max-width: 697px) {
   .project,
   .projectAlt {
-    border: none;
+    grid-column: span 2;
   }
 
-  .projectAlt {
-    background-color: $white;
-    color: $black;
+  .item5 {
+    grid-column: 2 / span 2;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1220px) {
+  .projectGallery {
+    grid-template-columns: repeat(6, minmax(170px, 1fr));
+  }
+
   .project,
   .projectAlt {
+    background-color: $primary-color;
+    color: $white;
+    position: relative;
+    overflow: hidden;
     grid-column-start: span 2;
+    height: 100%;
   }
 
   .item4 {
@@ -70,6 +55,13 @@
   }
 
   .item5 {
-    grid-column: 4 / span 2;
+    grid-column: span 2;
+  }
+
+  .project:hover .overlay,
+  .projectAlt:hover .overlay {
+    bottom: 0;
+    height: 100%;
+    opacity: 1;
   }
 }

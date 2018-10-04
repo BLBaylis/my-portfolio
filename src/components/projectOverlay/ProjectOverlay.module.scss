@@ -7,8 +7,14 @@
   overflow: hidden;
 }
 
-.info,
-.img {
+.img-left,
+.img-right,
+.img-up,
+.img-down,
+.info-left,
+.info-right,
+.info-up,
+.info-down {
   width: 100%;
   height: 100%;
   transition: all 0.4s ease-in-out;
@@ -21,23 +27,66 @@
   display: block;
 }
 
-.img {
+.img-left,
+.img-right,
+.img-up,
+.img-down {
   transform: translateX(0);
   background-color: transparent;
 }
 
-.projectOverlay:hover .img {
+.projectOverlay:hover .img-right {
   transform: translateX(100%);
   pointer-events: none;
 }
 
-.info {
+.projectOverlay:hover .img-left {
+  transform: translateX(-100%);
+  pointer-events: none;
+}
+
+.projectOverlay:hover .img-up {
+  transform: translateY(100%);
+  pointer-events: none;
+}
+
+.projectOverlay:hover .img-down {
+  transform: translateY(-100%);
+  pointer-events: none;
+}
+
+.info-left,
+.info-right,
+.info-up,
+.info-down {
   position: absolute;
   @include flex(center, center);
   top: 0;
-  transform: translateX(-100%);
   background-color: transparent;
   pointer-events: none;
+}
+
+.info-right {
+  transform: translateX(-100%);
+}
+
+.info-left {
+  transform: translateX(100%);
+}
+
+.info-up {
+  transform: translateY(-100%);
+}
+
+.info-down {
+  transform: translateY(100%);
+}
+
+.projectOverlay:hover .info-left,
+.projectOverlay:hover .info-right,
+.projectOverlay:hover .info-up,
+.projectOverlay:hover .info-down {
+  transform: translateX(0);
 }
 
 .tagsWrapper {
@@ -59,8 +108,4 @@
 
 .row {
   @include flex(space-between, center);
-}
-
-.projectOverlay:hover .info {
-  transform: translateX(0);
 }

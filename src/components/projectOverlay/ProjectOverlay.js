@@ -12,7 +12,7 @@ function groupElementsInArrIntoSets(arr, setLength) {
 }
 
 const ProjectOverlay = props => {
-  const { thumbnail, tags } = props
+  const { thumbnail, tags, direction } = props
   let tagEls = groupElementsInArrIntoSets(tags, 3).map(x => (
     <WhiteTypography key={Math.random() * 10} variant="button">
       <div className={styles.row}>
@@ -26,10 +26,10 @@ const ProjectOverlay = props => {
   ))
   return (
     <div className={styles.projectOverlay}>
-      <div className={styles.img}>
+      <div className={styles[`img-${direction}`]}>
         <img className={styles.thumbnail} src={thumbnail} />
       </div>
-      <div className={styles.info}>
+      <div className={styles[`info-${direction}`]}>
         <ul className={styles.tagsWrapper}>{tagEls}</ul>
       </div>
     </div>
@@ -39,6 +39,7 @@ const ProjectOverlay = props => {
 ProjectOverlay.propTypes = {
   thumbnail: PropTypes.string,
   tags: PropTypes.array,
+  direction: PropTypes.oneOf(['left', 'right', 'up', 'down']).isRequired,
 }
 
 export default ProjectOverlay
