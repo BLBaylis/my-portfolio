@@ -10,8 +10,6 @@ import Link from 'gatsby-link'
 const ProjectCard = props => {
   const { title, href, projectPageLink } = props.project
   const { direction, colNo } = props
-  //eslint-disable-next-line
-  console.log('hi', `projectCard${colNo}Col`)
   return (
     <Card className={styles[`projectCard${colNo}Col`]}>
       <Typography variant="display1">{title}</Typography>
