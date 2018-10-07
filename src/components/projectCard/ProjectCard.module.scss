@@ -1,7 +1,8 @@
 @import '../../utils/variables';
 @import '../../utils/mixins';
 
-.projectCard2Col, .projectCard3Col {
+.projectCard2Col,
+.projectCard3Col {
   padding: $base-vertical-rhythm;
   height: 100%;
 }
@@ -21,16 +22,14 @@
 }
 
 @media (min-width: 816px) {
-
   .projectCard3Col {
     display: none;
   }
 }
 
 @media (min-width: 1220px) {
-
   .projectCard2Col {
-    display : none;
+    display: none;
   }
 
   .projectCard3Col {

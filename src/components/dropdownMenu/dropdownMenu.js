@@ -13,32 +13,32 @@ const DropdownMenu = props => {
   return (
     <ul className={ulClass}>
       <li className={undroppedNavLink || styles.navLink1}>
-        <Typography variant="title" className={styles.type}>
-          <Link className={styles.anchor} to="/">
+        <Link className={styles.anchor} to="/">
+          <Typography variant="title" className={styles.type}>
             Home
-          </Link>
-        </Typography>
+          </Typography>
+        </Link>
       </li>
       <li className={undroppedNavLink || styles.navLink2}>
-        <Typography variant="title" className={styles.type}>
-          <a className={styles.anchor} href="#about">
+        <a className={styles.anchor} href="#about">
+          <Typography variant="title" className={styles.type}>
             About Me
-          </a>
-        </Typography>
+          </Typography>
+        </a>
       </li>
       <li className={undroppedNavLink || styles.navLink3}>
-        <Typography variant="title" className={styles.type}>
-          <a className={styles.anchor} href="#projects">
+        <a className={styles.anchor} href="#projects">
+          <Typography variant="title" className={styles.type}>
             Projects
-          </a>
-        </Typography>
+          </Typography>
+        </a>
       </li>
       <li className={undroppedNavLink || styles.navLink4}>
-        <Typography variant="title" className={styles.type}>
-          <a className={styles.anchor} href="#contact">
+        <a className={styles.anchor} href="#contact">
+          <Typography variant="title" className={styles.type}>
             Contact
-          </a>
-        </Typography>
+          </Typography>
+        </a>
       </li>
     </ul>
   )

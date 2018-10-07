@@ -2,14 +2,25 @@ import React from 'react'
 import * as projectData from '../../utils/projectData'
 import styles from './mobileProjectGallery.module.scss'
 import ProjectLink from '../projectLink/ProjectLink'
+import Fade from 'react-reveal/Fade'
 
 const mobileProjectGallery = () => (
   <div className={styles.mobileProjectGallery}>
-    <ProjectLink className={'project'} project={projectData.portfolio} />
-    <ProjectLink className={'projectAlt'} project={projectData.twitch} />
-    <ProjectLink className={'project'} project={projectData.calculator} />
-    <ProjectLink className={'projectAlt'} project={projectData.ticTacToe} />
-    <ProjectLink className={'project'} project={projectData.pomodoro} />
+    <Fade left>
+      <ProjectLink className={'project'} project={projectData.portfolio} />
+    </Fade>
+    <Fade right>
+      <ProjectLink className={'projectAlt'} project={projectData.twitch} />
+    </Fade>
+    <Fade left>
+      <ProjectLink className={'project'} project={projectData.calculator} />
+    </Fade>
+    <Fade right>
+      <ProjectLink className={'projectAlt'} project={projectData.ticTacToe} />
+    </Fade>
+    <Fade left>
+      <ProjectLink className={'project'} project={projectData.pomodoro} />
+    </Fade>
   </div>
 )
 

@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './LabelledIconList.module.scss'
 import PropTypes from 'prop-types'
 import LabelledIcon from '../labelledIcon/LabelledIcon'
+import Fade from 'react-reveal/Fade'
 
 class LabelledIconList extends React.Component {
   constructor(props) {
@@ -9,9 +10,14 @@ class LabelledIconList extends React.Component {
   }
 
   generateList = data => {
-    return data.map(x => (
-      <LabelledIcon key={x.label} icon={x.icon} link={x.link} label={x.label} />
-    ))
+    return data.map((x, index) => {
+      let fadeLeft = index % 2 === 0 ? true : false
+      return (
+        <Fade key={x.label} left={fadeLeft} right={!fadeLeft}>
+          <LabelledIcon icon={x.icon} link={x.link} label={x.label} />
+        </Fade>
+      )
+    })
   }
 
   render() {

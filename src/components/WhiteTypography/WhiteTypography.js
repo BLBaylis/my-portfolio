@@ -19,7 +19,11 @@ const WhiteTypography = props => {
 }
 
 WhiteTypography.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+  children: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.array,
+    PropTypes.object,
+  ]),
   variant: PropTypes.string,
 }
 

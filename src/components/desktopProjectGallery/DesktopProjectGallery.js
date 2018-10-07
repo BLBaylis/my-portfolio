@@ -36,7 +36,11 @@ const ProjectGallery = () => (
     </div>
     <div className={classNames(styles.project, styles.item4)}>
       <ProjectCard direction="left" colNo={2} project={projectData.ticTacToe} />
-      <ProjectCard direction="right" colNo={3} project={projectData.ticTacToe} />
+      <ProjectCard
+        direction="right"
+        colNo={3}
+        project={projectData.ticTacToe}
+      />
     </div>
     <div className={classNames(styles.project, styles.item5)}>
       <ProjectCard direction="down" colNo={2} project={projectData.pomodoro} />
