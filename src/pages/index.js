@@ -2,16 +2,17 @@ import React from 'react'
 import IntroSection from '../components/introSection/IntroSection'
 import Projects from '../components/projects/Projects'
 import About from '../components/about/About'
-//import Contact from '../components/contact/Contact'
+import Contact from '../components/contact/Contact'
 import styles from './index.module.css'
-//import jazz from '../static/images/jazz-pic.jpg'
+import Footer from '../components/footer/Footer'
 
 const IndexPage = () => (
   <div className={styles.outerDiv}>
     <IntroSection />
     <About />
     <Projects />
-    {/*<Contact />*/}
+    <Contact />
+    <Footer />
   </div>
 )
 

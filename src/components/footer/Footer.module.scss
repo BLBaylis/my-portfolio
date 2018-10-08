@@ -1,0 +1,8 @@
+@import '../../utils/variables';
+@import '../../utils/mixins';
+
+.footer {
+  @include flex(center, center);
+  background-color: $primary-color;
+  height: 50px;
+}

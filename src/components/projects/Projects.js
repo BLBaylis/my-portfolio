@@ -6,10 +6,10 @@ import WhiteTypography from '../whiteTypography/WhiteTypography'
 
 const Projects = () => (
   <main id="projects" className={styles.projects}>
-    <WhiteTypography variant="display2" gutterBottom className={styles.heading}>
+    <WhiteTypography variant="display2" gutterBottom>
       Projects
     </WhiteTypography>
-    <WhiteTypography variant="body1" className={styles.subHeading}>
+    <WhiteTypography variant="body1">
       All of my project ideas are from{' '}
       <a
         className={styles.link}

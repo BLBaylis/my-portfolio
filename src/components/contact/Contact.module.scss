@@ -1,0 +1,23 @@
+@import '../../utils/variables';
+
+.contact {
+  padding: $section-vertical-rhythm 0;
+}
+
+.socialMediaIcon {
+  width: 25%;
+  max-width: 100px;
+  margin: $base-vertical-rhythm;
+}
+
+.socialMediaIcon:hover {
+  fill: $primary-color;
+}
+
+.email {
+  color: $grey-text;
+}
+
+.email:hover {
+  color: $primary-color;
+}

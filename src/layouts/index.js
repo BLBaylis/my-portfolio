@@ -2,11 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import CssBaseline from '@material-ui/core/CssBaseline'
-//import MobileNavbar from '../components/mobileNavbar2/MobileNavbar'
 import Navbar from '../components/navbar/Navbar'
-//import MobileNavbar from '../components/mobileNavbar/MobileNavbar'
-//import './index.css'
-//import '../utils/global.scss'
 
 const Layout = ({ children, data }) => (
   <div>
@@ -19,7 +15,6 @@ const Layout = ({ children, data }) => (
     />
     <div>
       <CssBaseline />
-      {/*<MobileNavbar />*/}
       <Navbar />
       {children()}
     </div>

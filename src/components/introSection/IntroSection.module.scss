@@ -9,26 +9,20 @@
   @include flex(center, center);
 }
 
+.textBox {
+  width: 95%;
+  margin: 0 auto;
+}
+
 .introBtn {
   background-color: $secondary-color;
   color: $primary-color;
   margin-top: 1.225rem;
 }
 
-.textBox {
-  position: relative;
-  top: -$standard-navbar-height/2;
-}
-
 @media (min-width: 400px) {
   .intro {
     height: 500px;
-  }
-}
-
-@media (min-width: 600px) {
-  .textBox {
-    top: -$lrg-navbar-height/2;
   }
 }
 

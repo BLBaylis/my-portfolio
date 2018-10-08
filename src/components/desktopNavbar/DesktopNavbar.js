@@ -26,7 +26,7 @@ const DesktopNavbar = props => {
   const { classes } = props
   return (
     <nav className={classNames(styles.desktopNavbar, classes.root)}>
-      <AppBar position="static" className={classes.appBar}>
+      <AppBar position="fixed" className={classes.appBar}>
         <Toolbar>
           <ul className={styles.navList}>
             <li className={styles.logo}>
@@ -38,23 +38,23 @@ const DesktopNavbar = props => {
             </li>
             <li className={styles.navLink}>
               <Typography variant="body2">
-                <a className={styles.anchor} href="#contact">
+                <Link className={styles.anchor} to="/#contact">
                   Contact
-                </a>
+                </Link>
               </Typography>
             </li>
             <li className={styles.navLink}>
               <Typography variant="body2">
-                <a className={styles.anchor} href="#projects">
+                <Link className={styles.anchor} to="/#projects">
                   Projects
-                </a>
+                </Link>
               </Typography>
             </li>
             <li className={styles.navLink}>
               <Typography variant="body2">
-                <a className={styles.anchor} href="#about">
+                <Link className={styles.anchor} to="/#about">
                   About Me
-                </a>
+                </Link>
               </Typography>
             </li>
             <li className={styles.navLink}>

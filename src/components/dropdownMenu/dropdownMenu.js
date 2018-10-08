@@ -5,13 +5,13 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 
 const DropdownMenu = props => {
-  const { droppedStatus } = props
+  const { droppedStatus, handleClose } = props
   const undroppedNavLink = droppedStatus ? false : styles.navLink
   const ulClass = droppedStatus
     ? `${styles.navList} ${styles.boxShadow}`
     : styles.navList
   return (
-    <ul className={ulClass}>
+    <ul onClick={handleClose} className={ulClass}>
       <li className={undroppedNavLink || styles.navLink1}>
         <Link className={styles.anchor} to="/">
           <Typography variant="title" className={styles.type}>
@@ -20,25 +20,25 @@ const DropdownMenu = props => {
         </Link>
       </li>
       <li className={undroppedNavLink || styles.navLink2}>
-        <a className={styles.anchor} href="#about">
+        <Link className={styles.anchor} to="/#about">
           <Typography variant="title" className={styles.type}>
             About Me
           </Typography>
-        </a>
+        </Link>
       </li>
       <li className={undroppedNavLink || styles.navLink3}>
-        <a className={styles.anchor} href="#projects">
+        <Link className={styles.anchor} to="/#projects">
           <Typography variant="title" className={styles.type}>
             Projects
           </Typography>
-        </a>
+        </Link>
       </li>
       <li className={undroppedNavLink || styles.navLink4}>
-        <a className={styles.anchor} href="#contact">
+        <Link className={styles.anchor} to="/#contact">
           <Typography variant="title" className={styles.type}>
             Contact
           </Typography>
-        </a>
+        </Link>
       </li>
     </ul>
   )
@@ -46,6 +46,7 @@ const DropdownMenu = props => {
 
 DropdownMenu.propTypes = {
   droppedStatus: PropTypes.bool.isRequired,
+  handleClose: PropTypes.func.isRequired,
 }
 
 export default DropdownMenu

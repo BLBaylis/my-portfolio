@@ -1,87 +1,99 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+import { withStyles } from '@material-ui/core/styles'
+import AppBar from '@material-ui/core/AppBar'
+import Toolbar from '@material-ui/core/Toolbar'
+import Typography from '@material-ui/core/Typography'
+import IconButton from '@material-ui/core/IconButton'
+import classNames from 'classnames'
+import { primaryColor } from '../../utils/cssVariables'
 import styles from './MobileNavbar.module.scss'
-import Link from 'gatsby-link'
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import DropdownMenu from '../dropdownMenu/DropdownMenu'
 
-library.add(faBars)
+const JSStyles = {
+  root: {
+    flexGrow: 1,
+  },
+  appBar: {
+    backgroundColor: primaryColor,
+  },
+  appBarNoShadow: {
+    backgroundColor: primaryColor,
+    boxShadow: 'none',
+  },
+  grow: {
+    flexGrow: 1,
+  },
+  menuButton: {
+    marginLeft: -12,
+    marginRight: -10,
+  },
+}
 
 class MobileNavbar extends React.Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
+
     this.state = {
-      navbarDropped: false,
+      dropped: false,
     }
-    this.toggleMenu = this.toggleMenu.bind(this)
   }
 
-  toggleMenu() {
-    this.setState(prevState => ({
-      navbarDropped: !prevState.navbarDropped,
-    }))
+  handleClick = () => {
+    this.setState({ dropped: true })
+  }
+
+  handleClose = () => {
+    this.setState({ dropped: false })
   }
 
   render() {
+    const { classes } = this.props
+    const onClick = this.state.dropped ? this.handleClose : this.handleClick
+    const appBar = this.state.dropped ? classes.appBar : classes.appBarNoShadow
     return (
-      <nav className={styles.mobileNavbar}>
-        <ul className={styles.navList}>
-          <li className={styles.logo}>
-            <Link className={styles.anchor} to="/">
-              Bradley Baylis
-            </Link>
-          </li>
-          {this.state.navbarDropped && (
-            <ul className={styles.dropdownMenu}>
-              <li className={styles.navLink}>
-                <Link
-                  className={styles.anchor}
-                  onClick={this.toggleMenu}
-                  to="/"
-                >
-                  Home
-                </Link>
-              </li>
-              <li className={styles.navLink}>
-                <a
-                  className={styles.anchor}
-                  onClick={this.toggleMenu}
-                  href="#about"
-                >
-                  About Me
-                </a>
-              </li>
-              <li className={styles.navLink}>
-                <a
-                  className={styles.anchor}
-                  onClick={this.toggleMenu}
-                  href="#projects"
-                >
-                  Projects
-                </a>
-              </li>
-              <li className={styles.navLink}>
-                <a
-                  className={styles.anchor}
-                  onClick={this.toggleMenu}
-                  href="#contact"
-                >
-                  Contact
-                </a>
-              </li>
-            </ul>
-          )}
-        </ul>
-        <button className={styles.dropdownBtn}>
-          <FontAwesomeIcon
-            onClick={this.toggleMenu}
-            className={styles.dropdownIcon}
-            icon="bars"
+      <nav className={classNames(styles.mobileNavbar, classes.root)}>
+        <AppBar position="static" className={appBar}>
+          <DropdownMenu
+            droppedStatus={this.state.dropped}
+            handleClose={this.handleClose}
           />
-        </button>
+          <Toolbar>
+            <Typography
+              variant="title"
+              color="inherit"
+              className={classes.grow}
+            >
+              Bradley Baylis
+            </Typography>
+            <IconButton
+              onClick={onClick}
+              className={classes.menuButton}
+              color="inherit"
+              aria-label="Menu"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+                  fill="white"
+                />
+              </svg>
+            </IconButton>
+          </Toolbar>
+        </AppBar>
       </nav>
     )
   }
 }
 
-export default MobileNavbar
+MobileNavbar.propTypes = {
+  classes: PropTypes.object.isRequired,
+}
+
+export default withStyles(JSStyles)(MobileNavbar)
