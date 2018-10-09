@@ -11,8 +11,9 @@ const Layout = ({ children, data }) => (
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
-      ]}
-    />
+      ]}>
+      <html lang="en" />
+    </Helmet>
     <div>
       <CssBaseline />
       <Navbar />
