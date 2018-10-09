@@ -11,7 +11,9 @@ const Bio = () => (
       <div className={styles.bioWrapper}>
         <Fade left>
           <img
-            className={styles.bradPic} alt = "headshot of brad" src = {bradPic}
+            className={styles.bradPic}
+            alt="headshot of brad"
+            src={bradPic}
           />
         </Fade>
         <Fade right>
