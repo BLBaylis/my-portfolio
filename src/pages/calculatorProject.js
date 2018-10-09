@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './projectPage.module.css'
 import Typography from '@material-ui/core/Typography'
-import calculatorScreenShot from '../static/images/calculator.png'
+import calculatorScreenShot from '../static/images/screenshots/calculator/calculator.png'
 
 const CalculatorProject = () => (
   <div className={styles.outerDiv}>

@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './projectPage.module.css'
 import Typography from '@material-ui/core/Typography'
-import ticTacToeScreenShot from '../static/images/tictactoe.png'
+import ticTacToeScreenShot from '../static/images/screenshots/tictactoe/tictactoe-320w.png'
 
 const TicTacToeProject = () => (
   <div className={styles.outerDiv}>

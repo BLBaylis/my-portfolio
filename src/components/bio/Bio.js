@@ -1,5 +1,5 @@
 import React from 'react'
-import bradPic from '../../static/images/brad.jpg'
+import bradPic from '../../static/images/bradPic/brad-150w.jpg'
 import styles from './Bio.module.scss'
 import Typography from '@material-ui/core/Typography'
 import Fade from 'react-reveal/Fade'
@@ -10,7 +10,9 @@ const Bio = () => (
       <Typography variant="display2">About Me</Typography>
       <div className={styles.bioWrapper}>
         <Fade left>
-          <img className={styles.bradPic} src={bradPic} />
+          <img
+            className={styles.bradPic} src = {bradPic}
+          />
         </Fade>
         <Fade right>
           <Typography

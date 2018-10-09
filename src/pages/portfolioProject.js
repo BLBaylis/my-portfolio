@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './projectPage.module.css'
-import portfolioScreenShot from '../static/images/portfolio.png'
+import portfolioScreenShot from '../static/images/screenshots/portfolio/portfolio-320w.png'
 import Typography from '@material-ui/core/Typography'
 
 const PortfolioProject = () => (

@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './projectPage.module.css'
 import Typography from '@material-ui/core/Typography'
-import pomodoroScreenShot from '../static/images/pomodoro.png'
+import pomodoroScreenShot from '../static/images/screenshots/pomodoro/pomodoro-320w.png'
 
 const PomodoroProject = () => (
   <div className={styles.outerDiv}>

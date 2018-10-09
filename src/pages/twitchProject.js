@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './projectPage.module.css'
 import Typography from '@material-ui/core/Typography'
-import twitchScreenShot from '../static/images/twitch.png'
+import twitchScreenShot from '../static/images/screenshots/twitch/twitch-320w.png'
 
 const TwitchTvProject = () => (
   <div className={styles.outerDiv}>

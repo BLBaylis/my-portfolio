@@ -1,8 +1,8 @@
-import twitchScreenShot from '../static/images/twitch.png'
-import pomodoroScreenShot from '../static/images/pomodoro.png'
-import ticTacToeScreenShot from '../static/images/tictactoe.png'
-import calculatorScreenShot from '../static/images/calculator.png'
-import portfolioScreenShot from '../static/images/portfolio.png'
+import twitchScreenShot from '../static/images/screenshots/twitch/twitch-320w.png'
+import pomodoroScreenShot from '../static/images/screenshots/pomodoro/pomodoro-320w.png'
+import ticTacToeScreenShot from '../static/images/screenshots/tictactoe/tictactoe-320w.png'
+import calculatorScreenShot from '../static/images/screenshots/calculator/calculator-320w.png'
+import portfolioScreenShot from '../static/images/screenshots/portfolio/portfolio-320w.png'
 
 export const twitch = {
   title: 'Twitch.Tv Tool',
