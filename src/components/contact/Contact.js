@@ -12,7 +12,11 @@ const Contact = () => (
       Hit me up on my social media
     </Typography>
     <Fade>
-      <a target = "_blank" rel = "noopener noreferrer" href="https://www.linkedin.com/in/bradley-baylis/">
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.linkedin.com/in/bradley-baylis/"
+      >
         <svg
           className={styles.socialMediaIcon}
           role="img"
@@ -28,7 +32,11 @@ const Contact = () => (
       </a>
     </Fade>
     <Fade>
-      <a target = "_blank" rel = "noopener noreferrer" href="https://github.com/BLBaylis">
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://github.com/BLBaylis"
+      >
         <svg
           className={styles.socialMediaIcon}
           role="img"

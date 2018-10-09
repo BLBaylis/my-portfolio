@@ -20,7 +20,8 @@
 
 .bradPic {
   margin: $base-vertical-rhythm auto;
-  height: 150px;
+  max-height: 150px;
+  height: 75%;
   border-radius: 25px;
   font-size: 1.625em;
 }
