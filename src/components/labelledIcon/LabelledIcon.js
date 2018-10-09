@@ -10,7 +10,7 @@ const LabelledIcon = props => {
     : styles.disabledIconLink
   return (
     <div className={styles.labelledIcon}>
-      <a className={iconLinkClassName} href={props.link}>
+      <a className={iconLinkClassName} alt = {`visit ${props.label}'s website`} href={props.link}>
         <img className={styles.icon} alt = {`${props.label} logo`} src={props.icon} />
       </a>
       <a className={linkClassName} href={props.link}>
