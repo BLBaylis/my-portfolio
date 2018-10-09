@@ -4,10 +4,13 @@
   padding: $section-vertical-rhythm 0;
 }
 
-.socialMediaIcon {
-  width: 25%;
-  max-width: 100px;
+.socialMediaLink {
+  display : inline-block;
   margin: $base-vertical-rhythm;
+}
+
+.socialMediaIcon {
+  width: 100px;
 }
 
 .socialMediaIcon:hover {

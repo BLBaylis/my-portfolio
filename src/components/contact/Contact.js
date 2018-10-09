@@ -13,6 +13,7 @@ const Contact = () => (
     </Typography>
     <Fade>
       <a
+        className = {styles.socialMediaLink}
         target="_blank"
         rel="noopener noreferrer"
         href="https://www.linkedin.com/in/bradley-baylis/"
@@ -33,6 +34,7 @@ const Contact = () => (
     </Fade>
     <Fade>
       <a
+        className = {styles.socialMediaLink}
         target="_blank"
         rel="noopener noreferrer"
         href="https://github.com/BLBaylis"
