@@ -11,7 +11,7 @@ const LabelledIcon = props => {
   return (
     <div className={styles.labelledIcon}>
       <a className={iconLinkClassName} href={props.link}>
-        <img className={styles.icon} src={props.icon} />
+        <img className={styles.icon} alt = {`${props.label} logo`} src={props.icon} />
       </a>
       <a className={linkClassName} href={props.link}>
         <Typography variant="display1" className={styles.label}>

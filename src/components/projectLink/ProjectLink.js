@@ -53,7 +53,7 @@ const ProjectLink = props => {
   return (
     <div className={styles[className]}>
       {typography}
-      <img className={styles.thumbnail} src={thumbnail} />
+      <img className={styles.thumbnail} alt = {`${title} thumbnail`} src={thumbnail} />
       <div className={styles.btnWrapper}>{buttons}</div>
     </div>
   )
