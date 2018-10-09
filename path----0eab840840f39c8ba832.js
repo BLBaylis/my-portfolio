@@ -1,2 +1,2 @@
-webpackJsonp([60335399758886],{104:function(t,a){t.exports={data:{site:{siteMetadata:{title:"Bradley Baylis | Portfolio"}}},layoutContext:{}}}});
+webpackJsonp([60335399758886],{160:function(t,a){t.exports={data:{site:{siteMetadata:{title:"Bradley Baylis | Portfolio"}}},layoutContext:{}}}});
 //# sourceMappingURL=path----0eab840840f39c8ba832.js.map

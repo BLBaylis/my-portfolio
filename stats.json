@@ -4,45 +4,37 @@
       "path---tic-tac-toe-project-a0e39f21c11f6a62c5ab.js",
       "path---tic-tac-toe-project-a0e39f21c11f6a62c5ab.js.map"
     ],
-    "path---twitch-tv-tool-project": [
-      "path---twitch-tv-tool-project-a0e39f21c11f6a62c5ab.js",
-      "path---twitch-tv-tool-project-a0e39f21c11f6a62c5ab.js.map"
-    ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-9d49907367b76d16012c.js",
-      "component---src-pages-index-js-9d49907367b76d16012c.js.map"
+      "component---src-pages-index-js-1c6a87e48860f367e043.js",
+      "component---src-pages-index-js-1c6a87e48860f367e043.js.map"
     ],
     "component---src-pages-portfolio-project-js": [
-      "component---src-pages-portfolio-project-js-6aabc4b4e78ce2bc4526.js",
-      "component---src-pages-portfolio-project-js-6aabc4b4e78ce2bc4526.js.map"
+      "component---src-pages-portfolio-project-js-4e3f6bf1094d0e58b621.js",
+      "component---src-pages-portfolio-project-js-4e3f6bf1094d0e58b621.js.map"
     ],
     "path---": [
       "path----0eab840840f39c8ba832.js",
       "path----0eab840840f39c8ba832.js.map"
     ],
     "component---src-pages-calculator-project-js": [
-      "component---src-pages-calculator-project-js-1205f0c80c06252846cd.js",
-      "component---src-pages-calculator-project-js-1205f0c80c06252846cd.js.map"
-    ],
-    "component---src-pages-twitch-tv-tool-project-js": [
-      "component---src-pages-twitch-tv-tool-project-js-7371c7b73eda0a32b6dd.js",
-      "component---src-pages-twitch-tv-tool-project-js-7371c7b73eda0a32b6dd.js.map"
+      "component---src-pages-calculator-project-js-3b688ef849551f1c65a5.js",
+      "component---src-pages-calculator-project-js-3b688ef849551f1c65a5.js.map"
     ],
     "path---portfolio-project": [
       "path---portfolio-project-a0e39f21c11f6a62c5ab.js",
       "path---portfolio-project-a0e39f21c11f6a62c5ab.js.map"
     ],
-    "path---projects": [
-      "path---projects-a0e39f21c11f6a62c5ab.js",
-      "path---projects-a0e39f21c11f6a62c5ab.js.map"
+    "path---pomodoro-project": [
+      "path---pomodoro-project-a0e39f21c11f6a62c5ab.js",
+      "path---pomodoro-project-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-04f3d8a03dbecec80ae2.js",
-      "component---src-layouts-index-js-04f3d8a03dbecec80ae2.js.map"
+      "component---src-layouts-index-js-6039be9833407cfd05d3.js",
+      "component---src-layouts-index-js-6039be9833407cfd05d3.js.map"
     ],
-    "path---pomodoro-timer-project": [
-      "path---pomodoro-timer-project-a0e39f21c11f6a62c5ab.js",
-      "path---pomodoro-timer-project-a0e39f21c11f6a62c5ab.js.map"
+    "path---twitch-project": [
+      "path---twitch-project-a0e39f21c11f6a62c5ab.js",
+      "path---twitch-project-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
@@ -57,36 +49,36 @@
       "component---src-pages-404-js-2c47073222785de9f749.js.map"
     ],
     "commons": [
-      "commons-4bc7a6e79053edbdda67.js",
+      "commons-0a18561c8afdd2fd7b5a.js",
       "build-js-styles.css",
-      "commons-4bc7a6e79053edbdda67.js.map",
+      "commons-0a18561c8afdd2fd7b5a.js.map",
       "build-js-styles.css.map"
+    ],
+    "component---src-pages-pomodoro-project-js": [
+      "component---src-pages-pomodoro-project-js-2eb2a2f3a5463e85354e.js",
+      "component---src-pages-pomodoro-project-js-2eb2a2f3a5463e85354e.js.map"
     ],
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
-    "component---src-pages-projects-js": [
-      "component---src-pages-projects-js-f2d402ca92b9cb92166b.js",
-      "component---src-pages-projects-js-f2d402ca92b9cb92166b.js.map"
-    ],
     "app": [
-      "app-2c170be65e4cdac5727e.js",
+      "app-f6b159bae0f87a0c7433.js",
       "build-js-styles.css",
-      "app-2c170be65e4cdac5727e.js.map",
+      "app-f6b159bae0f87a0c7433.js.map",
       "build-js-styles.css.map"
+    ],
+    "component---src-pages-twitch-project-js": [
+      "component---src-pages-twitch-project-js-3fd2ff8f289c82e6167a.js",
+      "component---src-pages-twitch-project-js-3fd2ff8f289c82e6167a.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
       "path---404-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-tic-tac-toe-project-js": [
-      "component---src-pages-tic-tac-toe-project-js-2619467d973d202a86b0.js",
-      "component---src-pages-tic-tac-toe-project-js-2619467d973d202a86b0.js.map"
-    ],
-    "component---src-pages-pomodoro-timer-project-js": [
-      "component---src-pages-pomodoro-timer-project-js-8f16dca780dac312c287.js",
-      "component---src-pages-pomodoro-timer-project-js-8f16dca780dac312c287.js.map"
+      "component---src-pages-tic-tac-toe-project-js-dd32561a54bd70f66a6a.js",
+      "component---src-pages-tic-tac-toe-project-js-dd32561a54bd70f66a6a.js.map"
     ]
   }
 }
