@@ -1,2 +1,2 @@
-webpackJsonp([0x6dc628f4b57f],{507:function(t,n){t.exports={pathContext:{}}}});
+webpackJsonp([0x6dc628f4b57f],{504:function(t,n){t.exports={pathContext:{}}}});
 //# sourceMappingURL=path---twitch-project-a0e39f21c11f6a62c5ab.js.map
