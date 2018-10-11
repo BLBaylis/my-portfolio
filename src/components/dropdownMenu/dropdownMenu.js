@@ -7,33 +7,30 @@ import Link from 'gatsby-link'
 const DropdownMenu = props => {
   const { droppedStatus, handleClose } = props
   const undroppedNavLink = droppedStatus ? false : styles.navLink
-  const ulClass = droppedStatus
-    ? `${styles.navList} ${styles.boxShadow}`
-    : styles.navList
   return (
-    <ul onClick={handleClose} className={ulClass}>
-      <li className={undroppedNavLink || styles.navLink1}>
+    <ul className={styles.navList}>
+      <li onClick={handleClose} className={undroppedNavLink || styles.navLink1}>
         <Link className={styles.anchor} to="/">
           <Typography variant="title" className={styles.type}>
             Home
           </Typography>
         </Link>
       </li>
-      <li className={undroppedNavLink || styles.navLink2}>
+      <li onClick={handleClose} className={undroppedNavLink || styles.navLink2}>
         <Link className={styles.anchor} to="/#about">
           <Typography variant="title" className={styles.type}>
             About Me
           </Typography>
         </Link>
       </li>
-      <li className={undroppedNavLink || styles.navLink3}>
+      <li onClick={handleClose} className={undroppedNavLink || styles.navLink3}>
         <Link className={styles.anchor} to="/#projects">
           <Typography variant="title" className={styles.type}>
             Projects
           </Typography>
         </Link>
       </li>
-      <li className={undroppedNavLink || styles.navLink4}>
+      <li onClick={handleClose} className={undroppedNavLink || styles.navLink4}>
         <Link className={styles.anchor} to="/#contact">
           <Typography variant="title" className={styles.type}>
             Contact

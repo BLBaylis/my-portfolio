@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import CssBaseline from '@material-ui/core/CssBaseline'
 import Navbar from '../components/navbar/Navbar'
 
 const Layout = ({ children, data }) => (
@@ -9,13 +8,12 @@ const Layout = ({ children, data }) => (
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'Bradley Baylis\'s front end developer portfolio' },
+        { name: 'keywords', content: 'Bradley, Baylis, front, end, development, portfolio' },
       ]}>
       <html lang="en" />
     </Helmet>
     <div>
-      <CssBaseline />
       <Navbar />
       {children()}
     </div>

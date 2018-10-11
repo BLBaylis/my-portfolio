@@ -24,10 +24,6 @@ const JSStyles = {
   grow: {
     flexGrow: 1,
   },
-  menuButton: {
-    marginLeft: -12,
-    marginRight: -10,
-  },
 }
 
 class MobileNavbar extends React.Component {
@@ -53,12 +49,12 @@ class MobileNavbar extends React.Component {
     const appBar = this.state.dropped ? classes.appBar : classes.appBarNoShadow
     return (
       <nav className={classNames(styles.mobileNavbar, classes.root)}>
-        <AppBar position="static" className={appBar}>
+        <AppBar position="static" className={classNames(styles.appBar, appBar)}>
           <DropdownMenu
             droppedStatus={this.state.dropped}
             handleClose={this.handleClose}
           />
-          <Toolbar>
+          <Toolbar className = {styles.toolBar}>
             <Typography
               variant="title"
               color="inherit"
@@ -68,7 +64,6 @@ class MobileNavbar extends React.Component {
             </Typography>
             <IconButton
               onClick={onClick}
-              className={classes.menuButton}
               color="inherit"
               aria-label="Menu"
             >
