@@ -3,9 +3,10 @@ module.exports = {
     title: 'Bradley Baylis | Portfolio',
   },
   plugins: [
+    'gatsby-plugin-layout',
   	'gatsby-plugin-react-helmet',
-   	'gatsby-plugin-eslint', 
    	'gatsby-plugin-sass',
+	  '@wapps/gatsby-plugin-material-ui'
   ],
   pathPrefix: `/my-portfolio`,
 }
