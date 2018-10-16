@@ -6,7 +6,7 @@ module.exports = {
     'gatsby-plugin-layout',
   	'gatsby-plugin-react-helmet',
    	'gatsby-plugin-sass',
-	  '@wapps/gatsby-plugin-material-ui'
+	'@wapps/gatsby-plugin-material-ui'
   ],
   pathPrefix: `/my-portfolio`,
 }

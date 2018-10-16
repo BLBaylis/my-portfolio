@@ -11,8 +11,14 @@ function groupElementsInArrIntoSets(arr, setLength) {
   return arrCopy
 }
 
+function capitaliseFirstLetter(str){
+	let firstLetter = str[0].toUpperCase();
+	return firstLetter + str.slice(1);
+}
+
 const ProjectOverlay = props => {
-  const { thumbnail, tags, direction } = props
+  const { thumbnail, tags, direction } = props;
+  let newDirection = capitaliseFirstLetter(direction);
   let tagEls = groupElementsInArrIntoSets(tags, 3).map(x => (
     <WhiteTypography key={Math.random() * 10} variant="button">
       <div className={styles.row}>
@@ -26,10 +32,10 @@ const ProjectOverlay = props => {
   ))
   return (
     <div className={styles.projectOverlay}>
-      <div className={styles[`img-${direction}`]}>
+      <div className={styles[`img${newDirection}`]}>
         <img className={styles.thumbnail} src={thumbnail} />
       </div>
-      <div className={styles[`info-${direction}`]}>
+      <div className={styles[`info${newDirection}`]}>
         <ul className={styles.tagsWrapper}>{tagEls}</ul>
       </div>
     </div>
