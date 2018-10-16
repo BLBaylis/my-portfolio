@@ -6,13 +6,13 @@ import Fade from 'react-reveal/Fade'
 
 const mobileProjectGallery = () => (
   <div className={styles.mobileProjectGallery}>
-   <Fade left>
-      <ProjectLink className={'project'} project={projectData.portfolio} />
-   </Fade> 
-   <Fade right>
-      <ProjectLink className={'projectAlt'} project={projectData.twitch} />
-   </Fade>
-   <Fade left>
+    <Fade left>
+      <ProjectLink className={'project'} project={projectData.twitch} />
+    </Fade>
+    <Fade right>
+      <ProjectLink className={'projectAlt'} project={projectData.portfolio} />
+    </Fade>
+    <Fade left>
       <ProjectLink className={'project'} project={projectData.calculator} />
     </Fade>
     <Fade right>

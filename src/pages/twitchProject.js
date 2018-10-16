@@ -1,7 +1,10 @@
 import React from 'react'
 import styles from './projectPage.module.css'
 import Typography from '@material-ui/core/Typography'
-import twitchScreenShot from '../static/images/screenshots/twitch/twitch-320w.png'
+import twitchScreenShot320 from '../static/images/screenshots/twitch/twitch-320w.png'
+import twitchScreenShot700 from '../static/images/screenshots/twitch/twitch-700w.png'
+import twitchScreenShot1000 from '../static/images/screenshots/twitch/twitch-1000w.png'
+import twitchScreenShot1300 from '../static/images/screenshots/twitch/twitch-1300w.png'
 
 const TwitchTvProject = () => (
   <div className={styles.outerDiv}>
@@ -14,7 +17,16 @@ const TwitchTvProject = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img className={styles.image} src={twitchScreenShot} />
+        <img
+          className={styles.image}
+          srcSet={`${twitchScreenShot320} 320w, 
+        	${twitchScreenShot700} 700w, 
+        	${twitchScreenShot1000} 1000w,
+            ${twitchScreenShot1300} 1200w`}
+          sizes="100%"
+          alt={'twitch screenshot'}
+          src={twitchScreenShot1300}
+        />
       </a>
       <figcaption>
         <Typography variant="body2" align="center">

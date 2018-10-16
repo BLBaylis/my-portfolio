@@ -1,7 +1,10 @@
 import React from 'react'
 import styles from './projectPage.module.css'
 import Typography from '@material-ui/core/Typography'
-import ticTacToeScreenShot from '../static/images/screenshots/tictactoe/tictactoe-320w.png'
+import ticTacToeScreenShot320 from '../static/images/screenshots/tictactoe/tictactoe-320w.png'
+import ticTacToeScreenShot700 from '../static/images/screenshots/tictactoe/tictactoe-700w.png'
+import ticTacToeScreenShot1000 from '../static/images/screenshots/tictactoe/tictactoe-1000w.png'
+import ticTacToeScreenShot1300 from '../static/images/screenshots/tictactoe/tictactoe-1300w.png'
 
 const TicTacToeProject = () => (
   <div className={styles.outerDiv}>
@@ -14,7 +17,16 @@ const TicTacToeProject = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img className={styles.image} src={ticTacToeScreenShot} />
+        <img
+          className={styles.image}
+          srcSet={`${ticTacToeScreenShot320} 320w, 
+        	${ticTacToeScreenShot700} 700w, 
+        	${ticTacToeScreenShot1000} 1000w,
+            ${ticTacToeScreenShot1300} 1300w`}
+          sizes="100%"
+          alt={'ticTacToe screenshot'}
+          src={ticTacToeScreenShot1300}
+        />
       </a>
       <figcaption>
         <Typography variant="body2" align="center">

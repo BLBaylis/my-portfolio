@@ -1,7 +1,10 @@
 import React from 'react'
 import styles from './projectPage.module.css'
 import Typography from '@material-ui/core/Typography'
-import calculatorScreenShot from '../static/images/screenshots/calculator/calculator.png'
+import calculatorScreenShot320 from '../static/images/screenshots/calculator/calculator-320w.png'
+import calculatorScreenShot700 from '../static/images/screenshots/calculator/calculator-700w.png'
+import calculatorScreenShot1000 from '../static/images/screenshots/calculator/calculator-1000w.png'
+import calculatorScreenShot1300 from '../static/images/screenshots/calculator/calculator-1300w.png'
 
 const CalculatorProject = () => (
   <div className={styles.outerDiv}>
@@ -14,7 +17,16 @@ const CalculatorProject = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img className={styles.image} src={calculatorScreenShot} />
+        <img
+          className={styles.image}
+          srcSet={`${calculatorScreenShot320} 320w, 
+        	${calculatorScreenShot700} 700w, 
+        	${calculatorScreenShot1000} 1000w,
+            ${calculatorScreenShot1300} 1200w`}
+          sizes="100%"
+          alt={'calculator screenshot'}
+          src={calculatorScreenShot1300}
+        />
       </a>
       <figcaption>
         <Typography variant="body1" align="center">

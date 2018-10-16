@@ -54,7 +54,7 @@ class MobileNavbar extends React.Component {
             droppedStatus={this.state.dropped}
             handleClose={this.handleClose}
           />
-          <Toolbar className = {styles.toolBar}>
+          <Toolbar className={styles.toolBar}>
             <Typography
               variant="title"
               color="inherit"
@@ -62,11 +62,7 @@ class MobileNavbar extends React.Component {
             >
               Bradley Baylis
             </Typography>
-            <IconButton
-              onClick={onClick}
-              color="inherit"
-              aria-label="Menu"
-            >
+            <IconButton onClick={onClick} color="inherit" aria-label="Menu">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"

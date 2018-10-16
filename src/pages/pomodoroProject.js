@@ -1,7 +1,10 @@
 import React from 'react'
 import styles from './projectPage.module.css'
 import Typography from '@material-ui/core/Typography'
-import pomodoroScreenShot from '../static/images/screenshots/pomodoro/pomodoro-320w.png'
+import pomodoroScreenShot320 from '../static/images/screenshots/pomodoro/pomodoro-320w.png'
+import pomodoroScreenShot700 from '../static/images/screenshots/pomodoro/pomodoro-700w.png'
+import pomodoroScreenShot1000 from '../static/images/screenshots/pomodoro/pomodoro-1000w.png'
+import pomodoroScreenShot1300 from '../static/images/screenshots/pomodoro/pomodoro-1300w.png'
 
 const PomodoroProject = () => (
   <div className={styles.outerDiv}>
@@ -14,7 +17,16 @@ const PomodoroProject = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img className={styles.image} src={pomodoroScreenShot} />
+        <img
+          className={styles.image}
+          srcSet={`${pomodoroScreenShot320} 320w, 
+        	${pomodoroScreenShot700} 700w, 
+        	${pomodoroScreenShot1000} 1000w,
+            ${pomodoroScreenShot1300} 1300w`}
+          sizes="100%"
+          alt="pomodoro screenshot"
+          src={pomodoroScreenShot1300}
+        />
       </a>
       <figcaption>
         <Typography variant="body1" align="center">

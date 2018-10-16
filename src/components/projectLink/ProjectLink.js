@@ -55,8 +55,13 @@ const ProjectLink = props => {
       {typography}
       <img
         className={styles.thumbnail}
+        srcSet={`${thumbnail[0]} 320w, 
+        	${thumbnail[1]} 700w, 
+        	${thumbnail[2]} 1000w,
+            ${thumbnail[3]} 1200w`}
+        sizes="100%"
         alt={`${title} thumbnail`}
-        src={thumbnail}
+        src={thumbnail[0]}
       />
       <div className={styles.btnWrapper}>{buttons}</div>
     </div>
