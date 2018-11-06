@@ -38,7 +38,7 @@ export const twitch = {
     'Create React App',
   ],
   projectPageLink: 'twitchProject',
-  href: 'https://blbaylis.github.io/Twitch-Tool/',
+  href: 'https://blbaylis.github.io/twitch-tv-tool/',
 }
 
 export const pomodoro = {
